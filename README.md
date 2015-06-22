@@ -1,27 +1,31 @@
-Quark Core integration/staging tree
+Bloodcoin Core integration/staging tree
 ===================================
 
-http://www.qrk.cc
+http://www.bloodcoin.cc
 
+Copyright (c) 2009-2015 Satoshi Nakamoto
 Copyright (c) 2009-2015 Bitcoin Core Developers
+Copyright (c) 2013-2015 Sifcoin Core Developers
 Copyright (c) 2013-2015 Quark Core Developers
+Copyright (c) 2015 Sharkcoin Core Developers
+Copyright (c) 2015 Bloodcoin Core Developers
 
-What is Quark?
+What is Bloodcoin?
 --------------
 
-Quark is an experimental new digital currency that enables instant payments to
-anyone, anywhere in the world. Quark uses peer-to-peer technology to operate
+Bloodcoin is an experimental new digital currency that enables instant payments to
+anyone, anywhere in the world. Bloodcoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Quark Core is the name of open source
+out collectively by the network. Bloodcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Quark Core software, see http://www.qrk.cc/
+the Bloodcoin Core software, see http://www.bloodcoin.cc/
 
 License
 -------
 
-Quark Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Bloodcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see http://opensource.org/licenses/MIT.
 
 Development process
@@ -30,7 +34,7 @@ Development process
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
-If it is a simple/trivial/non-controversial change, then one of the Quark
+If it is a simple/trivial/non-controversial change, then one of the Bloodcoin
 development team members simply pulls it.
 
 If it is a *more complicated or potentially controversial* change, then the patch
@@ -44,7 +48,7 @@ controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/bitcoin/bitcoin/tags) are created
-regularly to indicate new official, stable release versions of Quark.
+regularly to indicate new official, stable release versions of Bloodcoin.
 
 Testing
 -------
@@ -95,7 +99,7 @@ that run in -regest mode.
 
 **DEBUG_LOCKORDER**
 
-Quark Core is a multithreaded application, and deadlocks or other multithreading bugs
+Bloodcoin Core is a multithreaded application, and deadlocks or other multithreading bugs
 can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of what locks
 are held, and adds warning to the debug.log file if inconsistencies are detected.
