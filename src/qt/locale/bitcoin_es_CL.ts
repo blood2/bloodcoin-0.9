@@ -2,11 +2,11 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Quark Core</source>
+        <source>About Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&lt;b&gt;Quark Core&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Blood Core&lt;/b&gt; version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -31,7 +31,7 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>Copyright</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
+        <source>The Blood Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -106,11 +106,11 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>These are your Quark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Blood addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>These are your Quark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Blood addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -228,8 +228,8 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>Billetera codificada</translation>
     </message>
     <message>
-        <source>Quark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
-        <translation>Quark se cerrará para finalizar el proceso de encriptación. Recuerde que encriptar su billetera no protegera completatamente sus quarks de ser robados por malware que infecte su computador</translation>
+        <source>Blood will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bloods from being stolen by malware infecting your computer.</source>
+        <translation>Blood se cerrará para finalizar el proceso de encriptación. Recuerde que encriptar su billetera no protegera completatamente sus bloods de ser robados por malware que infecte su computador</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -299,8 +299,8 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>Salir del programa</translation>
     </message>
     <message>
-        <source>Show information about Quark</source>
-        <translation>Muestra información acerca de Quark</translation>
+        <source>Show information about Blood</source>
+        <translation>Muestra información acerca de Blood</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -347,11 +347,11 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>Cargando el index de bloques...</translation>
     </message>
     <message>
-        <source>Send coins to a Quark address</source>
+        <source>Send coins to a Blood address</source>
         <translation>Enviar monedas a una dirección bitcoin</translation>
     </message>
     <message>
-        <source>Modify configuration options for Quark</source>
+        <source>Modify configuration options for Blood</source>
         <translation>Modifica las opciones de configuración de bitcoin</translation>
     </message>
     <message>
@@ -375,8 +375,8 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -403,11 +403,11 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Sign messages with your Quark addresses to prove you own them</source>
+        <source>Sign messages with your Blood addresses to prove you own them</source>
         <translation>Firmar un mensaje para provar que usted es dueño de esta dirección</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Quark addresses</source>
+        <source>Verify messages to ensure they were signed with specified Blood addresses</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -431,15 +431,15 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation>[red-de-pruebas]</translation>
     </message>
     <message>
-        <source>Quark Core</source>
+        <source>Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Request payments (generates QR codes and quark: URIs)</source>
+        <source>Request payments (generates QR codes and blood: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&amp;About Quark Core</source>
+        <source>&amp;About Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -451,7 +451,7 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Open a quark: URI or payment request</source>
+        <source>Open a blood: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -459,16 +459,16 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Show the Quark Core help message to get a list with possible Quark command-line options</source>
+        <source>Show the Blood Core help message to get a list with possible Blood command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark client</source>
-        <translation>Cliente Quark</translation>
+        <source>Blood client</source>
+        <translation>Cliente Blood</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Quark network</source>
-        <translation><numerusform>%n conexión activa hacia la red Quark</numerusform><numerusform>%n conexiones activas hacia la red Quark</numerusform></translation>
+        <source>%n active connection(s) to Blood network</source>
+        <translation><numerusform>%n conexión activa hacia la red Blood</numerusform><numerusform>%n conexiones activas hacia la red Blood</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -562,7 +562,7 @@ Dirección: %4</translation>
         <translation>La billetera esta &lt;b&gt;codificada&lt;/b&gt; y actualmente &lt;b&gt;bloqueda&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Quark can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Blood can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -847,8 +847,8 @@ Dirección: %4</translation>
         <translation>La dirección introducida &quot;%1&quot; ya esta guardada en la libreta de direcciones.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Quark address.</source>
-        <translation>La dirección introducida &quot;%1&quot; no es una dirección Quark valida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Blood address.</source>
+        <translation>La dirección introducida &quot;%1&quot; no es una dirección Blood valida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -885,11 +885,11 @@ Dirección: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Quark Core - Command-line options</source>
+        <source>Blood Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core</source>
+        <source>Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -937,15 +937,15 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Welcome to Quark Core.</source>
+        <source>Welcome to Blood Core.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Quark Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Blood Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core will download and store a copy of the Quark block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Blood Core will download and store a copy of the Blood block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -957,8 +957,8 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
@@ -1019,12 +1019,12 @@ Dirección: %4</translation>
         <translation>Comisión de &amp;transacciónes</translation>
     </message>
     <message>
-        <source>Automatically start Quark after logging in to the system.</source>
-        <translation>Inicia Quark automáticamente despues de encender el computador</translation>
+        <source>Automatically start Blood after logging in to the system.</source>
+        <translation>Inicia Blood automáticamente despues de encender el computador</translation>
     </message>
     <message>
-        <source>&amp;Start Quark on system login</source>
-        <translation>&amp;Inicia Quark al iniciar el sistema</translation>
+        <source>&amp;Start Blood on system login</source>
+        <translation>&amp;Inicia Blood al iniciar el sistema</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1039,7 +1039,7 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Connect to the Quark network through a SOCKS proxy.</source>
+        <source>Connect to the Blood network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1099,8 +1099,8 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Automatically open the Quark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automáticamente el puerto del cliente Quark en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
+        <source>Automatically open the Blood client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abre automáticamente el puerto del cliente Blood en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1155,7 +1155,7 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Quark.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Blood.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1167,7 +1167,7 @@ Dirección: %4</translation>
         <translation>Elige la subdivisión por defecto para mostrar cantidaded en la interfaz cuando se envien monedas</translation>
     </message>
     <message>
-        <source>Whether to show Quark addresses in the transaction list or not.</source>
+        <source>Whether to show Blood addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1222,7 +1222,7 @@ Dirección: %4</translation>
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quark network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Blood network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1277,7 +1277,7 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Quark address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Blood address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1289,7 +1289,7 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Cannot start quark: click-to-pay handler</source>
+        <source>Cannot start blood: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1344,8 +1344,8 @@ Dirección: %4</translation>
 <context>
     <name>QObject</name>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
@@ -1360,12 +1360,12 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core didn&apos;t yet exit safely...</source>
+        <source>Blood Core didn&apos;t yet exit safely...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Introduce una dirección Quark (ej. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Introduce una dirección Blood (ej. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
 </context>
 <context>
@@ -1486,7 +1486,7 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Open the Quark debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Blood debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1494,7 +1494,7 @@ Dirección: %4</translation>
         <translation>Limpiar Consola</translation>
     </message>
     <message>
-        <source>Welcome to the Quark RPC console.</source>
+        <source>Welcome to the Blood RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1557,7 +1557,7 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Quark network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Blood network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1870,7 +1870,7 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Warning: Invalid Quark address</source>
+        <source>Warning: Invalid Blood address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1957,7 +1957,7 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>A message that was attached to the quark: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Quark network.</source>
+        <source>A message that was attached to the blood: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Blood network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1976,7 +1976,7 @@ Dirección: %4</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Quark Core is shutting down...</source>
+        <source>Blood Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2000,7 +2000,7 @@ Dirección: %4</translation>
     </message>
     <message>
         <source>The address to sign the message with (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Introduce una dirección Quark (ej. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <translation>Introduce una dirección Blood (ej. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2031,7 +2031,7 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Sign the message to prove you own this Quark address</source>
+        <source>Sign the message to prove you own this Blood address</source>
         <translation>Firmar un mensjage para probar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -2056,10 +2056,10 @@ Dirección: %4</translation>
     </message>
     <message>
         <source>The address the message was signed with (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Introduce una dirección Quark (ej. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <translation>Introduce una dirección Blood (ej. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Quark address</source>
+        <source>Verify the message to ensure it was signed with the specified Blood address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2071,8 +2071,8 @@ Dirección: %4</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Introduce una dirección Quark (ej. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Introduce una dirección Blood (ej. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
@@ -2080,11 +2080,11 @@ Dirección: %4</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
-        <translation>La dirección introducida &quot;%1&quot; no es una dirección Quark valida.</translation>
+        <translation>La dirección introducida &quot;%1&quot; no es una dirección Blood valida.</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
-        <translation>Por favor, revise la dirección Quark e inténtelo denuevo</translation>
+        <translation>Por favor, revise la dirección Blood e inténtelo denuevo</translation>
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
@@ -2130,11 +2130,11 @@ Dirección: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Quark Core</source>
+        <source>Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>The Quark Core developers</source>
+        <source>The Blood Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2616,13 +2616,13 @@ Dirección: %4</translation>
 </translation>
     </message>
     <message>
-        <source>Specify configuration file (default: quarkcoin.conf)</source>
-        <translation>Especifica archivo de configuración (predeterminado: quarkcoin.conf)
+        <source>Specify configuration file (default: bloodcoin.conf)</source>
+        <translation>Especifica archivo de configuración (predeterminado: bloodcoin.conf)
 </translation>
     </message>
     <message>
-        <source>Specify pid file (default: quarkd.pid)</source>
-        <translation>Especifica archivo pid (predeterminado: quark.pid)
+        <source>Specify pid file (default: bloodd.pid)</source>
+        <translation>Especifica archivo pid (predeterminado: blood.pid)
 </translation>
     </message>
     <message>
@@ -2668,7 +2668,7 @@ Dirección: %4</translation>
 </translation>
     </message>
     <message>
-        <source>Quark Core RPC client version</source>
+        <source>Blood Core RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2689,13 +2689,13 @@ Dirección: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=quarkrpc
+rpcuser=bloodrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Blood Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2768,7 +2768,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Quark Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Blood Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2780,8 +2780,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation>Precaución: -paytxfee es muy alta. Esta es la comisión que pagarás si envias una transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quark will not work properly.</source>
-        <translation>Precaución: Por favor revise que la fecha y hora de tu ordenador son correctas. Si tu reloj está mal configurado Quark no funcionará correctamente.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Blood will not work properly.</source>
+        <translation>Precaución: Por favor revise que la fecha y hora de tu ordenador son correctas. Si tu reloj está mal configurado Blood no funcionará correctamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2816,7 +2816,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core Daemon</source>
+        <source>Blood Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3025,7 +3025,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Usage (deprecated, use quark-cli):</source>
+        <source>Usage (deprecated, use blood-cli):</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3061,7 +3061,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation>Importar bloques desde el archivo externo blk000??.dat </translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Quark Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Blood Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3125,7 +3125,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>RPC SSL options: (see the Quark Wiki for SSL setup instructions)</source>
+        <source>RPC SSL options: (see the Blood Wiki for SSL setup instructions)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3145,11 +3145,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>SSL options: (see the Quark Wiki for SSL setup instructions)</source>
-        <translation>Opciones SSL: (ver la Quark Wiki para instrucciones de configuración SSL)</translation>
+        <source>SSL options: (see the Blood Wiki for SSL setup instructions)</source>
+        <translation>Opciones SSL: (ver la Blood Wiki para instrucciones de configuración SSL)</translation>
     </message>
     <message>
-        <source>Send command to Quark Core</source>
+        <source>Send command to Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3185,7 +3185,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation>Especifica tiempo de espera para conexion en milisegundos (predeterminado: 5000)</translation>
     </message>
     <message>
-        <source>Start Quark Core Daemon</source>
+        <source>Start Blood Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3312,12 +3312,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation>Error cargando wallet.dat: Billetera corrupta</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Quark</source>
-        <translation>Error cargando wallet.dat: Billetera necesita una vercion reciente de Quark</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Blood</source>
+        <translation>Error cargando wallet.dat: Billetera necesita una vercion reciente de Blood</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Quark to complete</source>
-        <translation>La billetera necesita ser reescrita: reinicie Quark para completar</translation>
+        <source>Wallet needed to be rewritten: restart Blood to complete</source>
+        <translation>La billetera necesita ser reescrita: reinicie Blood para completar</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>

@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Quark Core</source>
-        <translation>Sobre Quark core</translation>
+        <source>About Blood Core</source>
+        <translation>Sobre Blood core</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Quark Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Quark core&lt;/b&gt; versión</translation>
+        <source>&lt;b&gt;Blood Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Blood core&lt;/b&gt; versión</translation>
     </message>
     <message>
         <source>
@@ -28,8 +28,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation>Copyright</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
-        <translation>Os desarrolladores de Quark Core</translation>
+        <source>The Blood Core developers</source>
+        <translation>Os desarrolladores de Blood Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -103,12 +103,12 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation>Direccións para recibir</translation>
     </message>
     <message>
-        <source>These are your Quark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son as túas direccións Quark para enviar pagos. Revisa sempre a cantidade e a dirección receptora antes de enviar moedas.</translation>
+        <source>These are your Blood addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son as túas direccións Blood para enviar pagos. Revisa sempre a cantidade e a dirección receptora antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Quark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son as túas direccións Quark para recibir pagos. Recoméndase empregar unha nova dirección de recepción por cada transacción.</translation>
+        <source>These are your Blood addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son as túas direccións Blood para recibir pagos. Recoméndase empregar unha nova dirección de recepción por cada transacción.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -225,8 +225,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation>Moedeiro encriptado</translation>
     </message>
     <message>
-        <source>Quark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
-        <translation>Quark se pechará agora para rematar o proceso de encriptación. Lembra que encriptar o teu moedeiro non protexe totalmente os teus quarks de ser robados por malware que infecte o teu ordenador.</translation>
+        <source>Blood will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bloods from being stolen by malware infecting your computer.</source>
+        <translation>Blood se pechará agora para rematar o proceso de encriptación. Lembra que encriptar o teu moedeiro non protexe totalmente os teus bloods de ser robados por malware que infecte o teu ordenador.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -296,8 +296,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation>Saír da aplicación</translation>
     </message>
     <message>
-        <source>Show information about Quark</source>
-        <translation>Amosar información sobre Quark</translation>
+        <source>Show information about Blood</source>
+        <translation>Amosar información sobre Blood</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -344,12 +344,12 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation>Reindexando bloques no disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Quark address</source>
-        <translation>Enviar moedas a unha dirección Quark</translation>
+        <source>Send coins to a Blood address</source>
+        <translation>Enviar moedas a unha dirección Blood</translation>
     </message>
     <message>
-        <source>Modify configuration options for Quark</source>
-        <translation>Modificar opcións de configuración para Quark</translation>
+        <source>Modify configuration options for Blood</source>
+        <translation>Modificar opcións de configuración para Blood</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -372,8 +372,8 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation>&amp;Verificar mensaxe...</translation>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -400,12 +400,12 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation>Encriptar as claves privadas que pertencen ao teu moedeiro</translation>
     </message>
     <message>
-        <source>Sign messages with your Quark addresses to prove you own them</source>
-        <translation>Asina mensaxes coas túas direccións Quark para probar que te pertencen</translation>
+        <source>Sign messages with your Blood addresses to prove you own them</source>
+        <translation>Asina mensaxes coas túas direccións Blood para probar que te pertencen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Quark addresses</source>
-        <translation>Verificar mensaxes para asegurar que foron asinados con direccións Quark dadas.</translation>
+        <source>Verify messages to ensure they were signed with specified Blood addresses</source>
+        <translation>Verificar mensaxes para asegurar que foron asinados con direccións Blood dadas.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -428,16 +428,16 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Quark Core</source>
-        <translation>Core de Quark</translation>
+        <source>Blood Core</source>
+        <translation>Core de Blood</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and quark: URIs)</source>
-        <translation>Solicitar pagos (xenera códigos QR e quark: URIs)</translation>
+        <source>Request payments (generates QR codes and blood: URIs)</source>
+        <translation>Solicitar pagos (xenera códigos QR e blood: URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Quark Core</source>
-        <translation>&amp;Sobre Quark Core</translation>
+        <source>&amp;About Blood Core</source>
+        <translation>&amp;Sobre Blood Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -448,24 +448,24 @@ Este produto inclúe software desenvolvido polo OpenSSL Project para o uso no Op
         <translation>Amosar a listaxe de etiquetas e direccións para recibir empregadas</translation>
     </message>
     <message>
-        <source>Open a quark: URI or payment request</source>
-        <translation>Abrir un quark: URI ou solicitude de pago</translation>
+        <source>Open a blood: URI or payment request</source>
+        <translation>Abrir un blood: URI ou solicitude de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Show the Quark Core help message to get a list with possible Quark command-line options</source>
+        <source>Show the Blood Core help message to get a list with possible Blood command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark client</source>
-        <translation>Cliente Quark</translation>
+        <source>Blood client</source>
+        <translation>Cliente Blood</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Quark network</source>
-        <translation><numerusform>%n conexión activa coa rede Quark</numerusform><numerusform>%n conexións activas coa rede Quark</numerusform></translation>
+        <source>%n active connection(s) to Blood network</source>
+        <translation><numerusform>%n conexión activa coa rede Blood</numerusform><numerusform>%n conexións activas coa rede Blood</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -560,8 +560,8 @@ Dirección: %4
         <translation>O moedeiro está &lt;b&gt;encriptado&lt;/b&gt; e actualmente &lt;b&gt;bloqueado&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Quark can no longer continue safely and will quit.</source>
-        <translation>Ocorriu un erro fatal. Quark non pode continuar en condicións de seguridade e pecharáse.</translation>
+        <source>A fatal error occurred. Blood can no longer continue safely and will quit.</source>
+        <translation>Ocorriu un erro fatal. Blood non pode continuar en condicións de seguridade e pecharáse.</translation>
     </message>
 </context>
 <context>
@@ -845,8 +845,8 @@ Dirección: %4
         <translation>A dirección introducida &quot;%1&quot; xa está no libro de direccións.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Quark address.</source>
-        <translation>A dirección introducida &apos;%1&apos; non é unha dirección Quark válida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Blood address.</source>
+        <translation>A dirección introducida &apos;%1&apos; non é unha dirección Blood válida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -883,12 +883,12 @@ Dirección: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Quark Core - Command-line options</source>
+        <source>Blood Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core</source>
-        <translation>Core de Quark</translation>
+        <source>Blood Core</source>
+        <translation>Core de Blood</translation>
     </message>
     <message>
         <source>version</source>
@@ -934,15 +934,15 @@ Dirección: %4
         <translation>Benvido</translation>
     </message>
     <message>
-        <source>Welcome to Quark Core.</source>
+        <source>Welcome to Blood Core.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Quark Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Blood Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core will download and store a copy of the Quark block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Blood Core will download and store a copy of the Blood block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -954,8 +954,8 @@ Dirección: %4
         <translation>Empregar un directorio de datos personalizado</translation>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
@@ -1016,12 +1016,12 @@ Dirección: %4
         <translation>Pagar &amp;tarifa da transacción</translation>
     </message>
     <message>
-        <source>Automatically start Quark after logging in to the system.</source>
-        <translation>Comezar Quark automáticamente despois de loguearse no sistema.</translation>
+        <source>Automatically start Blood after logging in to the system.</source>
+        <translation>Comezar Blood automáticamente despois de loguearse no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start Quark on system login</source>
-        <translation>&amp;Comezar Quark ao facer login no sistema</translation>
+        <source>&amp;Start Blood on system login</source>
+        <translation>&amp;Comezar Blood ao facer login no sistema</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1036,7 +1036,7 @@ Dirección: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Connect to the Quark network through a SOCKS proxy.</source>
+        <source>Connect to the Blood network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1096,8 +1096,8 @@ Dirección: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Automatically open the Quark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente o porto do cliente Quark no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
+        <source>Automatically open the Blood client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente o porto do cliente Blood no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1152,8 +1152,8 @@ Dirección: %4
         <translation>&amp;Linguaxe de interface de usuario:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Quark.</source>
-        <translation>A linguaxe de interface de usuario pode fixarse aquí. Esta configuración terá efecto tras reiniciar Quark.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Blood.</source>
+        <translation>A linguaxe de interface de usuario pode fixarse aquí. Esta configuración terá efecto tras reiniciar Blood.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1164,8 +1164,8 @@ Dirección: %4
         <translation>Escolle a unidade de subdivisión por defecto para amosar na interface e ao enviar moedas.</translation>
     </message>
     <message>
-        <source>Whether to show Quark addresses in the transaction list or not.</source>
-        <translation>Se se amosan ou non as direccións Quark na listaxe de transaccións.</translation>
+        <source>Whether to show Blood addresses in the transaction list or not.</source>
+        <translation>Se se amosan ou non as direccións Blood na listaxe de transaccións.</translation>
     </message>
     <message>
         <source>&amp;Display addresses in transaction list</source>
@@ -1219,8 +1219,8 @@ Dirección: %4
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quark network after a connection is established, but this process has not completed yet.</source>
-        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede Quark despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Blood network after a connection is established, but this process has not completed yet.</source>
+        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede Blood despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1274,8 +1274,8 @@ Dirección: %4
         <translation>Manexo de URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Quark address or malformed URI parameters.</source>
-        <translation>Non se pode parsear a URI! Esto pode ser causado por unha dirección Quark inválida ou parámetros da URI malformados.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Blood address or malformed URI parameters.</source>
+        <translation>Non se pode parsear a URI! Esto pode ser causado por unha dirección Blood inválida ou parámetros da URI malformados.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1286,7 +1286,7 @@ Dirección: %4
         <translation>Erro na petición de pago</translation>
     </message>
     <message>
-        <source>Cannot start quark: click-to-pay handler</source>
+        <source>Cannot start blood: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1341,8 +1341,8 @@ Dirección: %4
 <context>
     <name>QObject</name>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
@@ -1357,12 +1357,12 @@ Dirección: %4
         <translation>Erro: combinación inválida de -regtest e -testnet.</translation>
     </message>
     <message>
-        <source>Quark Core didn&apos;t yet exit safely...</source>
+        <source>Blood Core didn&apos;t yet exit safely...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Introduce unha dirección Quark (exemplo: QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Introduce unha dirección Blood (exemplo: QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
 </context>
 <context>
@@ -1483,16 +1483,16 @@ Dirección: %4
         <translation>Arquivo de log de depuración</translation>
     </message>
     <message>
-        <source>Open the Quark debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Abrir o arquivo de log de depuración de Quark dende o directorio actual de datos. Esto pode levar uns cantos segundos para grandes arquivos de log.</translation>
+        <source>Open the Blood debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Abrir o arquivo de log de depuración de Blood dende o directorio actual de datos. Esto pode levar uns cantos segundos para grandes arquivos de log.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Limpar consola</translation>
     </message>
     <message>
-        <source>Welcome to the Quark RPC console.</source>
-        <translation>Benvido á consola RPC de Quark</translation>
+        <source>Welcome to the Blood RPC console.</source>
+        <translation>Benvido á consola RPC de Blood</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1554,7 +1554,7 @@ Dirección: %4
         <translation>R&amp;eutilizar unha dirección para recibir existente (non recomendado)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Quark network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Blood network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1867,8 +1867,8 @@ Dirección: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Warning: Invalid Quark address</source>
-        <translation>Atención:  Enderezo Quark non válido</translation>
+        <source>Warning: Invalid Blood address</source>
+        <translation>Atención:  Enderezo Blood non válido</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1954,7 +1954,7 @@ Dirección: %4
         <translation>Introduce unha etiqueta para esta dirección para engadila á listaxe de direccións empregadas</translation>
     </message>
     <message>
-        <source>A message that was attached to the quark: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Quark network.</source>
+        <source>A message that was attached to the blood: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Blood network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1973,7 +1973,7 @@ Dirección: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Quark Core is shutting down...</source>
+        <source>Blood Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2028,8 +2028,8 @@ Dirección: %4
         <translation>Copiar a sinatura actual ao portapapeis do sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Quark address</source>
-        <translation>Asina a mensaxe para probar que posees esta dirección Quark</translation>
+        <source>Sign the message to prove you own this Blood address</source>
+        <translation>Asina a mensaxe para probar que posees esta dirección Blood</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2056,8 +2056,8 @@ Dirección: %4
         <translation>A dirección coa que foi firmada a mensaxe (exemplo: QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Quark address</source>
-        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección Quark especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified Blood address</source>
+        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección Blood especificada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2068,8 +2068,8 @@ Dirección: %4
         <translation>Restaurar todos os campos de verificación de mensaxe</translation>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Introduza unha dirección Quark (exemplo: QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Introduza unha dirección Blood (exemplo: QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
@@ -2127,12 +2127,12 @@ Dirección: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Quark Core</source>
-        <translation>Core de Quark</translation>
+        <source>Blood Core</source>
+        <translation>Core de Blood</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
-        <translation>Os desarrolladores de Quark Core</translation>
+        <source>The Blood Core developers</source>
+        <translation>Os desarrolladores de Blood Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2610,12 +2610,12 @@ Dirección: %4
         <translation>Opcións:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: quarkcoin.conf)</source>
-        <translation>Especificar arquivo de configuración (por defecto: quarkcoin.conf)</translation>
+        <source>Specify configuration file (default: bloodcoin.conf)</source>
+        <translation>Especificar arquivo de configuración (por defecto: bloodcoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: quarkd.pid)</source>
-        <translation>Especificar arquivo de pid (por defecto: quarkd.pid)</translation>
+        <source>Specify pid file (default: bloodd.pid)</source>
+        <translation>Especificar arquivo de pid (por defecto: bloodd.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
@@ -2658,7 +2658,7 @@ Dirección: %4
         <translation>Aceptar liña de comandos e comandos JSON-RPC</translation>
     </message>
     <message>
-        <source>Quark Core RPC client version</source>
+        <source>Blood Core RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2677,24 +2677,24 @@ Dirección: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=quarkrpc
+rpcuser=bloodrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Blood Alert&quot; admin@foo.com
 </source>
         <translation>%s, debes fixar unha rpcpassword no arquivo de configuración:
 %s
 Reoméndase usar o seguinte contrasinal aleatorio:
-rpcuser=quarkrpc
+rpcuser=bloodrpc
 rpcpassword=%s
 (non precisas lembrar este contrasinal)
 O nome do usuario e o contrasinal DEBEN NON ser o mesmo.
 Se o arquivo non existe, debes crealo con permisos de so lectura para o propietario.
 Tamén é recomendable fixar alertnotify de modo que recibas notificación dos problemas;
-por exemplo: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com
+por exemplo: alertnotify=echo %%s | mail -s &quot;Blood Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2766,7 +2766,7 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation>Esta é unha build de test pre-lanzamento - emprégaa baixo o teu propio risco - non empregar para minado ou aplicacións de comerciantes</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Quark Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Blood Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2778,8 +2778,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation>Precaución: -paytxfee está posto moi algo! Esta é a tarifa de transacción que ti pagarás se envías unha transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quark will not work properly.</source>
-        <translation>Precaución; Por favor revisa que a data e hora do teu ordenador son correctas! Se o teu reloxo está equivocato Quark non funcionará adecuadamente.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Blood will not work properly.</source>
+        <translation>Precaución; Por favor revisa que a data e hora do teu ordenador son correctas! Se o teu reloxo está equivocato Blood non funcionará adecuadamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2814,7 +2814,7 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation>Tentar recuperar claves privadas dende un wallet.dat corrupto</translation>
     </message>
     <message>
-        <source>Quark Core Daemon</source>
+        <source>Blood Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3022,8 +3022,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Usage (deprecated, use quark-cli):</source>
-        <translation>Emprego (desaconsellado, usar quark-cli)</translation>
+        <source>Usage (deprecated, use blood-cli):</source>
+        <translation>Emprego (desaconsellado, usar blood-cli)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3058,7 +3058,7 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation>Importa bloques dende arquivos blk000??.dat externos</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Quark Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Blood Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3122,7 +3122,7 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>RPC SSL options: (see the Quark Wiki for SSL setup instructions)</source>
+        <source>RPC SSL options: (see the Blood Wiki for SSL setup instructions)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3142,11 +3142,11 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>SSL options: (see the Quark Wiki for SSL setup instructions)</source>
-        <translation>Opcións SSL: (ver ńa Wiki Quark as instrucción de configuración de SSL)</translation>
+        <source>SSL options: (see the Blood Wiki for SSL setup instructions)</source>
+        <translation>Opcións SSL: (ver ńa Wiki Blood as instrucción de configuración de SSL)</translation>
     </message>
     <message>
-        <source>Send command to Quark Core</source>
+        <source>Send command to Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3182,7 +3182,7 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation>Especificar tempo límite da conexión en milisegundos (por defecto: 5000)</translation>
     </message>
     <message>
-        <source>Start Quark Core Daemon</source>
+        <source>Start Blood Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3298,12 +3298,12 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
         <translation>Erro cargando wallet.dat: Moedeiro corrupto</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Quark</source>
-        <translation>Erro cargando wallet.dat: O moedeiro precisa unha versión máis nova de Quark</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Blood</source>
+        <translation>Erro cargando wallet.dat: O moedeiro precisa unha versión máis nova de Blood</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Quark to complete</source>
-        <translation>Precísase rescribir o moedeiro: reinicie Quark para completar</translation>
+        <source>Wallet needed to be rewritten: restart Blood to complete</source>
+        <translation>Precísase rescribir o moedeiro: reinicie Blood para completar</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>

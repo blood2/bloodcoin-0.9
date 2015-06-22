@@ -2,11 +2,11 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Quark Core</source>
+        <source>About Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&lt;b&gt;Quark Core&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Blood Core&lt;/b&gt; version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -27,7 +27,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Copyright</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
+        <source>The Blood Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -102,11 +102,11 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>These are your Quark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Blood addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Hae sunt inscriptiones mittendi pensitationes.  Semper inspice quantitatem et inscriptionem accipiendi antequam nummos mittis.</translation>
     </message>
     <message>
-        <source>These are your Quark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Blood addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -224,8 +224,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Cassidile cifratum</translation>
     </message>
     <message>
-        <source>Quark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
-        <translation>Quark iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
+        <source>Blood will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bloods from being stolen by malware infecting your computer.</source>
+        <translation>Blood iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -295,8 +295,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Exi applicatione</translation>
     </message>
     <message>
-        <source>Show information about Quark</source>
-        <translation>Monstra informationem de Quark</translation>
+        <source>Show information about Blood</source>
+        <translation>Monstra informationem de Blood</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -343,12 +343,12 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Recreans indicem frustorum in disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Quark address</source>
-        <translation>Mitte nummos ad inscriptionem Quark</translation>
+        <source>Send coins to a Blood address</source>
+        <translation>Mitte nummos ad inscriptionem Blood</translation>
     </message>
     <message>
-        <source>Modify configuration options for Quark</source>
-        <translation>Muta configurationis optiones pro Quark</translation>
+        <source>Modify configuration options for Blood</source>
+        <translation>Muta configurationis optiones pro Blood</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -371,8 +371,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>&amp;Verifica nuntium...</translation>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -399,12 +399,12 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>Cifra claves privatas quae cassidili tui sunt</translation>
     </message>
     <message>
-        <source>Sign messages with your Quark addresses to prove you own them</source>
-        <translation>Signa nuntios cum tuis inscriptionibus Quark ut demonstres te eas possidere</translation>
+        <source>Sign messages with your Blood addresses to prove you own them</source>
+        <translation>Signa nuntios cum tuis inscriptionibus Blood ut demonstres te eas possidere</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Quark addresses</source>
-        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Quark</translation>
+        <source>Verify messages to ensure they were signed with specified Blood addresses</source>
+        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Blood</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -427,15 +427,15 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Quark Core</source>
-        <translation>Quark Nucleus</translation>
+        <source>Blood Core</source>
+        <translation>Blood Nucleus</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and quark: URIs)</source>
+        <source>Request payments (generates QR codes and blood: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&amp;About Quark Core</source>
+        <source>&amp;About Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -447,7 +447,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Open a quark: URI or payment request</source>
+        <source>Open a blood: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -455,16 +455,16 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Show the Quark Core help message to get a list with possible Quark command-line options</source>
+        <source>Show the Blood Core help message to get a list with possible Blood command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark client</source>
-        <translation>Quark cliens</translation>
+        <source>Blood client</source>
+        <translation>Blood cliens</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Quark network</source>
-        <translation><numerusform>%n activa conexio ad rete Quark</numerusform><numerusform>%n activae conexiones ad rete Quark</numerusform></translation>
+        <source>%n active connection(s) to Blood network</source>
+        <translation><numerusform>%n activa conexio ad rete Blood</numerusform><numerusform>%n activae conexiones ad rete Blood</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -559,8 +559,8 @@ Inscriptio: %4
         <translation>Cassidile &lt;b&gt;cifratum&lt;/b&gt; est et iam nunc &lt;b&gt;seratum&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Quark can no longer continue safely and will quit.</source>
-        <translation>Error fatalis accidit.  Quark nondum pergere tute potest, et exibit.</translation>
+        <source>A fatal error occurred. Blood can no longer continue safely and will quit.</source>
+        <translation>Error fatalis accidit.  Blood nondum pergere tute potest, et exibit.</translation>
     </message>
 </context>
 <context>
@@ -844,8 +844,8 @@ Inscriptio: %4
         <translation>Inserta inscriptio &quot;%1&quot; iam in libro inscriptionum est.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Quark address.</source>
-        <translation>Inscriptio inserta &quot;%1&quot; non valida inscriptio Quark est.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Blood address.</source>
+        <translation>Inscriptio inserta &quot;%1&quot; non valida inscriptio Blood est.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -882,12 +882,12 @@ Inscriptio: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Quark Core - Command-line options</source>
+        <source>Blood Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core</source>
-        <translation>Quark Nucleus</translation>
+        <source>Blood Core</source>
+        <translation>Blood Nucleus</translation>
     </message>
     <message>
         <source>version</source>
@@ -933,15 +933,15 @@ Inscriptio: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Welcome to Quark Core.</source>
+        <source>Welcome to Blood Core.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Quark Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Blood Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core will download and store a copy of the Quark block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Blood Core will download and store a copy of the Blood block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -953,8 +953,8 @@ Inscriptio: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
@@ -1015,12 +1015,12 @@ Inscriptio: %4
         <translation>Solve &amp;mercedem transactionis</translation>
     </message>
     <message>
-        <source>Automatically start Quark after logging in to the system.</source>
-        <translation>Pelle Quark per se postquam in systema inire.</translation>
+        <source>Automatically start Blood after logging in to the system.</source>
+        <translation>Pelle Blood per se postquam in systema inire.</translation>
     </message>
     <message>
-        <source>&amp;Start Quark on system login</source>
-        <translation>&amp;Pelle Quark cum inire systema</translation>
+        <source>&amp;Start Blood on system login</source>
+        <translation>&amp;Pelle Blood cum inire systema</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1035,7 +1035,7 @@ Inscriptio: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Connect to the Quark network through a SOCKS proxy.</source>
+        <source>Connect to the Blood network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1095,8 +1095,8 @@ Inscriptio: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Automatically open the Quark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aperi per se portam clientis Quark in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
+        <source>Automatically open the Blood client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aperi per se portam clientis Blood in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1151,8 +1151,8 @@ Inscriptio: %4
         <translation>&amp;Lingua monstranda utenti:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Quark.</source>
-        <translation>Lingua monstranda utenti hic constitui potest.  Haec configuratio effectiva erit postquam Quark iterum initiatum erit.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Blood.</source>
+        <translation>Lingua monstranda utenti hic constitui potest.  Haec configuratio effectiva erit postquam Blood iterum initiatum erit.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1163,8 +1163,8 @@ Inscriptio: %4
         <translation>Selige praedefinitam unitam subdivisionis monstrare in interfacie et quando nummos mittere</translation>
     </message>
     <message>
-        <source>Whether to show Quark addresses in the transaction list or not.</source>
-        <translation>Num monstrare inscriptiones Quark in enumeratione transactionum.</translation>
+        <source>Whether to show Blood addresses in the transaction list or not.</source>
+        <translation>Num monstrare inscriptiones Blood in enumeratione transactionum.</translation>
     </message>
     <message>
         <source>&amp;Display addresses in transaction list</source>
@@ -1218,8 +1218,8 @@ Inscriptio: %4
         <translation>Schema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quark network after a connection is established, but this process has not completed yet.</source>
-        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Quark postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Blood network after a connection is established, but this process has not completed yet.</source>
+        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Blood postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1273,8 +1273,8 @@ Inscriptio: %4
         <translation>Tractatio URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Quark address or malformed URI parameters.</source>
-        <translation>URI intellegi non posse!  Huius causa possit inscriptionem Quark non validam aut URI parametra maleformata.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Blood address or malformed URI parameters.</source>
+        <translation>URI intellegi non posse!  Huius causa possit inscriptionem Blood non validam aut URI parametra maleformata.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1285,8 +1285,8 @@ Inscriptio: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Cannot start quark: click-to-pay handler</source>
-        <translation>Quark incipere non potest: cliccare-ad-pensandum handler</translation>
+        <source>Cannot start blood: click-to-pay handler</source>
+        <translation>Blood incipere non potest: cliccare-ad-pensandum handler</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1340,8 +1340,8 @@ Inscriptio: %4
 <context>
     <name>QObject</name>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
@@ -1356,12 +1356,12 @@ Inscriptio: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core didn&apos;t yet exit safely...</source>
+        <source>Blood Core didn&apos;t yet exit safely...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Insere inscriptionem Quark (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Insere inscriptionem Blood (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
 </context>
 <context>
@@ -1482,16 +1482,16 @@ Inscriptio: %4
         <translation>Debug catalogi plica</translation>
     </message>
     <message>
-        <source>Open the Quark debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Aperi plicam catalogi de Quark debug ex activo indice datorum.  Hoc possit pauca secunda pro plicis magnis catalogi.</translation>
+        <source>Open the Blood debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Aperi plicam catalogi de Blood debug ex activo indice datorum.  Hoc possit pauca secunda pro plicis magnis catalogi.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Vacuefac terminale</translation>
     </message>
     <message>
-        <source>Welcome to the Quark RPC console.</source>
-        <translation>Bene ventio in terminale RPC de Quark.</translation>
+        <source>Welcome to the Blood RPC console.</source>
+        <translation>Bene ventio in terminale RPC de Blood.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1553,7 +1553,7 @@ Inscriptio: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Quark network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Blood network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1866,7 +1866,7 @@ Inscriptio: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Warning: Invalid Quark address</source>
+        <source>Warning: Invalid Blood address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1953,7 +1953,7 @@ Inscriptio: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>A message that was attached to the quark: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Quark network.</source>
+        <source>A message that was attached to the blood: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Blood network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1972,7 +1972,7 @@ Inscriptio: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Quark Core is shutting down...</source>
+        <source>Blood Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2027,8 +2027,8 @@ Inscriptio: %4
         <translation>Copia signationem in latibulum systematis</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Quark address</source>
-        <translation>Signa nuntium ut demonstres hanc inscriptionem Quark a te possessa esse</translation>
+        <source>Sign the message to prove you own this Blood address</source>
+        <translation>Signa nuntium ut demonstres hanc inscriptionem Blood a te possessa esse</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2055,8 +2055,8 @@ Inscriptio: %4
         <translation>Inscriptio qua nuntius signatus est (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Quark address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Quark</translation>
+        <source>Verify the message to ensure it was signed with the specified Blood address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Blood</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2067,8 +2067,8 @@ Inscriptio: %4
         <translation>Reconstitue omnes campos verificandi nuntii</translation>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Insere inscriptionem Quark (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Insere inscriptionem Blood (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
@@ -2126,11 +2126,11 @@ Inscriptio: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Quark Core</source>
-        <translation>Quark Nucleus</translation>
+        <source>Blood Core</source>
+        <translation>Blood Nucleus</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
+        <source>The Blood Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2609,12 +2609,12 @@ Inscriptio: %4
         <translation>Optiones:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: quarkcoin.conf)</source>
-        <translation>Specifica configurationis plicam (praedefinitum: quarkcoin.conf)</translation>
+        <source>Specify configuration file (default: bloodcoin.conf)</source>
+        <translation>Specifica configurationis plicam (praedefinitum: bloodcoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: quarkd.pid)</source>
-        <translation>Specifica pid plicam (praedefinitum: quark.pid)</translation>
+        <source>Specify pid file (default: bloodd.pid)</source>
+        <translation>Specifica pid plicam (praedefinitum: blood.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
@@ -2657,7 +2657,7 @@ Inscriptio: %4
         <translation>Accipe terminalis et JSON-RPC mandata.</translation>
     </message>
     <message>
-        <source>Quark Core RPC client version</source>
+        <source>Blood Core RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2676,24 +2676,24 @@ Inscriptio: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=quarkrpc
+rpcuser=bloodrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Blood Alert&quot; admin@foo.com
 </source>
         <translation>%s, necesse est te rpcpassword constituere in plica configurationis:
 %s
 Hortatur te hanc fortuitam tesseram uti:
-rpcuser=quarkrpc
+rpcuser=bloodrpc
 rpcpassword=%s
 (non est necesse te hanc tesseram meminisse)
 Nomen usoris et tessera eadem esse NON POSSUNT.
 Si plica non existit, eam crea cum permissionibus ut eius dominus tantum sinitur id legere.
 Quoque hortatur alertnotify constituere ut tu notificetur de problematibus;
-exempli gratia: alertnotify=echo %%s | mail -s &quot;Quark Notificatio&quot; admin@foo.com
+exempli gratia: alertnotify=echo %%s | mail -s &quot;Blood Notificatio&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2765,7 +2765,7 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Quark Notificatio&quot; adm
         <translation>Hoc est prae-dimittum experimentala aedes - utere eo periculo tuo proprio - nolite utere fodendo vel applicationibus mercatoriis</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Quark Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Blood Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2777,8 +2777,8 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Quark Notificatio&quot; adm
         <translation>Monitio: -paytxfee constitutum valde magnum!  Hoc est merces transactionis solves si mittis transactionem.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quark will not work properly.</source>
-        <translation>Monitio: Sodes cura ut dies tempusque computatri tui recti sunt!  Si horologium tuum pravum est, Quark non proprie fungetur.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Blood will not work properly.</source>
+        <translation>Monitio: Sodes cura ut dies tempusque computatri tui recti sunt!  Si horologium tuum pravum est, Blood non proprie fungetur.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2813,7 +2813,7 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Quark Notificatio&quot; adm
         <translation>Conare recipere claves privatas de corrupto wallet.dat</translation>
     </message>
     <message>
-        <source>Quark Core Daemon</source>
+        <source>Blood Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3021,7 +3021,7 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Quark Notificatio&quot; adm
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Usage (deprecated, use quark-cli):</source>
+        <source>Usage (deprecated, use blood-cli):</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3057,7 +3057,7 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Quark Notificatio&quot; adm
         <translation>Importat frusta ab externa plica blk000??.dat</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Quark Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Blood Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3121,7 +3121,7 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Quark Notificatio&quot; adm
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>RPC SSL options: (see the Quark Wiki for SSL setup instructions)</source>
+        <source>RPC SSL options: (see the Blood Wiki for SSL setup instructions)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3141,11 +3141,11 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Quark Notificatio&quot; adm
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>SSL options: (see the Quark Wiki for SSL setup instructions)</source>
-        <translation>Optiones SSL: (vide vici de Quark pro instructionibus SSL configurationis)</translation>
+        <source>SSL options: (see the Blood Wiki for SSL setup instructions)</source>
+        <translation>Optiones SSL: (vide vici de Blood pro instructionibus SSL configurationis)</translation>
     </message>
     <message>
-        <source>Send command to Quark Core</source>
+        <source>Send command to Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3181,7 +3181,7 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Quark Notificatio&quot; adm
         <translation>Specifica tempumfati conexionis in millisecundis (praedefinitum: 5000)</translation>
     </message>
     <message>
-        <source>Start Quark Core Daemon</source>
+        <source>Start Blood Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3297,12 +3297,12 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Quark Notificatio&quot; adm
         <translation>Error legendi wallet.dat: Cassidile corruptum</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Quark</source>
-        <translation>Error legendi wallet.dat: Cassidili necesse est recentior versio Quark</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Blood</source>
+        <translation>Error legendi wallet.dat: Cassidili necesse est recentior versio Blood</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Quark to complete</source>
-        <translation>Cassidili necesse erat rescribi: Repelle Quark ut compleas</translation>
+        <source>Wallet needed to be rewritten: restart Blood to complete</source>
+        <translation>Cassidili necesse erat rescribi: Repelle Blood ut compleas</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>

@@ -2,11 +2,11 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Quark Core</source>
+        <source>About Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&lt;b&gt;Quark Core&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Blood Core&lt;/b&gt; version</source>
         <translation>&lt;b&gt;ビットコインコア&lt;/b&gt; バージョン</translation>
     </message>
     <message>
@@ -28,7 +28,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>Copyright</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
+        <source>The Blood Core developers</source>
         <translation>ビットコインコアの開発者</translation>
     </message>
     <message>
@@ -103,11 +103,11 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>アドレス受信中</translation>
     </message>
     <message>
-        <source>These are your Quark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>これらは支払いを送信するためのあなたの Quark アドレスです。コインを送信する前に、常に額と受信アドレスを確認してください。</translation>
+        <source>These are your Blood addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>これらは支払いを送信するためのあなたの Blood アドレスです。コインを送信する前に、常に額と受信アドレスを確認してください。</translation>
     </message>
     <message>
-        <source>These are your Quark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Blood addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -206,7 +206,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QUARKS&lt;/b&gt;!</source>
-        <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの Quark はすべて失われます&lt;/b&gt;!</translation>
+        <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの Blood はすべて失われます&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -225,8 +225,8 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>ウォレットは暗号化されました</translation>
     </message>
     <message>
-        <source>Quark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
-        <translation>Quark は暗号化プロセスを終了するために今すぐ終了します。あなたのコンピュータがマルウェアに感染してコインを盗まれることもあるので、暗号化してもあなたのウォレットを完全に保護できないことを覚えていてください。</translation>
+        <source>Blood will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bloods from being stolen by malware infecting your computer.</source>
+        <translation>Blood は暗号化プロセスを終了するために今すぐ終了します。あなたのコンピュータがマルウェアに感染してコインを盗まれることもあるので、暗号化してもあなたのウォレットを完全に保護できないことを覚えていてください。</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -296,7 +296,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>アプリケーションを終了</translation>
     </message>
     <message>
-        <source>Show information about Quark</source>
+        <source>Show information about Blood</source>
         <translation>Bitcoinに関する情報を見る</translation>
     </message>
     <message>
@@ -344,12 +344,12 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>ディスク上のブロックのインデックスを再作成中...</translation>
     </message>
     <message>
-        <source>Send coins to a Quark address</source>
-        <translation>Quark アドレスにコインを送る</translation>
+        <source>Send coins to a Blood address</source>
+        <translation>Blood アドレスにコインを送る</translation>
     </message>
     <message>
-        <source>Modify configuration options for Quark</source>
-        <translation>Quark の設定を変更する</translation>
+        <source>Modify configuration options for Blood</source>
+        <translation>Blood の設定を変更する</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -372,8 +372,8 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>メッセージの検証... (&amp;V)</translation>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -400,12 +400,12 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>あなたのウォレットの秘密鍵を暗号化します</translation>
     </message>
     <message>
-        <source>Sign messages with your Quark addresses to prove you own them</source>
-        <translation>あなたが所有していることを証明するために、あなたの Quark アドレスでメッセージに署名してください</translation>
+        <source>Sign messages with your Blood addresses to prove you own them</source>
+        <translation>あなたが所有していることを証明するために、あなたの Blood アドレスでメッセージに署名してください</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Quark addresses</source>
-        <translation>指定された Quark アドレスで署名されたことを確認するためにメッセージを検証します</translation>
+        <source>Verify messages to ensure they were signed with specified Blood addresses</source>
+        <translation>指定された Blood アドレスで署名されたことを確認するためにメッセージを検証します</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -428,15 +428,15 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Quark Core</source>
-        <translation>Quark のコア</translation>
+        <source>Blood Core</source>
+        <translation>Blood のコア</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and quark: URIs)</source>
+        <source>Request payments (generates QR codes and blood: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>&amp;About Quark Core</source>
+        <source>&amp;About Blood Core</source>
         <translation>ビットコインコアについて (&amp;A)</translation>
     </message>
     <message>
@@ -448,7 +448,7 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>支払いを受け取るアドレスとラベルのリストを表示する</translation>
     </message>
     <message>
-        <source>Open a quark: URI or payment request</source>
+        <source>Open a blood: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -456,16 +456,16 @@ MIT/X11 ソフトウェア ライセンスの下で配布されています。�
         <translation>コマンドラインオプション (&amp;C)</translation>
     </message>
     <message>
-        <source>Show the Quark Core help message to get a list with possible Quark command-line options</source>
+        <source>Show the Blood Core help message to get a list with possible Blood command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark client</source>
-        <translation>Quark クライアント</translation>
+        <source>Blood client</source>
+        <translation>Blood クライアント</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Quark network</source>
-        <translation><numerusform>%n の Quark ネットワークへのアクティブな接続</numerusform></translation>
+        <source>%n active connection(s) to Blood network</source>
+        <translation><numerusform>%n の Blood ネットワークへのアクティブな接続</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -559,8 +559,8 @@ Address: %4
         <translation>ウォレットは&lt;b&gt;暗号化されて、ロックされています&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Quark can no longer continue safely and will quit.</source>
-        <translation>致命的なエラーが発生しました。Quark は安全に継続することができず終了するでしょう。
+        <source>A fatal error occurred. Blood can no longer continue safely and will quit.</source>
+        <translation>致命的なエラーが発生しました。Blood は安全に継続することができず終了するでしょう。
 </translation>
     </message>
 </context>
@@ -845,8 +845,8 @@ Address: %4
         <translation>入力されたアドレス &quot;%1&quot; は既にアドレス帳にあります。</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Quark address.</source>
-        <translation>入力されたアドレス &quot;%1&quot; は無効な Quark アドレスです。</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Blood address.</source>
+        <translation>入力されたアドレス &quot;%1&quot; は無効な Blood アドレスです。</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -883,12 +883,12 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Quark Core - Command-line options</source>
+        <source>Blood Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core</source>
-        <translation>Quark のコア</translation>
+        <source>Blood Core</source>
+        <translation>Blood のコア</translation>
     </message>
     <message>
         <source>version</source>
@@ -934,15 +934,15 @@ Address: %4
         <translation>ようこそ</translation>
     </message>
     <message>
-        <source>Welcome to Quark Core.</source>
+        <source>Welcome to Blood Core.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Quark Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Blood Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Quark Core will download and store a copy of the Quark block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Blood Core will download and store a copy of the Blood block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -954,8 +954,8 @@ Address: %4
         <translation>任意のデータ ディレクトリを使用:</translation>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
@@ -1016,12 +1016,12 @@ Address: %4
         <translation>支払う取引手数料 (&amp;f)</translation>
     </message>
     <message>
-        <source>Automatically start Quark after logging in to the system.</source>
-        <translation>システムにログインした時に自動的に Quark を起動します。</translation>
+        <source>Automatically start Blood after logging in to the system.</source>
+        <translation>システムにログインした時に自動的に Blood を起動します。</translation>
     </message>
     <message>
-        <source>&amp;Start Quark on system login</source>
-        <translation>システムにログインした時に Quark を起動 (&amp;S)</translation>
+        <source>&amp;Start Blood on system login</source>
+        <translation>システムにログインした時に Blood を起動 (&amp;S)</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1036,7 +1036,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Connect to the Quark network through a SOCKS proxy.</source>
+        <source>Connect to the Blood network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1096,8 +1096,8 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Automatically open the Quark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動的にルーター上の Quark クライアントのポートを開きます。あなたのルーターが UPnP に対応していて、それが有効になっている場合に作動します。</translation>
+        <source>Automatically open the Blood client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自動的にルーター上の Blood クライアントのポートを開きます。あなたのルーターが UPnP に対応していて、それが有効になっている場合に作動します。</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1152,8 +1152,8 @@ Address: %4
         <translation>ユーザインターフェースの言語 (&amp;l) :</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Quark.</source>
-        <translation>ここでユーザインターフェースの言語を設定できます。設定を反映するには Quark を再起動します。</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Blood.</source>
+        <translation>ここでユーザインターフェースの言語を設定できます。設定を反映するには Blood を再起動します。</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1164,8 +1164,8 @@ Address: %4
         <translation>インターフェース上の表示とコインの送信で使用する単位を選択します。</translation>
     </message>
     <message>
-        <source>Whether to show Quark addresses in the transaction list or not.</source>
-        <translation>最近の取引履歴で Quark アドレスを表示するかしないか。</translation>
+        <source>Whether to show Blood addresses in the transaction list or not.</source>
+        <translation>最近の取引履歴で Blood アドレスを表示するかしないか。</translation>
     </message>
     <message>
         <source>&amp;Display addresses in transaction list</source>
@@ -1219,8 +1219,8 @@ Address: %4
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quark network after a connection is established, but this process has not completed yet.</source>
-        <translation>表示された情報は古いかもしれません。接続が確立されると、あなたのウォレットは Quark ネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Blood network after a connection is established, but this process has not completed yet.</source>
+        <translation>表示された情報は古いかもしれません。接続が確立されると、あなたのウォレットは Blood ネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1274,8 +1274,8 @@ Address: %4
         <translation>URI の操作</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Quark address or malformed URI parameters.</source>
-        <translation>URI を解析できません! これは無効な Quark アドレスあるいや不正な形式の URI パラメーターによって引き起こされる場合があります。
+        <source>URI can not be parsed! This can be caused by an invalid Blood address or malformed URI parameters.</source>
+        <translation>URI を解析できません! これは無効な Blood アドレスあるいや不正な形式の URI パラメーターによって引き起こされる場合があります。
 </translation>
     </message>
     <message>
@@ -1287,8 +1287,8 @@ Address: %4
         <translation>支払いのリクエストのエラーです</translation>
     </message>
     <message>
-        <source>Cannot start quark: click-to-pay handler</source>
-        <translation>Quark を起動できません: click-to-pay handler</translation>
+        <source>Cannot start blood: click-to-pay handler</source>
+        <translation>Blood を起動できません: click-to-pay handler</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1342,8 +1342,8 @@ Address: %4
 <context>
     <name>QObject</name>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
@@ -1358,12 +1358,12 @@ Address: %4
         <translation>エラー：　-regtestと-testnetは一緒にするのは無効です。</translation>
     </message>
     <message>
-        <source>Quark Core didn&apos;t yet exit safely...</source>
+        <source>Blood Core didn&apos;t yet exit safely...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Quark アドレスを入力します (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Blood アドレスを入力します (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
 </context>
 <context>
@@ -1484,16 +1484,16 @@ Address: %4
         <translation>デバッグ用ログファイル</translation>
     </message>
     <message>
-        <source>Open the Quark debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>現在のデータ ディレクトリから Quark のデバッグ用ログファイルを開きます。ログファイルが大規模な場合には数秒かかることがあります。</translation>
+        <source>Open the Blood debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>現在のデータ ディレクトリから Blood のデバッグ用ログファイルを開きます。ログファイルが大規模な場合には数秒かかることがあります。</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>コンソールをクリア</translation>
     </message>
     <message>
-        <source>Welcome to the Quark RPC console.</source>
-        <translation>Quark RPC コンソールへようこそ。</translation>
+        <source>Welcome to the Blood RPC console.</source>
+        <translation>Blood RPC コンソールへようこそ。</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1555,7 +1555,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Quark network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Blood network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1868,7 +1868,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Warning: Invalid Quark address</source>
+        <source>Warning: Invalid Blood address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1955,7 +1955,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>A message that was attached to the quark: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Quark network.</source>
+        <source>A message that was attached to the blood: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Blood network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1974,7 +1974,7 @@ Address: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Quark Core is shutting down...</source>
+        <source>Blood Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2029,8 +2029,8 @@ Address: %4
         <translation>現在の署名をシステムのクリップボードにコピーする</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Quark address</source>
-        <translation>この Quark アドレスを所有していることを証明するためにメッセージに署名</translation>
+        <source>Sign the message to prove you own this Blood address</source>
+        <translation>この Blood アドレスを所有していることを証明するためにメッセージに署名</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2057,8 +2057,8 @@ Address: %4
         <translation>メッセージが署名されたアドレス (例 QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Quark address</source>
-        <translation>指定された Quark アドレスで署名されたことを保証するメッセージを検証</translation>
+        <source>Verify the message to ensure it was signed with the specified Blood address</source>
+        <translation>指定された Blood アドレスで署名されたことを保証するメッセージを検証</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2069,8 +2069,8 @@ Address: %4
         <translation>入力項目の内容をすべて消去します</translation>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Quark アドレスを入力します (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Blood アドレスを入力します (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
@@ -2128,11 +2128,11 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Quark Core</source>
-        <translation>Quark のコア</translation>
+        <source>Blood Core</source>
+        <translation>Blood のコア</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
+        <source>The Blood Core developers</source>
         <translation>ビットコインコアの開発者</translation>
     </message>
     <message>
@@ -2611,12 +2611,12 @@ Address: %4
         <translation>オプション:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: quarkcoin.conf)</source>
-        <translation>設定ファイルの指定 (初期値: quarkcoin.conf)</translation>
+        <source>Specify configuration file (default: bloodcoin.conf)</source>
+        <translation>設定ファイルの指定 (初期値: bloodcoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: quarkd.pid)</source>
-        <translation>pid ファイルの指定 (初期値: quarkd.pid)</translation>
+        <source>Specify pid file (default: bloodd.pid)</source>
+        <translation>pid ファイルの指定 (初期値: bloodd.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
@@ -2659,7 +2659,7 @@ Address: %4
         <translation>コマンドラインと JSON-RPC コマンドを許可</translation>
     </message>
     <message>
-        <source>Quark Core RPC client version</source>
+        <source>Blood Core RPC client version</source>
         <translation>ビットコインコアRPCクライアントのバージョン</translation>
     </message>
     <message>
@@ -2678,24 +2678,24 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=quarkrpc
+rpcuser=bloodrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Blood Alert&quot; admin@foo.com
 </source>
         <translation>%s, rpcpassword を設定ファイルで設定してください:
 %s
 下記のランダムなパスワードの使用を推奨します:
-rpcuser=quarkrpc
+rpcuser=bloodrpc
 rpcpassword=%s
 (このパスワードを覚える必要はありません)
 ユーザー名とパスワードが同じであってはいけません。
 もしもファイルが存在しないなら、所有者だけが読み取れる権限で作成してください。
 また、問題が通知されるように alertnotify を設定することをお勧めします;
-例えば: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com</translation>
+例えば: alertnotify=echo %%s | mail -s &quot;Blood Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
@@ -2766,7 +2766,7 @@ rpcpassword=%s
         <translation>これはリリース前のテストビルドです - 各自の責任で利用すること - 採掘や商取引に使用しないでください</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Quark Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Blood Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2778,8 +2778,8 @@ rpcpassword=%s
         <translation>警告: -paytxfee が非常に高く設定されています! これは取引を送信する場合に支払う取引手数料です。</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quark will not work properly.</source>
-        <translation>警告: あなたのコンピュータの日時が正しいことを確認してください! 時計が間違っていると Quark は正常に動作しません。</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Blood will not work properly.</source>
+        <translation>警告: あなたのコンピュータの日時が正しいことを確認してください! 時計が間違っていると Blood は正常に動作しません。</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2814,7 +2814,7 @@ rpcpassword=%s
         <translation>壊れた wallet.dat から秘密鍵を復旧することを試す</translation>
     </message>
     <message>
-        <source>Quark Core Daemon</source>
+        <source>Blood Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3023,7 +3023,7 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>Usage (deprecated, use quark-cli):</source>
+        <source>Usage (deprecated, use blood-cli):</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3059,7 +3059,7 @@ rpcpassword=%s
         <translation>外部の blk000??.dat ファイルからブロックをインポート</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Quark Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Blood Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3123,7 +3123,7 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>RPC SSL options: (see the Quark Wiki for SSL setup instructions)</source>
+        <source>RPC SSL options: (see the Blood Wiki for SSL setup instructions)</source>
         <translation>RPC SSL オプション: (SSLのセットアップ手順はビットコインWikiを参照してください)</translation>
     </message>
     <message>
@@ -3143,11 +3143,11 @@ rpcpassword=%s
         <translation type="unfinished"/>
     </message>
     <message>
-        <source>SSL options: (see the Quark Wiki for SSL setup instructions)</source>
-        <translation>SSL オプション: (SSLのセットアップ手順は Quark Wiki をご覧下さい)</translation>
+        <source>SSL options: (see the Blood Wiki for SSL setup instructions)</source>
+        <translation>SSL オプション: (SSLのセットアップ手順は Blood Wiki をご覧下さい)</translation>
     </message>
     <message>
-        <source>Send command to Quark Core</source>
+        <source>Send command to Blood Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3183,7 +3183,7 @@ rpcpassword=%s
         <translation>接続のタイムアウトをミリセコンドで指定 (初期値: 5000)</translation>
     </message>
     <message>
-        <source>Start Quark Core Daemon</source>
+        <source>Start Blood Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3299,12 +3299,12 @@ rpcpassword=%s
         <translation>wallet.dat 読み込みエラー: ウォレットが壊れました</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Quark</source>
-        <translation>wallet.dat 読み込みエラー: ウォレットは Quark の最新バージョンを必要とします</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Blood</source>
+        <translation>wallet.dat 読み込みエラー: ウォレットは Blood の最新バージョンを必要とします</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Quark to complete</source>
-        <translation>ウォレットが書き直される必要がありました: 完了するために Quark を再起動します</translation>
+        <source>Wallet needed to be rewritten: restart Blood to complete</source>
+        <translation>ウォレットが書き直される必要がありました: 完了するために Blood を再起動します</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>

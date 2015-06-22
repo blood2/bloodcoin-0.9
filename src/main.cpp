@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2013 The Sifcoin developers
 // Copyright (c) 2013-2015 The Quarkcoin developers
+// Copyright (c) 2015 The Bloodcoin developers
 // Copyright (c) 2009-2015 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -29,7 +30,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Quark cannot be compiled without assertions."
+# error "Blood cannot be compiled without assertions."
 #endif
 
 //
@@ -62,7 +63,7 @@ multimap<uint256, COrphanBlock*> mapOrphanBlocksByPrev;
 std::map<uint256, CBlock*> mapOrphanBlocksSyncCheckpoint;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-int64_t CTransaction::nMinTxFee = 10;  // Override with -mintxfee
+int64_t CTransaction::nMinTxFee = 40;  // Override with -mintxfee
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
 int64_t CTransaction::nMinRelayTxFee = 100;
 
@@ -72,7 +73,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Quarkcoin Signed Message:\n";
+const string strMessageMagic = "Bloodcoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -1183,31 +1184,101 @@ void static PruneOrphanBlocks()
 }
 
 static const int64_t nGenesisBlockRewardCoin = 1 * COIN;
-static const int64_t nBlockRewardStartCoin = 2048 * COIN;
+static const int64_t nBlockRewardStartCoin = 5 * COIN;
 static const int64_t nBlockRewardMinimumCoin = 1 * COIN;
 
-static const int64_t nTargetTimespan = 10 * 60; // 10 minutes
-static const int64_t nTargetSpacing = 30; // 30 seconds
-static const int64_t nInterval = nTargetTimespan / nTargetSpacing; // 20 blocks
+//static const int64 nTargetTimespan = 60 * 60; //60 minutes
+//static const int64 nTargetSpacing = 20; // 20 seconds
+//static const int64 nInterval = 40; //40 blocks
+//
+//static const int64_t nTargetTimespan = 20 * 60; //60 minutes
+//static const int64_t nTargetSpacing = 20; // 20 seconds
+//static const int64_t nTargetTimespanV2 = 20 * 60; //20 minutes
+//static const int64_t nTargetSpacingV2 = 20; // 20 seconds
+//static const int64_t nInterval = nTargetTimespanV2 / nTargetSpacingV2; //40 blocks
+//static const int64_t Fork1Height = 4000; //block 4000
+static const int64_t nTargetTimespan = 60 * 60; //60 minutes
+static const int64_t nTargetSpacing = 20; // 20 seconds
+static const int64_t nInterval = 40; //40 blocks
+
+static const int64_t Fork1Height = 4000; //block 4000
+static const int64_t nTargetTimespanV2 = 20 * 60; //20 minutes
+static const int64_t nTargetSpacingV2 = 20; // 20 seconds
+static const int64_t nIntervalV2 = nTargetTimespanV2 / nTargetSpacingV2; //60 blocks
+
+
 
 int64_t GetBlockValue(int nHeight, int64_t nFees)
 {
-    if (nHeight == 0)
+   if (nHeight == 0)
     {
         return nGenesisBlockRewardCoin;
     }
-    
+
     int64_t nSubsidy = nBlockRewardStartCoin;
-
-    // Subsidy is cut in half every 60480 blocks (21 days)
-    nSubsidy >>= min((nHeight / 60480), 63);
-    
-    // Minimum subsidy
-    if (nSubsidy < nBlockRewardMinimumCoin)
-    {
-        nSubsidy = nBlockRewardMinimumCoin;
+    if(nHeight<=18000 && nHeight%500==0) {
+        nSubsidy=32768*COIN;
     }
-
+    else if(nHeight<=17280)
+    {
+        nSubsidy=8192*COIN;
+    }
+    else if(nHeight<=25920)
+    {
+        nSubsidy=4096*COIN;
+    }
+    else if(nHeight<=34560)
+    {
+        nSubsidy=2048*COIN;
+    }
+    else if(nHeight<=43200)
+    {
+        nSubsidy=1024*COIN;
+    }
+    else if(nHeight<=86400)
+    {
+        nSubsidy=512*COIN;
+    }
+    else if(nHeight<=129600)
+    {
+       nSubsidy=256*COIN;
+    }
+        else if(nHeight<=259200)
+    {
+        nSubsidy=128*COIN;
+    }
+        else if(nHeight<=388800)
+    {
+        nSubsidy=64*COIN;
+    }
+        else if(nHeight<=777600)
+    {
+        nSubsidy=32*COIN;
+    }
+        else if(nHeight<=1166400)
+    {
+        nSubsidy=16*COIN;
+    }
+        else if(nHeight<=2332800)
+    {
+        nSubsidy=8*COIN;
+    }
+        else if(nHeight<=3499200)
+    {
+        nSubsidy=4*COIN;
+    }
+        else if(nHeight<=6998400)
+    {
+        nSubsidy=2*COIN;
+    }
+    else
+    {
+        nSubsidy=1*COIN;
+    }
+    //premined 2500000 for dev, support, bounty and etc
+    if(nHeight > 8 && nHeight < 10){
+        nSubsidy = 2500000 * COIN;
+        }
     return nSubsidy + nFees;
 }
 
@@ -1237,7 +1308,7 @@ unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime)
     return bnResult.GetCompact();
 }
 
-unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
+unsigned int GetNextWorkRequired_V1(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
     unsigned int nProofOfWorkLimit = Params().ProofOfWorkLimit().GetCompact();
 
@@ -1276,7 +1347,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     // Limit adjustment step
     int64_t nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
     LogPrintf("  nActualTimespan = %d before bounds\n", nActualTimespan);
-    int64_t LimUp = nTargetTimespan * 100 / 110; // 110% up
+    int64_t LimUp = nTargetTimespan * 100 / 150; // 150% up
     int64_t LimDown = nTargetTimespan * 2; // 200% down
     if (nActualTimespan < LimUp)
         nActualTimespan = LimUp;
@@ -1299,6 +1370,82 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     LogPrintf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString());
 
     return bnNew.GetCompact();
+}
+
+unsigned int GetNextWorkRequired_V2(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
+{
+    unsigned int nProofOfWorkLimit = Params().ProofOfWorkLimit().GetCompact();
+
+    // Genesis block
+    if (pindexLast == NULL)
+        return nProofOfWorkLimit;
+
+    // Only change once per interval
+    if ((pindexLast->nHeight+1) % nIntervalV2 != 0)
+    {
+        if (TestNet())
+        {
+            // Special difficulty rule for testnet:
+            // If the new block's timestamp is more than 2* 10 minutes
+            // then allow mining of a min-difficulty block.
+            if (pblock->nTime > pindexLast->nTime + nTargetSpacingV2*2)
+                return nProofOfWorkLimit;
+            else
+            {
+                // Return the last non-special-min-difficulty-rules-block
+                const CBlockIndex* pindex = pindexLast;
+                while (pindex->pprev && pindex->nHeight % nIntervalV2 != 0 && pindex->nBits == nProofOfWorkLimit)
+                    pindex = pindex->pprev;
+                return pindex->nBits;
+            }
+        }
+        return pindexLast->nBits;
+    }
+
+    // Go back by what we want to be nInterval blocks 
+    const CBlockIndex* pindexFirst = pindexLast;
+    for (int i = 0; pindexFirst && i < nIntervalV2-1; i++)
+        pindexFirst = pindexFirst->pprev;
+    assert(pindexFirst);
+
+    // Limit adjustment step
+    int64_t nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
+    LogPrintf("  nActualTimespan = %d before bounds\n", nActualTimespan);
+    int64_t LimUp = nTargetTimespanV2 * 100 / 150; // 110% up
+    int64_t LimDown = nTargetTimespanV2 * 2; // 200% down
+    if (nActualTimespan < LimUp)
+        nActualTimespan = LimUp;
+    if (nActualTimespan > LimDown)
+        nActualTimespan = LimDown;
+
+    // Retarget
+    CBigNum bnNew;
+    bnNew.SetCompact(pindexLast->nBits);
+    bnNew *= nActualTimespan;
+    bnNew /= nTargetTimespanV2;
+
+    if (bnNew > Params().ProofOfWorkLimit())
+        bnNew = Params().ProofOfWorkLimit();
+
+    /// debug print
+    LogPrintf("GetNextWorkRequiredV2 RETARGET\n");
+    LogPrintf("nTargetTimespanV2 = %d    nActualTimespan = %d\n", nTargetTimespanV2, nActualTimespan);
+    LogPrintf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString());
+    LogPrintf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString());
+
+    return bnNew.GetCompact();
+}
+
+unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
+{
+  if(pindexLast->nHeight > Fork1Height) 
+  {
+    return GetNextWorkRequired_V2(pindexLast, pblock);  
+  } else 
+  {
+    return GetNextWorkRequired_V1(pindexLast, pblock);  
+  } 
+
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)

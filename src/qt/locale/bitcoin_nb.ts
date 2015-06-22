@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Quark Core</source>
-        <translation>Om Quark Core</translation>
+        <source>About Blood Core</source>
+        <translation>Om Blood Core</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Quark Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Quark Core&lt;/b&gt; versjon</translation>
+        <source>&lt;b&gt;Blood Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Blood Core&lt;/b&gt; versjon</translation>
     </message>
     <message>
         <source>
@@ -28,8 +28,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>Copyright</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
-        <translation>Quark Core utviklerne</translation>
+        <source>The Blood Core developers</source>
+        <translation>Blood Core utviklerne</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -103,12 +103,12 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>Mottaksadresser</translation>
     </message>
     <message>
-        <source>These are your Quark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dette er dine Quark-adresser for å sende betalinger. Alltid sjekk beløp og mottakeradresse før sending av mynter.</translation>
+        <source>These are your Blood addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dette er dine Blood-adresser for å sende betalinger. Alltid sjekk beløp og mottakeradresse før sending av mynter.</translation>
     </message>
     <message>
-        <source>These are your Quark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dette er dine Quark-adresser for å sende betalinger. Det er anbefalt å bruk en ny mottaksadresse for hver transaksjon.</translation>
+        <source>These are your Blood addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dette er dine Blood-adresser for å sende betalinger. Det er anbefalt å bruk en ny mottaksadresse for hver transaksjon.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -225,8 +225,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>Lommebok kryptert</translation>
     </message>
     <message>
-        <source>Quark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
-        <translation>Quark vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine quarks fra å bli stjålet om skadevare infiserer datamaskinen.</translation>
+        <source>Blood will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bloods from being stolen by malware infecting your computer.</source>
+        <translation>Blood vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine bloods fra å bli stjålet om skadevare infiserer datamaskinen.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -296,8 +296,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>Avslutt applikasjonen</translation>
     </message>
     <message>
-        <source>Show information about Quark</source>
-        <translation>Vis informasjon om Quark</translation>
+        <source>Show information about Blood</source>
+        <translation>Vis informasjon om Blood</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -344,12 +344,12 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>Reindekserer blokker på harddisk...</translation>
     </message>
     <message>
-        <source>Send coins to a Quark address</source>
-        <translation>Send til en Quark-adresse</translation>
+        <source>Send coins to a Blood address</source>
+        <translation>Send til en Blood-adresse</translation>
     </message>
     <message>
-        <source>Modify configuration options for Quark</source>
-        <translation>Endre oppsett for Quark</translation>
+        <source>Modify configuration options for Blood</source>
+        <translation>Endre oppsett for Blood</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -372,8 +372,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>&amp;Verifiser melding...</translation>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -400,12 +400,12 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>Krypter de private nøklene som tilhører lommeboken din</translation>
     </message>
     <message>
-        <source>Sign messages with your Quark addresses to prove you own them</source>
-        <translation>Signer en melding med Quark-adressene dine for å bevise at du eier dem</translation>
+        <source>Sign messages with your Blood addresses to prove you own them</source>
+        <translation>Signer en melding med Blood-adressene dine for å bevise at du eier dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Quark addresses</source>
-        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt Quark-adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Blood addresses</source>
+        <translation>Bekreft meldinger for å være sikker på at de ble signert av en angitt Blood-adresse</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -428,16 +428,16 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>[testnett]</translation>
     </message>
     <message>
-        <source>Quark Core</source>
-        <translation>Quark Core</translation>
+        <source>Blood Core</source>
+        <translation>Blood Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and quark: URIs)</source>
-        <translation>Forespør betalinger (genererer QR-koder og quark: URIer)</translation>
+        <source>Request payments (generates QR codes and blood: URIs)</source>
+        <translation>Forespør betalinger (genererer QR-koder og blood: URIer)</translation>
     </message>
     <message>
-        <source>&amp;About Quark Core</source>
-        <translation>&amp;Om Quark Core</translation>
+        <source>&amp;About Blood Core</source>
+        <translation>&amp;Om Blood Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -448,24 +448,24 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
         <translation>Vis listen over bruke mottaksadresser og merkelapper</translation>
     </message>
     <message>
-        <source>Open a quark: URI or payment request</source>
-        <translation>Åpne en Quark: URI eller betalingsetterspørring</translation>
+        <source>Open a blood: URI or payment request</source>
+        <translation>Åpne en Blood: URI eller betalingsetterspørring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandolinjevalg</translation>
     </message>
     <message>
-        <source>Show the Quark Core help message to get a list with possible Quark command-line options</source>
-        <translation>Vis Quark Core hjelpemeldingen for å få en liste med mulige kommandolinjevalg</translation>
+        <source>Show the Blood Core help message to get a list with possible Blood command-line options</source>
+        <translation>Vis Blood Core hjelpemeldingen for å få en liste med mulige kommandolinjevalg</translation>
     </message>
     <message>
-        <source>Quark client</source>
+        <source>Blood client</source>
         <translation>Bitcoin-klienten</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Quark network</source>
-        <translation><numerusform>%n aktiv forbindelse til Quark-nettverket</numerusform><numerusform>%n aktive forbindelser til Quark-nettverket</numerusform></translation>
+        <source>%n active connection(s) to Blood network</source>
+        <translation><numerusform>%n aktiv forbindelse til Blood-nettverket</numerusform><numerusform>%n aktive forbindelser til Blood-nettverket</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -560,8 +560,8 @@ Adresse: %4
         <translation>Lommeboken er &lt;b&gt;kryptert&lt;/b&gt; og for tiden &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Quark can no longer continue safely and will quit.</source>
-        <translation>En fatal feil har inntruffet. Det er ikke trygt å fortsette og Quark må derfor avslutte.</translation>
+        <source>A fatal error occurred. Blood can no longer continue safely and will quit.</source>
+        <translation>En fatal feil har inntruffet. Det er ikke trygt å fortsette og Blood må derfor avslutte.</translation>
     </message>
 </context>
 <context>
@@ -845,8 +845,8 @@ Adresse: %4
         <translation>Den oppgitte adressen &quot;%1&quot; er allerede i adresseboken.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Quark address.</source>
-        <translation>Den angitte adressed &quot;%1&quot; er ikke en gyldig Quark-adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Blood address.</source>
+        <translation>Den angitte adressed &quot;%1&quot; er ikke en gyldig Blood-adresse.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -883,12 +883,12 @@ Adresse: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Quark Core - Command-line options</source>
-        <translation>Quark Core - Kommandolinjevalg</translation>
+        <source>Blood Core - Command-line options</source>
+        <translation>Blood Core - Kommandolinjevalg</translation>
     </message>
     <message>
-        <source>Quark Core</source>
-        <translation>Quark Core</translation>
+        <source>Blood Core</source>
+        <translation>Blood Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -934,16 +934,16 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Quark Core.</source>
-        <translation>Velkommen til Quark Core.</translation>
+        <source>Welcome to Blood Core.</source>
+        <translation>Velkommen til Blood Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Quark Core will store its data.</source>
-        <translation>Siden dette er første gang programmet starter, kan du nå velge hvor Quark Core skal lagre sine data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Blood Core will store its data.</source>
+        <translation>Siden dette er første gang programmet starter, kan du nå velge hvor Blood Core skal lagre sine data.</translation>
     </message>
     <message>
-        <source>Quark Core will download and store a copy of the Quark block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Quark Core vil laste ned og lagre en kopi av Quark sin blokkjede. Minst %1GB av data vil bli lagret i denne mappen, og det vil vokse over tid. Lommeboken vil også bli lagret i denne mappen.</translation>
+        <source>Blood Core will download and store a copy of the Blood block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Blood Core vil laste ned og lagre en kopi av Blood sin blokkjede. Minst %1GB av data vil bli lagret i denne mappen, og det vil vokse over tid. Lommeboken vil også bli lagret i denne mappen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -954,8 +954,8 @@ Adresse: %4
         <translation>Bruk en egendefinert datamappe:</translation>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
@@ -1016,12 +1016,12 @@ Adresse: %4
         <translation>Betal &amp;transaksjonsgebyr</translation>
     </message>
     <message>
-        <source>Automatically start Quark after logging in to the system.</source>
-        <translation>Start Quark automatisk etter innlogging.</translation>
+        <source>Automatically start Blood after logging in to the system.</source>
+        <translation>Start Blood automatisk etter innlogging.</translation>
     </message>
     <message>
-        <source>&amp;Start Quark on system login</source>
-        <translation>&amp;Start Quark ved systeminnlogging</translation>
+        <source>&amp;Start Blood on system login</source>
+        <translation>&amp;Start Blood ved systeminnlogging</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1036,8 +1036,8 @@ Adresse: %4
         <translation>Antall script &amp;verifikasjonstråder</translation>
     </message>
     <message>
-        <source>Connect to the Quark network through a SOCKS proxy.</source>
-        <translation>Koble til Quark-nettverket gjennom en SOCKS proxy.</translation>
+        <source>Connect to the Blood network through a SOCKS proxy.</source>
+        <translation>Koble til Blood-nettverket gjennom en SOCKS proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS proxy (default proxy):</source>
@@ -1096,8 +1096,8 @@ Adresse: %4
         <translation>&amp;Bruk ubekreftet veksel</translation>
     </message>
     <message>
-        <source>Automatically open the Quark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åpne automatisk Quark klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
+        <source>Automatically open the Blood client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åpne automatisk Blood klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1152,8 +1152,8 @@ Adresse: %4
         <translation>&amp;Språk for brukergrensesnitt</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Quark.</source>
-        <translation>Språket for brukergrensesnittet kan settes her. Innstillingen trer i kraft ved omstart av Quark.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Blood.</source>
+        <translation>Språket for brukergrensesnittet kan settes her. Innstillingen trer i kraft ved omstart av Blood.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1161,11 +1161,11 @@ Adresse: %4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av quarks.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av bloods.</translation>
     </message>
     <message>
-        <source>Whether to show Quark addresses in the transaction list or not.</source>
-        <translation>Om Quark-adresser skal vises i transaksjonslisten eller ikke.</translation>
+        <source>Whether to show Blood addresses in the transaction list or not.</source>
+        <translation>Om Blood-adresser skal vises i transaksjonslisten eller ikke.</translation>
     </message>
     <message>
         <source>&amp;Display addresses in transaction list</source>
@@ -1219,8 +1219,8 @@ Adresse: %4
         <translation>Skjema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quark network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Quark-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Blood network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasjonen som vises kan være foreldet. Din lommebok synkroniseres automatisk med Blood-nettverket etter at tilkobling er opprettet, men denne prosessen er ikke ferdig enda.</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1274,8 +1274,8 @@ Adresse: %4
         <translation>URI-håndtering</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Quark address or malformed URI parameters.</source>
-        <translation>URI kunne ikke tolkes! Dette kan forårsakes av en ugyldig Quark-adresse eller feil i URI-parametere.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Blood address or malformed URI parameters.</source>
+        <translation>URI kunne ikke tolkes! Dette kan forårsakes av en ugyldig Blood-adresse eller feil i URI-parametere.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1286,8 +1286,8 @@ Adresse: %4
         <translation>Betalingsforespørsel feil</translation>
     </message>
     <message>
-        <source>Cannot start quark: click-to-pay handler</source>
-        <translation>Kan ikke starte Quark: klikk-og-betal håndterer</translation>
+        <source>Cannot start blood: click-to-pay handler</source>
+        <translation>Kan ikke starte Blood: klikk-og-betal håndterer</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1341,8 +1341,8 @@ Adresse: %4
 <context>
     <name>QObject</name>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
@@ -1357,12 +1357,12 @@ Adresse: %4
         <translation>Feil: Ugyldig kombinasjon av -regtest og -testnet.</translation>
     </message>
     <message>
-        <source>Quark Core didn&apos;t yet exit safely...</source>
-        <translation>Quark Core har ennå ikke avsluttet på en sikker måte...</translation>
+        <source>Blood Core didn&apos;t yet exit safely...</source>
+        <translation>Blood Core har ennå ikke avsluttet på en sikker måte...</translation>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Skriv inn en Quark-adresse (f.eks. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Skriv inn en Blood-adresse (f.eks. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
 </context>
 <context>
@@ -1483,16 +1483,16 @@ Adresse: %4
         <translation>Loggfil for feilsøk</translation>
     </message>
     <message>
-        <source>Open the Quark debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åpne Quark sin loggfil for feilsøk fra den gjeldende datamappen. Dette kan ta noen sekunder for store loggfiler.</translation>
+        <source>Open the Blood debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åpne Blood sin loggfil for feilsøk fra den gjeldende datamappen. Dette kan ta noen sekunder for store loggfiler.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Tøm konsoll</translation>
     </message>
     <message>
-        <source>Welcome to the Quark RPC console.</source>
-        <translation>Velkommen til Quark sin RPC-konsoll.</translation>
+        <source>Welcome to the Blood RPC console.</source>
+        <translation>Velkommen til Blood sin RPC-konsoll.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1554,8 +1554,8 @@ Adresse: %4
         <translation>Gj&amp;enbruk en eksisterende mottaksadresse (ikke anbefalt)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Quark network.</source>
-        <translation>En valgfri melding å tilknytte betalingsforespørselen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Quark-nettverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Blood network.</source>
+        <translation>En valgfri melding å tilknytte betalingsforespørselen, som vil bli vist når forespørselen er åpnet. Meldingen vil ikke bli sendt med betalingen over Blood-nettverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1704,7 +1704,7 @@ Adresse: %4
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Quarks</translation>
+        <translation>Send Bloods</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1792,7 +1792,7 @@ Adresse: %4
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Bekreft sending av quarks</translation>
+        <translation>Bekreft sending av bloods</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -1867,8 +1867,8 @@ Adresse: %4
         <translation>Transaksjonen ble avvist!  Dette kan skje hvis noen av myntene i lommeboken allerede er brukt, som hvis du kopierte wallet.dat og mynter ble brukt i kopien uten å bli markert som brukt her.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Quark address</source>
-        <translation>Advarsel: Ugyldig Quark-adresse</translation>
+        <source>Warning: Invalid Blood address</source>
+        <translation>Advarsel: Ugyldig Blood-adresse</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1954,8 +1954,8 @@ Adresse: %4
         <translation>Skriv inn en merkelapp for denne adressen for å legge den til listen av brukte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the quark: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Quark network.</source>
-        <translation>En melding som var tilknyttet bitcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Quark-nettverket.</translation>
+        <source>A message that was attached to the blood: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Blood network.</source>
+        <translation>En melding som var tilknyttet bitcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Blood-nettverket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -1973,8 +1973,8 @@ Adresse: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Quark Core is shutting down...</source>
-        <translation>Quark Core lukker...</translation>
+        <source>Blood Core is shutting down...</source>
+        <translation>Blood Core lukker...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2028,8 +2028,8 @@ Adresse: %4
         <translation>Kopier valgt signatur til utklippstavle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Quark address</source>
-        <translation>Signer meldingen for å bevise at du eier denne Quark-adressen</translation>
+        <source>Sign the message to prove you own this Blood address</source>
+        <translation>Signer meldingen for å bevise at du eier denne Blood-adressen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2056,8 +2056,8 @@ Adresse: %4
         <translation>Adressen meldingen var signert med (f.eks. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Quark address</source>
-        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Quark-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Blood address</source>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Blood-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2068,8 +2068,8 @@ Adresse: %4
         <translation>Tilbakestill alle felter for meldingsverifikasjon</translation>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Skriv inn en Quark-adresse (f.eks. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Skriv inn en Blood-adresse (f.eks. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
@@ -2127,12 +2127,12 @@ Adresse: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Quark Core</source>
-        <translation>Quark Core</translation>
+        <source>Blood Core</source>
+        <translation>Blood Core</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
-        <translation>Quark Core utviklerne</translation>
+        <source>The Blood Core developers</source>
+        <translation>Blood Core utviklerne</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2246,7 +2246,7 @@ Adresse: %4
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Genererte quarks må modnes %1 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet på nettverket for å bli lagt til i kjeden av blokker. Hvis den ikke kommer med i kjeden vil den endre seg til &quot;ikke akseptert&quot; og pengene vil ikke kunne brukes. Dette vil noen ganger skje hvis en annen node genererer en blokk noen sekunder i tid fra din egen.</translation>
+        <translation>Genererte bloods må modnes %1 blokker før de kan brukes. Da du genererte denne blokken ble den kringkastet på nettverket for å bli lagt til i kjeden av blokker. Hvis den ikke kommer med i kjeden vil den endre seg til &quot;ikke akseptert&quot; og pengene vil ikke kunne brukes. Dette vil noen ganger skje hvis en annen node genererer en blokk noen sekunder i tid fra din egen.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2553,7 +2553,7 @@ Adresse: %4
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send Quarks</translation>
+        <translation>Send Bloods</translation>
     </message>
 </context>
 <context>
@@ -2610,12 +2610,12 @@ Adresse: %4
         <translation>Innstillinger:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: quarkcoin.conf)</source>
-        <translation>Angi konfigurasjonsfil (standardverdi: quarkcoin.conf)</translation>
+        <source>Specify configuration file (default: bloodcoin.conf)</source>
+        <translation>Angi konfigurasjonsfil (standardverdi: bloodcoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: quarkd.pid)</source>
-        <translation>Angi pid-fil (standardverdi: quarkd.pid)</translation>
+        <source>Specify pid file (default: bloodd.pid)</source>
+        <translation>Angi pid-fil (standardverdi: bloodd.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
@@ -2658,8 +2658,8 @@ Adresse: %4
         <translation>Ta imot kommandolinje- og JSON-RPC-kommandoer</translation>
     </message>
     <message>
-        <source>Quark Core RPC client version</source>
-        <translation>Quark Core RPC-klientversjon</translation>
+        <source>Blood Core RPC client version</source>
+        <translation>Blood Core RPC-klientversjon</translation>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -2677,24 +2677,24 @@ Adresse: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=quarkrpc
+rpcuser=bloodrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Blood Alert&quot; admin@foo.com
 </source>
         <translation>%s, du må angi rpcpassord i konfigurasjonsfilen.
 %s
 Det anbefales at du bruker det følgende tilfeldige passordet:
-rpcbruker=quarkrpc
+rpcbruker=bloodrpc
 rpcpassord=%s
 (du behøver ikke å huske passordet)
 Brukernavnet og passordet MÅ IKKE være like.
 Om filen ikke eksisterer, opprett den nå med eier-kun-les filrettigheter.
 Det er også anbefalt at å sette varselsmelding slik du får melding om problemer.
-For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@foo.com</translation>
+For eksempel: varselmelding=echo %%s | mail -s &quot;Blood Varsel&quot; admin@foo.com</translation>
     </message>
     <message>
         <source>Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!3DES:@STRENGTH)</source>
@@ -2765,8 +2765,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@fo
         <translation>Dette er en forhåndssluppet testversjon - bruk på egen risiko - ikke for bruk til blokkutvinning eller bedriftsapplikasjoner</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Quark Core is probably already running.</source>
-        <translation>Ute av stand til å binde til %s på denne datamaskinen. Quark Core kjører sannsynligvis allerede.</translation>
+        <source>Unable to bind to %s on this computer. Blood Core is probably already running.</source>
+        <translation>Ute av stand til å binde til %s på denne datamaskinen. Blood Core kjører sannsynligvis allerede.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
@@ -2777,8 +2777,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@fo
         <translation>Advarsel: -paytxfee er satt veldig høyt! Dette er transaksjonsgebyret du betaler når du sender transaksjoner.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quark will not work properly.</source>
-        <translation>Advarsel: Vennligst undersøk at din datamaskin har riktig dato og klokkeslett! Hvis klokken er stilt feil vil ikke Quark fungere riktig.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Blood will not work properly.</source>
+        <translation>Advarsel: Vennligst undersøk at din datamaskin har riktig dato og klokkeslett! Hvis klokken er stilt feil vil ikke Blood fungere riktig.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2813,8 +2813,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@fo
         <translation>Forsøk å berge private nøkler fra en korrupt wallet.dat</translation>
     </message>
     <message>
-        <source>Quark Core Daemon</source>
-        <translation>Quark Core Daemon</translation>
+        <source>Blood Core Daemon</source>
+        <translation>Blood Core Daemon</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -2954,7 +2954,7 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@fo
     </message>
     <message>
         <source>Generate coins (default: 0)</source>
-        <translation>Generer quarks (standardverdi: 0)</translation>
+        <translation>Generer bloods (standardverdi: 0)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: 288, 0 = all)</source>
@@ -3021,8 +3021,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@fo
         <translation>Dette er tiltenkt verktøy for regresjonstesting og apputvikling.</translation>
     </message>
     <message>
-        <source>Usage (deprecated, use quark-cli):</source>
-        <translation>Bruk (foreldet, bruk quark-cli):</translation>
+        <source>Usage (deprecated, use blood-cli):</source>
+        <translation>Bruk (foreldet, bruk blood-cli):</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3057,8 +3057,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@fo
         <translation>Importerer blokker fra ekstern fil blk000??.dat</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Quark Core is probably already running.</source>
-        <translation>Ute av stand til å låse datamappen %s. Quark Core kjører sannsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. Blood Core is probably already running.</source>
+        <translation>Ute av stand til å låse datamappen %s. Blood Core kjører sannsynligvis allerede.</translation>
     </message>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
@@ -3121,8 +3121,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@fo
         <translation>Skriv ut blokktreet ved oppstart (standardverdi: 0)</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Quark Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL-valg: (se Quark Wiki for oppsettsinstruksjoner for SSL)</translation>
+        <source>RPC SSL options: (see the Blood Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL-valg: (se Blood Wiki for oppsettsinstruksjoner for SSL)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -3141,12 +3141,12 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@fo
         <translation>Kjør en tråd som skriver lommeboken til disk periodisk (standard: 1)</translation>
     </message>
     <message>
-        <source>SSL options: (see the Quark Wiki for SSL setup instructions)</source>
-        <translation>SSL valg: (se Quark Wiki for instruksjoner for oppsett av SSL)</translation>
+        <source>SSL options: (see the Blood Wiki for SSL setup instructions)</source>
+        <translation>SSL valg: (se Blood Wiki for instruksjoner for oppsett av SSL)</translation>
     </message>
     <message>
-        <source>Send command to Quark Core</source>
-        <translation>Send kommando til Quark Core</translation>
+        <source>Send command to Blood Core</source>
+        <translation>Send kommando til Blood Core</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -3181,8 +3181,8 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@fo
         <translation>Angi tidsavbrudd for forbindelse i millisekunder (standardverdi: 5000)</translation>
     </message>
     <message>
-        <source>Start Quark Core Daemon</source>
-        <translation>Start Quark Core Daemon</translation>
+        <source>Start Blood Core Daemon</source>
+        <translation>Start Blood Core Daemon</translation>
     </message>
     <message>
         <source>System error: </source>
@@ -3297,12 +3297,12 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Quark Varsel&quot; admin@fo
         <translation>Feil ved lasting av wallet.dat: Lommeboken er skadet</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Quark</source>
-        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Quark</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Blood</source>
+        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Blood</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Quark to complete</source>
-        <translation>Lommeboken måtte skrives om: start Quark på nytt for å fullføre</translation>
+        <source>Wallet needed to be rewritten: restart Blood to complete</source>
+        <translation>Lommeboken måtte skrives om: start Blood på nytt for å fullføre</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>

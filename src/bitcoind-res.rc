@@ -5,7 +5,7 @@
 #define VER_PRODUCTVERSION_STR STRINGIZE(CLIENT_VERSION_MAJOR) "." STRINGIZE(CLIENT_VERSION_MINOR) "." STRINGIZE(CLIENT_VERSION_REVISION) "." STRINGIZE(CLIENT_VERSION_BUILD)
 #define VER_FILEVERSION        VER_PRODUCTVERSION
 #define VER_FILEVERSION_STR    VER_PRODUCTVERSION_STR
-#define COPYRIGHT_STR          "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin and Quark Core developers"
+#define COPYRIGHT_STR          "2009-" STRINGIZE(COPYRIGHT_YEAR) "Satoshi Nakamoto, The Bitcoin and Sifcoin and Quark and Sharkcoin and Blood Core developers"
 
 VS_VERSION_INFO VERSIONINFO
 FILEVERSION     VER_FILEVERSION
@@ -17,14 +17,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Quark"
-            VALUE "FileDescription",    "Quarkd (OSS daemon/client for Quark)"
+            VALUE "CompanyName",        "Blood"
+            VALUE "FileDescription",    "Bloodd (OSS daemon/client for Blood)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "quarkd"
+            VALUE "InternalName",       "bloodd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "quarkd.exe"
-            VALUE "ProductName",        "Quarkd"
+            VALUE "OriginalFilename",   "bloodd.exe"
+            VALUE "ProductName",        "Bloodd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

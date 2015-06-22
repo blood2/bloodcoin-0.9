@@ -29,9 +29,14 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     float fontFactor            = 1.0;
 
     // define text to place
-    QString titleText       = tr("Quark Core");
+    QString titleText       = tr("Blood Core");
     QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
-    QString copyrightText   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin and Quark Core developers"));
+    QString copyrightText   = tr("Copyright") + QString(" &copy; 2009-%1 ").arg(COPYRIGHT_YEAR) + tr("Satoshi Nakamoto") + QString(",<br>") + 
+        tr("Copyright") + QString(" &copy; 2009-%1 ").arg(COPYRIGHT_YEAR) + tr("The Bitcoin Developers") + QString(",<br>") +
+        tr("Copyright") + QString(" &copy; 2013-%1 ").arg(COPYRIGHT_YEAR) + tr("The Siftcoin Developers") + QString(",<br>") +
+                tr("Copyright") + QString(" &copy; 2013-%1 ").arg(COPYRIGHT_YEAR) + tr("The Quarkcoin Developers") + QString(",<br>") +
+                tr("Copyright") + QString(" &copy; 2015 ") + tr("The Sharkcoin Developers") + QString(",<br>") +
+                tr("Copyright") + QString(" &copy; 2015 ") + tr("The Bloodcoin Developers");
     QString testnetAddText  = QString(tr("[testnet]")); // define text to place as single text object
 
     QString font            = "Arial";

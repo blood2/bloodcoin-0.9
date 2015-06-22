@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Quark Core</source>
-        <translation>O jadre Quark</translation>
+        <source>About Blood Core</source>
+        <translation>O jadre Blood</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Quark Core&lt;/b&gt; version</source>
-        <translation>Verzia &lt;b&gt;Quark jadra&lt;/b&gt;</translation>
+        <source>&lt;b&gt;Blood Core&lt;/b&gt; version</source>
+        <translation>Verzia &lt;b&gt;Blood jadra&lt;/b&gt;</translation>
     </message>
     <message>
         <source>
@@ -28,8 +28,8 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Autorské práva</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
-        <translation>Vývojári jadra Quark</translation>
+        <source>The Blood Core developers</source>
+        <translation>Vývojári jadra Blood</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -103,12 +103,12 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Adresa prijatia</translation>
     </message>
     <message>
-        <source>These are your Quark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú Vaše Quark adresy pre posielanie platieb. Vždy skontrolujte množstvo a prijímaciu adresu pred poslaním coins.</translation>
+        <source>These are your Blood addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú Vaše Blood adresy pre posielanie platieb. Vždy skontrolujte množstvo a prijímaciu adresu pred poslaním coins.</translation>
     </message>
     <message>
-        <source>These are your Quark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Quark adresy pre prijímanie platieb. Odporúča sa použiť novú prijímaciu adresu pre každú transakciu.</translation>
+        <source>These are your Blood addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše Blood adresy pre prijímanie platieb. Odporúča sa použiť novú prijímaciu adresu pre každú transakciu.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -225,8 +225,8 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Peňaženka zašifrovaná</translation>
     </message>
     <message>
-        <source>Quark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
-        <translation>Quark sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou bitcoinov pomocou škodlivého software.</translation>
+        <source>Blood will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bloods from being stolen by malware infecting your computer.</source>
+        <translation>Blood sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou bitcoinov pomocou škodlivého software.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -296,8 +296,8 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Ukončiť program</translation>
     </message>
     <message>
-        <source>Show information about Quark</source>
-        <translation>Zobraziť informácie o Quark</translation>
+        <source>Show information about Blood</source>
+        <translation>Zobraziť informácie o Blood</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -344,11 +344,11 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Preindexúvam bloky na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a Quark address</source>
-        <translation>Poslať quarks na adresu</translation>
+        <source>Send coins to a Blood address</source>
+        <translation>Poslať bloods na adresu</translation>
     </message>
     <message>
-        <source>Modify configuration options for Quark</source>
+        <source>Modify configuration options for Blood</source>
         <translation>Upraviť možnosti nastavenia pre bitcoin</translation>
     </message>
     <message>
@@ -372,8 +372,8 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Overiť správu</translation>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -400,12 +400,12 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Zašifruj súkromné kľúče ktoré patria do vašej peňaženky</translation>
     </message>
     <message>
-        <source>Sign messages with your Quark addresses to prove you own them</source>
-        <translation>Podpísať správu s vašou adresou Quark aby ste preukázali že ju vlastníte</translation>
+        <source>Sign messages with your Blood addresses to prove you own them</source>
+        <translation>Podpísať správu s vašou adresou Blood aby ste preukázali že ju vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Quark addresses</source>
-        <translation>Overiť či správa bola podpísaná uvedenou Quark adresou</translation>
+        <source>Verify messages to ensure they were signed with specified Blood addresses</source>
+        <translation>Overiť či správa bola podpísaná uvedenou Blood adresou</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -428,16 +428,16 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>[testovacia sieť]</translation>
     </message>
     <message>
-        <source>Quark Core</source>
-        <translation>Jadro Quark</translation>
+        <source>Blood Core</source>
+        <translation>Jadro Blood</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and quark: URIs)</source>
-        <translation>Vyžiadať platbu (vygeneruje QR kód a quark: URI)</translation>
+        <source>Request payments (generates QR codes and blood: URIs)</source>
+        <translation>Vyžiadať platbu (vygeneruje QR kód a blood: URI)</translation>
     </message>
     <message>
-        <source>&amp;About Quark Core</source>
-        <translation>O jadre Quark</translation>
+        <source>&amp;About Blood Core</source>
+        <translation>O jadre Blood</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -448,7 +448,7 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Zobraziť zoznam použitých prijímacích adries a ich popisov</translation>
     </message>
     <message>
-        <source>Open a quark: URI or payment request</source>
+        <source>Open a blood: URI or payment request</source>
         <translation>Otvoriť bitcoin URI alebo výzvu k platbe</translation>
     </message>
     <message>
@@ -456,16 +456,16 @@ Tento výrobok obsahuje sofvér, ktorý vyvynul OpenSSL Project pre použitie v 
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message>
-        <source>Show the Quark Core help message to get a list with possible Quark command-line options</source>
-        <translation>Zobraziť pomocnú správu od Quark Jadra pre získanie zoznamu dostupných možností príkazového riadku</translation>
+        <source>Show the Blood Core help message to get a list with possible Blood command-line options</source>
+        <translation>Zobraziť pomocnú správu od Blood Jadra pre získanie zoznamu dostupných možností príkazového riadku</translation>
     </message>
     <message>
-        <source>Quark client</source>
-        <translation>Quark klient</translation>
+        <source>Blood client</source>
+        <translation>Blood klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Quark network</source>
-        <translation><numerusform>%n aktívne spojenie v Quark sieti</numerusform><numerusform>%n aktívne spojenia v Quark sieti</numerusform><numerusform>%n aktívnych spojení v Bitconi sieti</numerusform></translation>
+        <source>%n active connection(s) to Blood network</source>
+        <translation><numerusform>%n aktívne spojenie v Blood sieti</numerusform><numerusform>%n aktívne spojenia v Blood sieti</numerusform><numerusform>%n aktívnych spojení v Bitconi sieti</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -559,8 +559,8 @@ Adresa: %4</translation>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;zamknutá&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Quark can no longer continue safely and will quit.</source>
-        <translation>Vyskytla sa neblahá chyba. Quark nemôže daľej bezpečne pokračovať a vypne sa.</translation>
+        <source>A fatal error occurred. Blood can no longer continue safely and will quit.</source>
+        <translation>Vyskytla sa neblahá chyba. Blood nemôže daľej bezpečne pokračovať a vypne sa.</translation>
     </message>
 </context>
 <context>
@@ -844,7 +844,7 @@ Adresa: %4</translation>
         <translation>Vložená adresa &quot;%1&quot; sa už nachádza v adresári.</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Quark address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Blood address.</source>
         <translation>Vložená adresa &quot;%1&quot; nieje platnou adresou bitcoin.</translation>
     </message>
     <message>
@@ -882,12 +882,12 @@ Adresa: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Quark Core - Command-line options</source>
-        <translation>Jadro Quark - možnosti príkazového riadku</translation>
+        <source>Blood Core - Command-line options</source>
+        <translation>Jadro Blood - možnosti príkazového riadku</translation>
     </message>
     <message>
-        <source>Quark Core</source>
-        <translation>Jadro Quark</translation>
+        <source>Blood Core</source>
+        <translation>Jadro Blood</translation>
     </message>
     <message>
         <source>version</source>
@@ -933,16 +933,16 @@ Adresa: %4</translation>
         <translation>Vitajte</translation>
     </message>
     <message>
-        <source>Welcome to Quark Core.</source>
-        <translation>Vitajte v jadre Quark.</translation>
+        <source>Welcome to Blood Core.</source>
+        <translation>Vitajte v jadre Blood.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Quark Core will store its data.</source>
-        <translation>Keďže spúštate program prvý krát, môžte si vybrať kde bude Quark Jadro ukladať svoje dáta.</translation>
+        <source>As this is the first time the program is launched, you can choose where Blood Core will store its data.</source>
+        <translation>Keďže spúštate program prvý krát, môžte si vybrať kde bude Blood Jadro ukladať svoje dáta.</translation>
     </message>
     <message>
-        <source>Quark Core will download and store a copy of the Quark block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Jadro Quark stiahne zo siete a uloží kópiu Quark blockchain. Aspoň %1GB dát bude uložených v tomto priečinku a časom porastie. Peňaženka bude tiež uložená v tomto priečinku.</translation>
+        <source>Blood Core will download and store a copy of the Blood block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Jadro Blood stiahne zo siete a uloží kópiu Blood blockchain. Aspoň %1GB dát bude uložených v tomto priečinku a časom porastie. Peňaženka bude tiež uložená v tomto priečinku.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -953,8 +953,8 @@ Adresa: %4</translation>
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; can not be created.</source>
@@ -1015,12 +1015,12 @@ Adresa: %4</translation>
         <translation>Zaplatiť transakčné &amp;poplatky</translation>
     </message>
     <message>
-        <source>Automatically start Quark after logging in to the system.</source>
-        <translation>Automaticky spustiť Quark po zapnutí počítača</translation>
+        <source>Automatically start Blood after logging in to the system.</source>
+        <translation>Automaticky spustiť Blood po zapnutí počítača</translation>
     </message>
     <message>
-        <source>&amp;Start Quark on system login</source>
-        <translation>&amp;Spustiť Quark pri spustení systému správy okien</translation>
+        <source>&amp;Start Blood on system login</source>
+        <translation>&amp;Spustiť Blood pri spustení systému správy okien</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1035,8 +1035,8 @@ Adresa: %4</translation>
         <translation>Počet skript overujucich vlákien</translation>
     </message>
     <message>
-        <source>Connect to the Quark network through a SOCKS proxy.</source>
-        <translation>Pripojiť k Quark sieti cez SOCKS proxy.</translation>
+        <source>Connect to the Blood network through a SOCKS proxy.</source>
+        <translation>Pripojiť k Blood sieti cez SOCKS proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS proxy (default proxy):</source>
@@ -1095,8 +1095,8 @@ Adresa: %4</translation>
         <translation>Minúť nepotvrdený výdavok</translation>
     </message>
     <message>
-        <source>Automatically open the Quark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvorit port pre Quark na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
+        <source>Automatically open the Blood client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvorit port pre Blood na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1151,8 +1151,8 @@ Adresa: %4</translation>
         <translation>Jazyk užívateľského rozhrania:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Quark.</source>
-        <translation>Tu sa dá nastaviť jazyk užívateľského rozhrania. Toto nastavenie bude účinné po reštartovaní Quark.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Blood.</source>
+        <translation>Tu sa dá nastaviť jazyk užívateľského rozhrania. Toto nastavenie bude účinné po reštartovaní Blood.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1163,8 +1163,8 @@ Adresa: %4</translation>
         <translation>Zvoľte ako deliť bitcoin pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
     </message>
     <message>
-        <source>Whether to show Quark addresses in the transaction list or not.</source>
-        <translation>Či ukazovať Quark adresy v zozname transakcií alebo nie.</translation>
+        <source>Whether to show Blood addresses in the transaction list or not.</source>
+        <translation>Či ukazovať Blood adresy v zozname transakcií alebo nie.</translation>
     </message>
     <message>
         <source>&amp;Display addresses in transaction list</source>
@@ -1218,8 +1218,8 @@ Adresa: %4</translation>
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quark network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť neaktuápne. Vaša peňaženka sa automaticky synchronizuje so sieťou Quark po nadviazaní spojenia ale tento proces ešte nieje ukončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Blood network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť neaktuápne. Vaša peňaženka sa automaticky synchronizuje so sieťou Blood po nadviazaní spojenia ale tento proces ešte nieje ukončený.</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1273,8 +1273,8 @@ Adresa: %4</translation>
         <translation>Spracovanie URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Quark address or malformed URI parameters.</source>
-        <translation>URI sa nedá rozložiť! To môže byť spôsobené neplatou Quark adresou alebo zle upravenými vlastnosťami URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Blood address or malformed URI parameters.</source>
+        <translation>URI sa nedá rozložiť! To môže byť spôsobené neplatou Blood adresou alebo zle upravenými vlastnosťami URI.</translation>
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
@@ -1285,8 +1285,8 @@ Adresa: %4</translation>
         <translation>Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-        <source>Cannot start quark: click-to-pay handler</source>
-        <translation>Nedá sa spustiť obslužný program quark: click-to-pay zaplatiť kliknutím</translation>
+        <source>Cannot start blood: click-to-pay handler</source>
+        <translation>Nedá sa spustiť obslužný program blood: click-to-pay zaplatiť kliknutím</translation>
     </message>
     <message>
         <source>Net manager warning</source>
@@ -1340,8 +1340,8 @@ Adresa: %4</translation>
 <context>
     <name>QObject</name>
     <message>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Blood</source>
+        <translation>Blood</translation>
     </message>
     <message>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
@@ -1356,12 +1356,12 @@ Adresa: %4</translation>
         <translation>Chyba: Nesprávna kombinácia -regtest a -testnet.</translation>
     </message>
     <message>
-        <source>Quark Core didn&apos;t yet exit safely...</source>
-        <translation>Jadro Quark sa ešte úspešne nevyplo ...</translation>
+        <source>Blood Core didn&apos;t yet exit safely...</source>
+        <translation>Jadro Blood sa ešte úspešne nevyplo ...</translation>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Zadajte Quark adresu (napr. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Zadajte Blood adresu (napr. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
 </context>
 <context>
@@ -1482,16 +1482,16 @@ Adresa: %4</translation>
         <translation>Súbor záznamu ladenia</translation>
     </message>
     <message>
-        <source>Open the Quark debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvoriť Quark log súbor pre ladenie z aktuálneho dátového adresára. Toto môže trvať niekoľko sekúnd pre veľké súbory.</translation>
+        <source>Open the Blood debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvoriť Blood log súbor pre ladenie z aktuálneho dátového adresára. Toto môže trvať niekoľko sekúnd pre veľké súbory.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Vymazať konzolu</translation>
     </message>
     <message>
-        <source>Welcome to the Quark RPC console.</source>
-        <translation>Vitajte v Quark RPC konzole. Baník, pyčo!</translation>
+        <source>Welcome to the Blood RPC console.</source>
+        <translation>Vitajte v Blood RPC konzole. Baník, pyčo!</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1553,8 +1553,8 @@ Adresa: %4</translation>
         <translation>Znovu použiť jestvujúcu prijímaciu adresu (neodporúča sa)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Quark network.</source>
-        <translation>Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť Quark.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Blood network.</source>
+        <translation>Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť Blood.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1703,7 +1703,7 @@ Adresa: %4</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Quarks</translation>
+        <translation>Poslať Bloods</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1791,7 +1791,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Potvrdiť odoslanie quarks</translation>
+        <translation>Potvrdiť odoslanie bloods</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -1866,8 +1866,8 @@ Adresa: %4</translation>
         <translation>Transakcia bola zamietnutá! Toto sa môže stať ak niektoré coins vo vašej peňaženke už boli minuté, ako keď použijete kópiu wallet.dat a coins boli minuté z kópie ale neoznačené ako minuté tu.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Quark address</source>
-        <translation>Varovanie: Nesprávna Quark adresa</translation>
+        <source>Warning: Invalid Blood address</source>
+        <translation>Varovanie: Nesprávna Blood adresa</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1953,8 +1953,8 @@ Adresa: %4</translation>
         <translation>Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-        <source>A message that was attached to the quark: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Quark network.</source>
-        <translation>Správa ktorá bola pripojená k quark: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Quark.</translation>
+        <source>A message that was attached to the blood: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Blood network.</source>
+        <translation>Správa ktorá bola pripojená k blood: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Blood.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -1972,8 +1972,8 @@ Adresa: %4</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Quark Core is shutting down...</source>
-        <translation>Jadro Quark sa ukončuje...</translation>
+        <source>Blood Core is shutting down...</source>
+        <translation>Jadro Blood sa ukončuje...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1996,7 +1996,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>The address to sign the message with (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Zadajte Quark adresu (napr. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <translation>Zadajte Blood adresu (napr. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2027,7 +2027,7 @@ Adresa: %4</translation>
         <translation>Kopírovať práve zvolenú adresu do systémového klipbordu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Quark address</source>
+        <source>Sign the message to prove you own this Blood address</source>
         <translation>Podpíšte správu aby ste dokázali že vlastníte túto adresu</translation>
     </message>
     <message>
@@ -2052,11 +2052,11 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>The address the message was signed with (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Zadajte Quark adresu (napr. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <translation>Zadajte Blood adresu (napr. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Quark address</source>
-        <translation>Overím správy sa uistiť že bola podpísaná označenou Quark adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Blood address</source>
+        <translation>Overím správy sa uistiť že bola podpísaná označenou Blood adresou</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2067,8 +2067,8 @@ Adresa: %4</translation>
         <translation>Obnoviť všetky polia v overiť správu</translation>
     </message>
     <message>
-        <source>Enter a Quark address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
-        <translation>Zadajte Quark adresu (napr. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
+        <source>Enter a Blood address (e.g. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</source>
+        <translation>Zadajte Blood adresu (napr. QfgBvXopUwn3KtDnW4HHqX2L7KD37TigXS)</translation>
     </message>
     <message>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
@@ -2126,12 +2126,12 @@ Adresa: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Quark Core</source>
-        <translation>Jadro Quark</translation>
+        <source>Blood Core</source>
+        <translation>Jadro Blood</translation>
     </message>
     <message>
-        <source>The Quark Core developers</source>
-        <translation>Vývojári jadra Quark</translation>
+        <source>The Blood Core developers</source>
+        <translation>Vývojári jadra Blood</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2552,7 +2552,7 @@ Adresa: %4</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Quarks</translation>
+        <translation>Poslať Bloods</translation>
     </message>
 </context>
 <context>
@@ -2609,12 +2609,12 @@ Adresa: %4</translation>
         <translation>Možnosti:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: quarkcoin.conf)</source>
-        <translation>Určiť súbor s nastaveniami (predvolené: quarkcoin.conf)</translation>
+        <source>Specify configuration file (default: bloodcoin.conf)</source>
+        <translation>Určiť súbor s nastaveniami (predvolené: bloodcoin.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: quarkd.pid)</source>
-        <translation>Určiť súbor pid (predvolené: quarkd.pid)</translation>
+        <source>Specify pid file (default: bloodd.pid)</source>
+        <translation>Určiť súbor pid (predvolené: bloodd.pid)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
@@ -2657,8 +2657,8 @@ Adresa: %4</translation>
         <translation>Prijímať príkazy z príkazového riadku a JSON-RPC</translation>
     </message>
     <message>
-        <source>Quark Core RPC client version</source>
-        <translation>Verzia RPC klienta Jadra Quark</translation>
+        <source>Blood Core RPC client version</source>
+        <translation>Verzia RPC klienta Jadra Blood</translation>
     </message>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
@@ -2676,24 +2676,24 @@ Adresa: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=quarkrpc
+rpcuser=bloodrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Blood Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword heslo v súbore nastavení:
 %s
 Odporúča sa používať nasledujúce náhodné heslo:
-rpcuser=quarkrpc
+rpcuser=bloodrpc
 rpcpassword=%s
 (nemusíte si pamätať toto heslo)
 Užívateľské meno a heslo NESMÚ byť rovnaké.
 Ak súbor neexistuje, vytvorte ho s prístupovým právom owner-readable-only čitateľné len pre majiteľa.
 Tiež sa odporúča nastaviť alertnotify aby ste boli upozorňovaní na problémy;
-napríklad: alertnotify=echo %%s | mail -s &quot;Quark Výstraha&quot; admin@foo.com
+napríklad: alertnotify=echo %%s | mail -s &quot;Blood Výstraha&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2765,8 +2765,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;Quark Výstraha&quot; admin@foo
         <translation>Toto je pred-testovacia verzia - použitie je na vlastné riziko - nepoužívajte na tvorbu bitcoin ani obchodovanie.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Quark Core is probably already running.</source>
-        <translation>Nepodarilo sa pripojiť na %s na tomto počítači. Quark Jadro je už pravdepodobne spustené.</translation>
+        <source>Unable to bind to %s on this computer. Blood Core is probably already running.</source>
+        <translation>Nepodarilo sa pripojiť na %s na tomto počítači. Blood Jadro je už pravdepodobne spustené.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -proxy)</source>
@@ -2777,8 +2777,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;Quark Výstraha&quot; admin@foo
         <translation>Varovanie: -paytxfee je nastavené veľmi vysoko. Toto sú transakčné poplatky ktoré zaplatíte ak odošlete transakciu.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quark will not work properly.</source>
-        <translation>Varovanie: Skontroluj či je na počítači nastavený správny čas a dátum. Ak sú hodiny nastavené nesprávne, Quark nebude správne pracovať.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Blood will not work properly.</source>
+        <translation>Varovanie: Skontroluj či je na počítači nastavený správny čas a dátum. Ak sú hodiny nastavené nesprávne, Blood nebude správne pracovať.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2815,8 +2815,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Pokus zachrániť súkromné kľúče z poškodeného wallet.dat</translation>
     </message>
     <message>
-        <source>Quark Core Daemon</source>
-        <translation>Démon Jadro Quark</translation>
+        <source>Blood Core Daemon</source>
+        <translation>Démon Jadro Blood</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -3023,8 +3023,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Toto je mienené nástrojom pre regresné testovania a vývoj programu.</translation>
     </message>
     <message>
-        <source>Usage (deprecated, use quark-cli):</source>
-        <translation>Použitie (neodporúča sa, použite quark-cli):</translation>
+        <source>Usage (deprecated, use blood-cli):</source>
+        <translation>Použitie (neodporúča sa, použite blood-cli):</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -3059,8 +3059,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Importuje bloky z externého súboru blk000??.dat</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Quark Core is probably already running.</source>
-        <translation>Neviem uzamknúť data adresár %s. Jadro Quark je pravdepodobne už spustené.</translation>
+        <source>Cannot obtain a lock on data directory %s. Blood Core is probably already running.</source>
+        <translation>Neviem uzamknúť data adresár %s. Jadro Blood je pravdepodobne už spustené.</translation>
     </message>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
@@ -3123,8 +3123,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Vytlačiť strom blokov pri spustení (prednastavené: 0)</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Quark Wiki for SSL setup instructions)</source>
-        <translation>Možnosti RPC SSL: (Pozri v Quark Wiki pokyny pre SSL nastavenie)</translation>
+        <source>RPC SSL options: (see the Blood Wiki for SSL setup instructions)</source>
+        <translation>Možnosti RPC SSL: (Pozri v Blood Wiki pokyny pre SSL nastavenie)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -3143,12 +3143,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Mať spustené vlákno pravidelného čístenia peňaženky (predvolené: 1)</translation>
     </message>
     <message>
-        <source>SSL options: (see the Quark Wiki for SSL setup instructions)</source>
-        <translation>SSL možnosť: (pozrite Quark Wiki pre návod na nastavenie SSL)</translation>
+        <source>SSL options: (see the Blood Wiki for SSL setup instructions)</source>
+        <translation>SSL možnosť: (pozrite Blood Wiki pre návod na nastavenie SSL)</translation>
     </message>
     <message>
-        <source>Send command to Quark Core</source>
-        <translation>Poslať príkaz Jadru Quark</translation>
+        <source>Send command to Blood Core</source>
+        <translation>Poslať príkaz Jadru Blood</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -3183,8 +3183,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Určiť aut spojenia v milisekundách (predvolené: 5000)</translation>
     </message>
     <message>
-        <source>Start Quark Core Daemon</source>
-        <translation>Štart služby Jadro Quark</translation>
+        <source>Start Blood Core Daemon</source>
+        <translation>Štart služby Jadro Blood</translation>
     </message>
     <message>
         <source>System error: </source>
@@ -3299,12 +3299,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Chyba načítania wallet.dat: Peňaženka je poškodená</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Quark</source>
-        <translation>Chyba načítania wallet.dat: Peňaženka vyžaduje novšiu verziu Quark</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Blood</source>
+        <translation>Chyba načítania wallet.dat: Peňaženka vyžaduje novšiu verziu Blood</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Quark to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: dokončite reštartovaním Quark</translation>
+        <source>Wallet needed to be rewritten: restart Blood to complete</source>
+        <translation>Bolo potrebné prepísať peňaženku: dokončite reštartovaním Blood</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>

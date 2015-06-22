@@ -41,9 +41,9 @@ static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "Quark"
+#define QAPP_ORG_NAME "Blood"
 #define QAPP_ORG_DOMAIN "qrk.cc"
-#define QAPP_APP_NAME_DEFAULT "Quark-Qt"
-#define QAPP_APP_NAME_TESTNET "Quark-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "Blood-Qt"
+#define QAPP_APP_NAME_TESTNET "Blood-Qt-testnet"
 
 #endif // GUICONSTANTS_H
