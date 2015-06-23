@@ -205,8 +205,8 @@ Izplatīta saskaņā ar MIT/X11 programmatūras licenci, skatīt pievienoto datn
         <translation>Apstiprināt maciņa šifrēšanu</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QUARKS&lt;/b&gt;!</source>
-        <translation>Brīdinājums: Ja tu nošifrē savu maciņu un pazaudē paroli, tu &lt;b&gt;PAZAUDĒSI VISAS SAVAS QUARKS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Bloodcoins&lt;/b&gt;!</source>
+        <translation>Brīdinājums: Ja tu nošifrē savu maciņu un pazaudē paroli, tu &lt;b&gt;PAZAUDĒSI VISAS SAVAS Bloodcoins&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>

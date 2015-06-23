@@ -200,7 +200,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>رمزگذاری wallet را تایید کنید</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QUARKS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Bloodcoins&lt;/b&gt;!</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1486,7 +1486,7 @@ Address: %4
     </message>
     <message>
         <source>Welcome to the Blood RPC console.</source>
-        <translation>به کنسول آر.پی.سی. QUARK خوش آمدید</translation>
+        <translation>به کنسول آر.پی.سی. BLOOD خوش آمدید</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>

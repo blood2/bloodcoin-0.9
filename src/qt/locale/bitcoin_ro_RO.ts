@@ -205,8 +205,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
         <translation>Confirmă criptarea portofelului</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QUARKS&lt;/b&gt;!</source>
-        <translation>Atenție: Dacă pierdeţi parola portofelului electronic dupa criptare, &lt;b&gt;VEŢI PIERDE ÎNTREAGA SUMĂ DE QUARK ACUMULATĂ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Bloodcoins&lt;/b&gt;!</source>
+        <translation>Atenție: Dacă pierdeţi parola portofelului electronic dupa criptare, &lt;b&gt;VEŢI PIERDE ÎNTREAGA SUMĂ DE BLOOD ACUMULATĂ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>

@@ -204,8 +204,8 @@ Ez a termék az OpenSSL Project által lett kifejlesztve az OpenSSL Toolkit (htt
         <translation>Biztosan kódolni akarod a tárcát?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QUARKS&lt;/b&gt;!</source>
-        <translation>Figyelem: Ha kódolod a tárcát, és elveszíted a jelszavad, akkor &lt;b&gt;AZ ÖSSZES QUARKODAT IS EL FOGOD VESZÍTENI!&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Bloodcoins&lt;/b&gt;!</source>
+        <translation>Figyelem: Ha kódolod a tárcát, és elveszíted a jelszavad, akkor &lt;b&gt;AZ ÖSSZES BLOODODAT IS EL FOGOD VESZÍTENI!&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
