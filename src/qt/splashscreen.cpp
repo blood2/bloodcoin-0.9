@@ -21,7 +21,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     setAutoFillBackground(true);
 
     // set reference point, paddings
-    int paddingRight            = 300;
+    int paddingRight            = 600;
     int paddingTop              = 50;
     int titleVersionVSpace      = 17;
     int titleCopyrightVSpace    = 35;
@@ -35,7 +35,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
         tr("Copyright") + QString(" &copy; 2009-%1 ").arg(COPYRIGHT_YEAR) + tr("The Bitcoin Developers") + QString(",<br>") +
         tr("Copyright") + QString(" &copy; 2013-%1 ").arg(COPYRIGHT_YEAR) + tr("The Siftcoin Developers") + QString(",<br>") +
                 tr("Copyright") + QString(" &copy; 2013-%1 ").arg(COPYRIGHT_YEAR) + tr("The Quarkcoin Developers") + QString(",<br>") +
-                tr("Copyright") + QString(" &copy; 2015 ") + tr("The Sharkcoin Developers") + QString(",<br>") +
+                tr("Copyright") + QString(" &copy; 2014-%1 ") + tr("The Sharkcoin Developers") + QString(",<br>") +
                 tr("Copyright") + QString(" &copy; 2015 ") + tr("The Bloodcoin Developers");
     QString testnetAddText  = QString(tr("[testnet]")); // define text to place as single text object
 
@@ -51,7 +51,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     }
 
     QPainter pixPaint(&newPixmap);
-    pixPaint.setPen(QColor(100,100,100));
+    pixPaint.setPen(QColor(238,255,255));
 
     // check font size and drawing with
     pixPaint.setFont(QFont(font, 33*fontFactor));

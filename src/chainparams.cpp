@@ -21,7 +21,8 @@ using namespace boost::assign;
 
 unsigned int pnSeed[] =
 {
-    0x01020304, 
+    0xe226655e, 0xf301a28b, 0xcf0f212d, 0x5f49fe5e, 0xdd7e21b2, 0x473bf25e, 0xde2cee2e, 0x6df9a8d5,
+    0x25974f2d, 0xd18baf65, 0xe870a6bc,
 };
 
 static const unsigned int timeMainGenesisBlock = 1434482533;
@@ -70,6 +71,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0xb1b803d7826df7d8b6464f3125c7dce12b050a5dc836693096f61d2cb5b5db45"));
 
         vSeeds.push_back(CDNSSeedData("ns000.bloodcoin.cc", "nd000.bloodcoin.cc"));
+        vSeeds.push_back(CDNSSeedData("ns001.bloodcoin.cc", "nd001.bloodcoin.cc"));
+        vSeeds.push_back(CDNSSeedData("ns004.bloodcoin.cc", "nd004.bloodcoin.cc"));
 		
         base58Prefixes[PUBKEY_ADDRESS] = list_of(85);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(9);
