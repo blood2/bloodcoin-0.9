@@ -30,7 +30,7 @@ AboutDialog::AboutDialog(QWidget *parent) :
         tr("Copyright") + QString(" &copy; 2009-%1 ").arg(COPYRIGHT_YEAR) + tr("The Bitcoin Developers") + QString(",<br>") +
         tr("Copyright") + QString(" &copy; 2013-%1 ").arg(COPYRIGHT_YEAR) + tr("The Siftcoin Developers") + QString(",<br>") +
                 tr("Copyright") + QString(" &copy; 2013-%1 ").arg(COPYRIGHT_YEAR) + tr("The Quarkcoin Developers") + QString(",<br>") +
-                tr("Copyright") + QString(" &copy; 2014-%1 ") + tr("The Sharkcoin Developers") + QString(",<br>") +
+                tr("Copyright") + QString(" &copy; 2014-%1 ").arg(COPYRIGHT_YEAR)+ tr("The Sharkcoin Developers") + QString(",<br>") +
                 tr("Copyright") + QString(" &copy; 2015 ") + tr("The Bloodcoin Developers"));
 }
 
