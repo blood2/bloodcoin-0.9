@@ -1,5 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +11,6 @@
 #include "main.h"
 #include "ui_interface.h"
 #include "util.h"
-#include "checkpoints.h"
 #ifdef ENABLE_WALLET
 #include "wallet.h"
 #endif
@@ -208,88 +208,12 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Blood server.");
+            "\nStop Bloodcoin server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Blood server stopping";
+    return "Bloodcoin server stopping";
 }
 
-
-// RPC commands related to sync checkpoints
-// get information of sync-checkpoint (first introduced in ppcoin)
-Value getcheckpoint(const Array& params, bool fHelp)
-{
-    if (fHelp || params.size() != 0)
-        throw runtime_error(
-            "getcheckpoint\n"
-            "Show info of synchronized checkpoint.\n");
-
-    Object result;
-    CBlockIndex* pindexCheckpoint;
-
-    result.push_back(Pair("synccheckpoint", Checkpoints::hashSyncCheckpoint.ToString().c_str()));
-    if (mapBlockIndex.count(Checkpoints::hashSyncCheckpoint))
-    {
-        pindexCheckpoint = mapBlockIndex[Checkpoints::hashSyncCheckpoint];
-        result.push_back(Pair("height", pindexCheckpoint->nHeight));
-        result.push_back(Pair("timestamp", (boost::int64_t) pindexCheckpoint->GetBlockTime()));
-    }
-    result.push_back(Pair("subscribemode", Checkpoints::IsSyncCheckpointEnforced()? "enforce" : "advisory"));
-    if (mapArgs.count("-checkpointkey"))
-        result.push_back(Pair("checkpointmaster", true));
-
-    return result;
-}
-
-Value sendcheckpoint(const Array& params, bool fHelp)
-{
-    if (fHelp || params.size() != 1)
-        throw runtime_error(
-            "sendcheckpoint <blockhash>\n"
-            "Send a synchronized checkpoint.\n");
-
-    if (!mapArgs.count("-checkpointkey") || CSyncCheckpoint::strMasterPrivKey.empty())
-        throw runtime_error("Not a checkpointmaster node, first set checkpointkey in configuration and restart client. ");
-
-    std::string strHash = params[0].get_str();
-    uint256 hash(strHash);
-
-    if (!Checkpoints::SendSyncCheckpoint(hash))
-        throw runtime_error("Failed to send checkpoint, check log. ");
-
-    Object result;
-    CBlockIndex* pindexCheckpoint;
-
-    result.push_back(Pair("synccheckpoint", Checkpoints::hashSyncCheckpoint.ToString().c_str()));
-    if (mapBlockIndex.count(Checkpoints::hashSyncCheckpoint))
-    {
-        pindexCheckpoint = mapBlockIndex[Checkpoints::hashSyncCheckpoint];
-        result.push_back(Pair("height", pindexCheckpoint->nHeight));
-        result.push_back(Pair("timestamp", (boost::int64_t) pindexCheckpoint->GetBlockTime()));
-    }
-    result.push_back(Pair("subscribemode", Checkpoints::IsSyncCheckpointEnforced()? "enforce" : "advisory"));
-    if (mapArgs.count("-checkpointkey"))
-        result.push_back(Pair("checkpointmaster", true));
-
-    return result;
-}
-
-Value enforcecheckpoint(const Array& params, bool fHelp)
-{
-    if (fHelp || params.size() != 1)
-        throw runtime_error(
-            "enforcecheckpoint <enforce>\n"
-            "<enforce> is true or false to enable or disable enforcement of broadcasted checkpoints by developer.");
-
-    bool fEnforceCheckpoint = params[0].get_bool();
-    if (mapArgs.count("-checkpointkey") && !fEnforceCheckpoint)
-        throw runtime_error(
-            "checkpoint master node must enforce synchronized checkpoints.");
-    if (fEnforceCheckpoint)
-        Checkpoints::strCheckpointWarning = "";
-    mapArgs["-checkpointenforce"] = (fEnforceCheckpoint ? "1" : "0");
-    return Value::null;
-}
 
 
 //
@@ -319,6 +243,7 @@ static const CRPCCommand vRPCCommands[] =
     { "getbestblockhash",       &getbestblockhash,       true,      false,      false },
     { "getblockcount",          &getblockcount,          true,      false,      false },
     { "getblock",               &getblock,               false,     false,      false },
+    { "getblockheader",         &getblockheader,         false,     false,      false },
     { "getblockhash",           &getblockhash,           false,     false,      false },
     { "getdifficulty",          &getdifficulty,          true,      false,      false },
     { "getrawmempool",          &getrawmempool,          true,      false,      false },
@@ -344,13 +269,14 @@ static const CRPCCommand vRPCCommands[] =
     { "createmultisig",         &createmultisig,         true,      true ,      false },
     { "validateaddress",        &validateaddress,        true,      false,      false }, /* uses wallet if enabled */
     { "verifymessage",          &verifymessage,          false,     false,      false },
-	
-	/* Checkpoints */
-	{ "getcheckpoint",          &getcheckpoint,          true,      false,      false },
-	{ "sendcheckpoint",         &sendcheckpoint,         true,      false,      false },
-	{ "enforcecheckpoint",      &enforcecheckpoint,      true,      false,      false },
 
+    /* Bloodcoin features */
+    { "spork",                  &spork,                  true,      false,      false },
+    { "masternode",             &masternode,             true,      false,      true  },
+    { "masternodelist",         &masternodelist,         true,      false,      false },
 #ifdef ENABLE_WALLET
+    { "darksend",               &darksend,               false,     false,      true  },
+
     /* Wallet */
     { "addmultisigaddress",     &addmultisigaddress,     false,     false,      true },
     { "backupwallet",           &backupwallet,           true,      false,      true },
@@ -370,6 +296,7 @@ static const CRPCCommand vRPCCommands[] =
     { "getwalletinfo",          &getwalletinfo,          true,      false,      true },
     { "importprivkey",          &importprivkey,          false,     false,      true },
     { "importwallet",           &importwallet,           false,     false,      true },
+    { "keepass",                &keepass,                false,     false,      true },
     { "keypoolrefill",          &keypoolrefill,          true,      false,      true },
     { "listaccounts",           &listaccounts,           false,     false,      true },
     { "listaddressgroupings",   &listaddressgroupings,   false,     false,      true },
@@ -396,6 +323,7 @@ static const CRPCCommand vRPCCommands[] =
     { "gethashespersec",        &gethashespersec,        true,      false,      false },
     { "getwork",                &getwork,                true,      false,      true  },
     { "setgenerate",            &setgenerate,            true,      true,       false },
+
 #endif // ENABLE_WALLET
 };
 
@@ -589,7 +517,7 @@ void StartRPCThreads()
     {
         unsigned char rand_pwd[32];
         RAND_bytes(rand_pwd, 32);
-        string strWhatAmI = "To use bloodd";
+        string strWhatAmI = "To use bloodcoind";
         if (mapArgs.count("-server"))
             strWhatAmI = strprintf(_("To use the %s option"), "\"-server\"");
         else if (mapArgs.count("-daemon"))
@@ -604,7 +532,7 @@ void StartRPCThreads()
               "The username and password MUST NOT be the same.\n"
               "If the file does not exist, create it with owner-readable-only file permissions.\n"
               "It is also recommended to set alertnotify so you are notified of problems;\n"
-              "for example: alertnotify=echo %%s | mail -s \"Blood Alert\" admin@foo.com\n"),
+              "for example: alertnotify=echo %%s | mail -s \"Bloodcoin Alert\" admin@foo.com\n"),
                 strWhatAmI,
                 GetConfigFile().string(),
                 EncodeBase58(&rand_pwd[0],&rand_pwd[0]+32)),
@@ -621,7 +549,7 @@ void StartRPCThreads()
 
     if (fUseSSL)
     {
-        rpc_ssl_context->set_options(ssl::context::no_sslv2);
+        rpc_ssl_context->set_options(ssl::context::no_sslv2 | ssl::context::no_sslv3);
 
         filesystem::path pathCertFile(GetArg("-rpcsslcertificatechainfile", "server.cert"));
         if (!pathCertFile.is_complete()) pathCertFile = filesystem::path(GetDataDir()) / pathCertFile;
@@ -794,7 +722,7 @@ void JSONRequest::parse(const Value& valRequest)
         throw JSONRPCError(RPC_INVALID_REQUEST, "Method must be a string");
     strMethod = valMethod.get_str();
     if (strMethod != "getwork" && strMethod != "getblocktemplate")
-        LogPrint("rpc", "ThreadRPCServer method=%s\n", strMethod);
+        LogPrint("rpc", "ThreadRPCServer method=%s\n", SanitizeString(strMethod));
 
     // Parse params
     Value valParams = find_value(request, "params");
@@ -970,12 +898,12 @@ json_spirit::Value CRPCTable::execute(const std::string &strMethod, const json_s
 }
 
 std::string HelpExampleCli(string methodname, string args){
-    return "> blood-cli " + methodname + " " + args + "\n";
+    return "> bloodcoin-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args){
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
-        "\"method\": \"" + methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/\n";
+        "\"method\": \"" + methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:9998/\n";
 }
 
 const CRPCTable tableRPC;

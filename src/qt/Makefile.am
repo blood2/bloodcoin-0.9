@@ -5,90 +5,48 @@ AM_CPPFLAGS += -I$(top_srcdir)/src \
   -I$(top_builddir)/src/qt/forms \
   $(PROTOBUF_CFLAGS) \
   $(QR_CFLAGS)
-bin_PROGRAMS = blood-qt
-noinst_LIBRARIES = libbitcoinqt.a
+bin_PROGRAMS = bloodcoin-qt
+noinst_LIBRARIES = libbloodcoinqt.a
 SUBDIRS = . $(BUILD_TEST_QT)
 DIST_SUBDIRS = . test
 
-# blood qt core #
+# bloodcoin qt core #
 QT_TS = \
-  locale/bitcoin_ach.ts \
-  locale/bitcoin_af_ZA.ts \
-  locale/bitcoin_ar.ts \
-  locale/bitcoin_be_BY.ts \
-  locale/bitcoin_bg.ts \
-  locale/bitcoin_bs.ts \
-  locale/bitcoin_ca_ES.ts \
-  locale/bitcoin_ca.ts \
-  locale/bitcoin_ca@valencia.ts \
-  locale/bitcoin_cmn.ts \
-  locale/bitcoin_cs.ts \
-  locale/bitcoin_cy.ts \
-  locale/bitcoin_da.ts \
-  locale/bitcoin_de.ts \
-  locale/bitcoin_el_GR.ts \
-  locale/bitcoin_en.ts \
-  locale/bitcoin_eo.ts \
-  locale/bitcoin_es_CL.ts \
-  locale/bitcoin_es_DO.ts \
-  locale/bitcoin_es_MX.ts \
-  locale/bitcoin_es.ts \
-  locale/bitcoin_es_UY.ts \
-  locale/bitcoin_et.ts \
-  locale/bitcoin_eu_ES.ts \
-  locale/bitcoin_fa_IR.ts \
-  locale/bitcoin_fa.ts \
-  locale/bitcoin_fi.ts \
-  locale/bitcoin_fr_CA.ts \
-  locale/bitcoin_fr.ts \
-  locale/bitcoin_gl.ts \
-  locale/bitcoin_gu_IN.ts \
-  locale/bitcoin_he.ts \
-  locale/bitcoin_hi_IN.ts \
-  locale/bitcoin_hr.ts \
-  locale/bitcoin_hu.ts \
-  locale/bitcoin_id_ID.ts \
-  locale/bitcoin_it.ts \
-  locale/bitcoin_ja.ts \
-  locale/bitcoin_ka.ts \
-  locale/bitcoin_kk_KZ.ts \
-  locale/bitcoin_ko_KR.ts \
-  locale/bitcoin_ky.ts \
-  locale/bitcoin_la.ts \
-  locale/bitcoin_lt.ts \
-  locale/bitcoin_lv_LV.ts \
-  locale/bitcoin_mn.ts \
-  locale/bitcoin_ms_MY.ts \
-  locale/bitcoin_nb.ts \
-  locale/bitcoin_nl.ts \
-  locale/bitcoin_pam.ts \
-  locale/bitcoin_pl.ts \
-  locale/bitcoin_pt_BR.ts \
-  locale/bitcoin_pt_PT.ts \
-  locale/bitcoin_ro_RO.ts \
-  locale/bitcoin_ru.ts \
-  locale/bitcoin_sah.ts \
-  locale/bitcoin_sk.ts \
-  locale/bitcoin_sl_SI.ts \
-  locale/bitcoin_sq.ts \
-  locale/bitcoin_sr.ts \
-  locale/bitcoin_sv.ts \
-  locale/bitcoin_th_TH.ts \
-  locale/bitcoin_tr.ts \
-  locale/bitcoin_uk.ts \
-  locale/bitcoin_ur_PK.ts \
-  locale/bitcoin_uz@Cyrl.ts \
-  locale/bitcoin_vi.ts \
-  locale/bitcoin_vi_VN.ts \
-  locale/bitcoin_zh_CN.ts \
-  locale/bitcoin_zh_HK.ts \
-  locale/bitcoin_zh_TW.ts
+  locale/bloodcoin_bar.ts \
+  locale/bloodcoin_bg.ts \
+  locale/bloodcoin_ca.ts \
+  locale/bloodcoin_cmn.ts \
+  locale/bloodcoin_cs.ts \
+  locale/bloodcoin_da.ts \
+  locale/bloodcoin_de.ts \
+  locale/bloodcoin_el.ts \
+  locale/bloodcoin_en.ts \
+  locale/bloodcoin_eo.ts \
+  locale/bloodcoin_es.ts \
+  locale/bloodcoin_fi.ts \
+  locale/bloodcoin_fr.ts \
+  locale/bloodcoin_hu_HU.ts \
+  locale/bloodcoin_it.ts \
+  locale/bloodcoin_lv_LV.ts \
+  locale/bloodcoin_nb.ts \
+  locale/bloodcoin_nl.ts \
+  locale/bloodcoin_pl.ts \
+  locale/bloodcoin_pt.ts \
+  locale/bloodcoin_pt_BR.ts \
+  locale/bloodcoin_ru.ts \
+  locale/bloodcoin_sk.ts \
+  locale/bloodcoin_sv.ts \
+  locale/bloodcoin_tr.ts \
+  locale/bloodcoin_vi.ts \
+  locale/bloodcoin_zh_CN.ts \
+  locale/bloodcoin_zh_HK.ts
 
 QT_FORMS_UI = \
   forms/aboutdialog.ui \
   forms/addressbookpage.ui \
   forms/askpassphrasedialog.ui \
   forms/coincontroldialog.ui \
+  forms/darksendconfig.ui \
   forms/editaddressdialog.ui \
   forms/helpmessagedialog.ui \
   forms/intro.ui \
@@ -115,6 +73,7 @@ QT_MOC_CPP = \
   moc_coincontroldialog.cpp \
   moc_coincontroltreewidget.cpp \
   moc_csvmodelwriter.cpp \
+  moc_darksendconfig.cpp \
   moc_editaddressdialog.cpp \
   moc_guiutil.cpp \
   moc_intro.cpp \
@@ -153,13 +112,13 @@ BITCOIN_MM = \
   macnotificationhandler.mm
 
 QT_MOC = \
-  bitcoin.moc \
+  bloodcoin.moc \
   intro.moc \
   overviewpage.moc \
   rpcconsole.moc
 
-QT_QRC_CPP = qrc_bitcoin.cpp
-QT_QRC = bitcoin.qrc
+QT_QRC_CPP = qrc_bloodcoin.cpp
+QT_QRC = bloodcoin.qrc
 
 PROTOBUF_CC = paymentrequest.pb.cc
 PROTOBUF_H = paymentrequest.pb.h
@@ -177,6 +136,7 @@ BITCOIN_QT_H = \
   coincontroldialog.h \
   coincontroltreewidget.h \
   csvmodelwriter.h \
+  darksendconfig.h \
   editaddressdialog.h \
   guiconstants.h \
   guiutil.h \
@@ -258,16 +218,23 @@ RES_ICONS = \
   res/icons/tx_inout.png \
   res/icons/tx_input.png \
   res/icons/tx_output.png \
-  res/icons/tx_mined.png
+  res/icons/tx_mined.png \
+  res/icons/drkblue_editpaste.png \
+  res/icons/drkblue_address-book.png \
+  res/icons/drkblue_editcopy.png \
+  res/icons/drkblue_remove.png \
+  res/icons/browse.png
+
 
 BITCOIN_QT_CPP = \
-  bitcoin.cpp \
+  bloodcoin.cpp \
   bitcoinaddressvalidator.cpp \
   bitcoinamountfield.cpp \
   bitcoingui.cpp \
   bitcoinunits.cpp \
   clientmodel.cpp \
   csvmodelwriter.cpp \
+  darksendconfig.cpp \
   guiutil.cpp \
   intro.cpp \
   monitoreddatamapper.cpp \
@@ -289,6 +256,7 @@ BITCOIN_QT_CPP += \
   askpassphrasedialog.cpp \
   coincontroldialog.cpp \
   coincontroltreewidget.cpp \
+  darksendconfig.cpp \
   editaddressdialog.cpp \
   openuridialog.cpp \
   overviewpage.cpp \
@@ -315,44 +283,56 @@ endif
 RES_IMAGES = \
   res/images/about.png \
   res/images/splash.png \
-  res/images/splash_testnet.png
+  res/images/splash_testnet.png \
+  res/images/bloodcoin_logo_horizontal.png \
+  res/images/drkblue_downArrow.png \
+  res/images/drkblue_downArrow_small.png \
+  res/images/drkblue_upArrow_small.png \
+  res/images/drkblue_leftArrow_small.png \
+  res/images/drkblue_rightArrow_small.png \
+  res/images/drkblue_qtreeview_selected.png \
+  res/images/drkblue_walletFrame_bg.png \
+  res/images/drkblue_walletFrame.png
 
+RES_CSS = \
+  res/css/drkblue.css
+  
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-BITCOIN_RC = res/bitcoin-qt-res.rc
+bloodcoin_RC = res/bloodcoin-qt-res.rc
 
-libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
+libbloodcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
-libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
-  $(QT_QRC) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
+libbloodcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+  $(QT_QRC) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(RES_CSS)
 
-nodist_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+nodist_libbloodcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP)
 
-BUILT_SOURCES = $(nodist_libbitcoinqt_a_SOURCES)
+BUILT_SOURCES = $(nodist_libbloodcoinqt_a_SOURCES)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# blood-qt binary #
-blood_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
+# bloodcoin-qt binary #
+bloodcoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
-blood_qt_SOURCES = bitcoin.cpp
+bloodcoin_qt_SOURCES = bloodcoin.cpp
 if TARGET_DARWIN
-  blood_qt_SOURCES += $(BITCOIN_MM)
+  bloodcoin_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  blood_qt_SOURCES += $(BITCOIN_RC)
+  bloodcoin_qt_SOURCES += $(bloodcoin_RC)
 endif
-blood_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
+bloodcoin_qt_LDADD = libbloodcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-blood_qt_LDADD += $(LIBBITCOIN_WALLET)
+bloodcoin_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
-blood_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
+bloodcoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS)
-blood_qt_LDFLAGS = $(QT_LDFLAGS)
+bloodcoin_qt_LDFLAGS = $(QT_LDFLAGS)
 
 # forms/foo.h -> forms/ui_foo.h
 QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
@@ -363,15 +343,15 @@ QT_QM=$(QT_TS:.ts=.qm)
 .PHONY: FORCE
 .SECONDARY: $(QT_QM)
 
-bitcoinstrings.cpp: FORCE
-	$(MAKE) -C $(top_srcdir)/src qt/bitcoinstrings.cpp
+bloodcoinstrings.cpp: FORCE
+	$(MAKE) -C $(top_srcdir)/src qt/bloodcoinstrings.cpp
 
-translate: bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: bloodcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/bitcoin_en.ts
+	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/bloodcoin_en.ts
 
-$(QT_QRC_CPP): $(QT_QRC) $(QT_QM) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
-	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin -o $(abs_builddir)/$@ $< || \
+$(QT_QRC_CPP): $(QT_QRC) $(QT_QM) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(RES_CSS) $(PROTOBUF_H)
+	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name bloodcoin -o $(abs_builddir)/$@ $< || \
 	  echo error: could not build $@
 	$(SED) -e '/^\*\*.*Created:/d' $@ > $@.n && mv $@{.n,}
 	$(SED) -e '/^\*\*.*by:/d' $@  > $@.n && mv $@{.n,}

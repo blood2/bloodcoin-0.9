@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -381,11 +382,13 @@ ReadKeyValue(CWallet* pwallet, CDataStream& ssKey, CDataStream& ssValue,
             pwallet->AddToWallet(wtx, true);
             //// debug print
             //LogPrintf("LoadWallet  %s\n", wtx.GetHash().ToString());
-            //LogPrintf(" %12d  %s  %s  %s\n",
-            //    wtx.vout[0].nValue,
-            //    DateTimeStrFormat("%Y-%m-%d %H:%M:%S", wtx.GetBlockTime()),
-            //    wtx.hashBlock.ToString(),
-            //    wtx.mapValue["message"]);
+            if(fDebug) LogPrintf("LoadWallet %12d %2s %20s %s %s\n",
+                    wtx.vout[0].nValue,
+                    wtx.mapValue["DS"] == "1" ? "DS" : "",
+                    DateTimeStrFormat("%Y-%m-%d %H:%M:%S", wtx.GetTxTime()),
+                    wtx.GetHash().ToString(),
+                    wtx.hashBlock.ToString()
+            );
         }
         else if (strType == "acentry")
         {
@@ -763,7 +766,7 @@ DBErrors CWalletDB::ZapWalletTx(CWallet* pwallet)
 void ThreadFlushWalletDB(const string& strFile)
 {
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("bitcoin-wallet");
+    RenameThread("bloodcoin-wallet");
 
     static bool fOneThread;
     if (fOneThread)

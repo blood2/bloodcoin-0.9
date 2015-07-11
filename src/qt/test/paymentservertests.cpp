@@ -26,7 +26,6 @@ X509 *parse_b64der_cert(const char* cert_data)
 // Test payment request handling
 //
 
-/*
 static SendCoinsRecipient handleRequest(PaymentServer* server, std::vector<unsigned char>& data)
 {
     RecipientCatcher sigCatcher;
@@ -54,11 +53,9 @@ static SendCoinsRecipient handleRequest(PaymentServer* server, std::vector<unsig
     // Return results from sigCatcher
     return sigCatcher.recipient;
 }
-*/
 
 void PaymentServerTests::paymentServerTests()
 {
-    /*
     OptionsModel optionsModel;
     PaymentServer* server = new PaymentServer(NULL, false);
     X509_STORE* caStore = X509_STORE_new();
@@ -107,7 +104,6 @@ void PaymentServerTests::paymentServerTests()
     QCOMPARE(merchant, QString(""));
 
     delete server;
-    */
 }
 
 void RecipientCatcher::getRecipient(SendCoinsRecipient r)

@@ -122,7 +122,6 @@ public:
 // Goal: check that parsed keys match test payload
 BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
 {
-    /*
     Array tests = read_json(std::string(json_tests::base58_keys_valid, json_tests::base58_keys_valid + sizeof(json_tests::base58_keys_valid)));
     std::vector<unsigned char> result;
     CBitcoinSecret secret;
@@ -177,13 +176,11 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
         }
     }
     SelectParams(CChainParams::MAIN);
-    */
 }
 
 // Goal: check that generated keys match test vectors
 BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
 {
-    /*
     Array tests = read_json(std::string(json_tests::base58_keys_valid, json_tests::base58_keys_valid + sizeof(json_tests::base58_keys_valid)));
     std::vector<unsigned char> result;
     BOOST_FOREACH(Value& tv, tests)
@@ -247,7 +244,6 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
     BOOST_CHECK(!dummyAddr.Set(nodest));
 
     SelectParams(CChainParams::MAIN);
-    */
 }
 
 // Goal: check that base58 parsing code is robust against a variety of corrupted data

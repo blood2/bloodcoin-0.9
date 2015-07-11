@@ -1,26 +1,27 @@
-Bloodcoin Core integration/staging tree
-===================================
+Bloodcoin Core staging tree 0.11
+===============================
 
 http://www.bloodcoin.cc
 
-Copyright (c) 2009-2015 Satoshi Nakamoto
 Copyright (c) 2009-2015 Bitcoin Core Developers
-Copyright (c) 2013-2015 Sifcoin Core Developers
-Copyright (c) 2013-2015 Quark Core Developers
-Copyright (c) 2015 Sharkcoin Core Developers
+
+Copyright (c) 2014-2015 Dash Core Developers
+
 Copyright (c) 2015 Bloodcoin Core Developers
 
-What is Bloodcoin?
---------------
 
-Bloodcoin is an experimental new digital currency that enables instant payments to
-anyone, anywhere in the world. Bloodcoin uses peer-to-peer technology to operate
-with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Bloodcoin Core is the name of open source
-software which enables the use of this currency.
+What is Bloodcoin?
+----------------
+
+Bloodcoin is an experimental new digital currency that enables anonymous, instant
+payments to anyone, anywhere in the world. Bloodcoin uses peer-to-peer technology
+to operate with no central authority: managing transactions and issuing money
+are carried out collectively by the network. Bloodcoin Core is the name of open
+source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Bloodcoin Core software, see http://www.bloodcoin.cc/
+the Bloodcoin Core software, see http://www.bloodcoin.cc
+
 
 License
 -------
@@ -28,46 +29,19 @@ License
 Bloodcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see http://opensource.org/licenses/MIT.
 
-Development process
--------------------
 
-Developers work in their own trees, then submit pull requests when they think
-their feature or bug fix is ready.
+Building process
+-----------------
 
-If it is a simple/trivial/non-controversial change, then one of the Bloodcoin
-development team members simply pulls it.
+**compiling Bloodcoin from git**
 
-If it is a *more complicated or potentially controversial* change, then the patch
-submitter will be asked to start a discussion (if they haven't already) on the
-[mailing list](http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development).
+Use the autogen script to prepare the build environment.
 
-The patch will be accepted if there is broad consensus that it is a good thing.
-Developers should expect to rework and resubmit patches if the code doesn't
-match the project's coding conventions (see [doc/coding.md](doc/coding.md)) or are
-controversial.
+    ./autogen.sh
+    ./configure
+    make
 
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/bitcoin/bitcoin/tags) are created
-regularly to indicate new official, stable release versions of Bloodcoin.
 
-Testing
--------
-
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test. Please be patient and help out, and
-remember this is a security-critical project where any mistake might cost people
-lots of money.
-
-### Automated Testing
-
-Developers are strongly encouraged to write unit tests for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run (assuming they weren't disabled in configure) with: `make check`
-
-### Manual Quality Assurance (QA) Testing
-
-Large changes should have a test plan, and should be tested by somebody other
-than the developer who wrote the code.
-See https://github.com/bitcoin/QA/ for how to create a test plan.
 
 Development tips and tricks
 ---------------------------
@@ -90,12 +64,12 @@ to see it.
 
 **testnet and regtest modes**
 
-Run with the -testnet option to run with "play bitcoins" on the test network, if you
+Run with the -testnet option to run with "play bods" on the test network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 If you are testing something that can run on one machine, run with the -regtest option.
 In regression test mode blocks can be created on-demand; see qa/rpc-tests/ for tests
-that run in -regest mode.
+that run in -regtest mode.
 
 **DEBUG_LOCKORDER**
 

@@ -1,11 +1,10 @@
 *.tar.gz
 
 *.exe
-src/quark
-src/quarkd
-src/quark-cli
-src/test/test_quark
-src/qt/test/test_quark-qt
+src/bloodcoind
+src/bloodcoin-cli
+src/test/test_blood
+src/qt/test/test_blood-qt
 
 Makefile.in
 aclocal.m4
@@ -13,8 +12,8 @@ autom4te.cache/
 config.log
 config.status
 configure
-src/bitcoin-config.h
-src/bitcoin-config.h.in
+src/dash-config.h
+src/dash-config.h.in
 src/build-aux/
 src/stamp-h1
 share/setup.nsi
@@ -36,7 +35,7 @@ src/qt/test/moc*.cpp
 *.o
 *.o-*
 *.patch
-.quark
+.dash
 *.a
 *.pb.cc
 *.pb.h
@@ -51,18 +50,23 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-quark-qt
-Quark-Qt.app
+bloodcoin-qt
+Bloodcoin-Qt.app
 
 # Unit-tests
 Makefile.test
-quark-qt_test
+bloodcoin-qt_test
 
 # Resources cpp
 qrc_*.cpp
 
 # Qt creator
 *.pro.user
+darkcoi*.config
+*.creator
+*.creator.user
+darkcoi*.files
+darkcoi*.includes
 
 # Mac specific
 .DS_Store
@@ -71,7 +75,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_bitcoin.coverage/
+test_bloodcoin.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -83,3 +87,6 @@ qa/pull-tester/run-bitcoind-for-test.sh
 qa/pull-tester/build-tests.sh
 
 !src/leveldb*/Makefile
+
+.cproject
+.project

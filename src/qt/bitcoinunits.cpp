@@ -1,4 +1,5 @@
-// Copyright (c) 2011-2013 The Bitcoin developers
+// Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,9 +16,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(BTC);
-    unitlist.append(cBTC);
-    unitlist.append(mBTC);
+    unitlist.append(BOD);
+    unitlist.append(mBOD);
+    unitlist.append(uBOD);
     return unitlist;
 }
 
@@ -25,9 +26,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case BTC:
-    case cBTC:
-    case mBTC:
+    case BOD:
+    case mBOD:
+    case uBOD:
         return true;
     default:
         return false;
@@ -36,23 +37,49 @@ bool BitcoinUnits::valid(int unit)
 
 QString BitcoinUnits::name(int unit)
 {
-    switch(unit)
+    if(!TestNet() && !RegTest())
     {
-    case BTC: return QString("BOD");
-    case cBTC: return QString("cBOD");
-    case mBTC: return QString::fromUtf8("mBOD");
-    default: return QString("???");
+        switch(unit)
+        {
+            case BOD: return QString("BOD");
+            case mBOD: return QString("mBOD");
+            case uBOD: return QString::fromUtf8("μBOD");
+            default: return QString("???");
+        }
+    }
+    else
+    {
+        switch(unit)
+        {
+            case BOD: return QString("tBOD");
+            case mBOD: return QString("mtBOD");
+            case uBOD: return QString::fromUtf8("μtBOD");
+            default: return QString("???");
+        }
     }
 }
 
 QString BitcoinUnits::description(int unit)
 {
-    switch(unit)
+    if(!TestNet() && !RegTest())
     {
-    case BTC: return QString("Bloods");
-    case cBTC: return QString("Centum-Bloods (1 / 100)");
-    case mBTC: return QString("Milli-Bloods (1 / 1,000)");
-    default: return QString("???");
+        switch(unit)
+        {
+            case BOD: return QString("Bloodcoin");
+            case mBOD: return QString("Milli-Bloodcoin (1 / 1,000)");
+            case uBOD: return QString("Micro-Bloodcoin (1 / 1,000,000)");
+            default: return QString("???");
+        }
+    }
+    else
+    {
+        switch(unit)
+        {
+            case BOD: return QString("TestBods");
+            case mBOD: return QString("Milli-TestBods (1 / 1,000)");
+            case uBOD: return QString("Micro-TestBods (1 / 1,000,000)");
+            default: return QString("???");
+        }
     }
 }
 
@@ -60,9 +87,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case BTC:  return 100000;
-    case cBTC: return 1000;
-    case mBTC: return 100;
+    case BOD:  return 100000;
+    case mBOD: return 1000;
+    case uBOD: return 100;
     default:   return 100000;
     }
 }
@@ -71,9 +98,9 @@ qint64 BitcoinUnits::maxAmount(int unit)
 {
     switch(unit)
     {
-    case BTC:  return Q_INT64_C(210000000);
-    case cBTC: return Q_INT64_C(21000000000);
-    case mBTC: return Q_INT64_C(210000000000);
+    case BOD:  return Q_INT64_C(210000000);
+    case mBOD: return Q_INT64_C(210000000000);
+    case uBOD: return Q_INT64_C(210000000000000);
     default:   return 0;
     }
 }
@@ -82,9 +109,9 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case BTC: return 17; // trillions (# digits, without commas)
-    case cBTC: return 19; // *100
-    case mBTC: return 20; // *1,000
+    case BOD: return 17; // 21,000,000 (# digits, without commas)
+    case mBOD: return 19; // 21,000,000,000
+    case uBOD: return 20; // 21,000,000,000,000
     default: return 0;
     }
 }
@@ -93,9 +120,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case BTC: return 5;
-    case cBTC: return 3;
-    case mBTC: return 2;
+    case BOD: return 5;
+    case mBOD: return 3;
+    case uBOD: return 6;
     default: return 0;
     }
 }
@@ -124,6 +151,10 @@ QString BitcoinUnits::format(int unit, qint64 n, bool fPlus)
         quotient_str.insert(0, '-');
     else if (fPlus && n > 0)
         quotient_str.insert(0, '+');
+
+    if (num_decimals <= 0)
+        return quotient_str;
+
     return quotient_str + QString(".") + remainder_str;
 }
 

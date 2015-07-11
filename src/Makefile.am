@@ -3,28 +3,29 @@ include Makefile.include
 AM_CPPFLAGS += -I$(builddir)
 
 noinst_LIBRARIES = \
-  libbitcoin_server.a \
-  libbitcoin_common.a \
-  libbitcoin_cli.a
+  libdash_server.a \
+  libdash_common.a \
+  libdash_cli.a
 if ENABLE_WALLET
-noinst_LIBRARIES += libbitcoin_wallet.a
+noinst_LIBRARIES += libdash_wallet.a
 endif
 
 bin_PROGRAMS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += bloodd
+  bin_PROGRAMS += bloodcoind
 endif
 
 if BUILD_BITCOIN_CLI
-  bin_PROGRAMS += blood-cli
+  bin_PROGRAMS += bloodcoin-cli
 endif
 
 SUBDIRS = . $(BUILD_QT) $(BUILD_TEST)
 DIST_SUBDIRS = . qt test
 .PHONY: FORCE
-# bitcoin core #
+# bloodcoin core #
 BITCOIN_CORE_H = \
+  activemasternode.h \
   addrman.h \
   alert.h \
   allocators.h \
@@ -39,22 +40,22 @@ BITCOIN_CORE_H = \
   compat.h \
   core.h \
   crypter.h \
+  darksend.h \
+  darksend-relay.h \
   db.h \
   hash.h \
-  hashblock.h \
-  sph_types.h \
-  sph_blake.h \
-  sph_bmw.h \
-  sph_groestl.h \
-  sph_jh.h \
-  sph_keccak.h \
-  sph_skein.h \
   init.h \
+  instantx.h \
   key.h \
+  keepass.h \
   keystore.h \
   leveldbwrapper.h \
   limitedmap.h \
   main.h \
+  masternode.h \
+  masternode-pos.h \
+  masternodeman.h \
+  masternodeconfig.h \
   miner.h \
   mruset.h \
   netbase.h \
@@ -66,6 +67,19 @@ BITCOIN_CORE_H = \
   rpcserver.h \
   script.h \
   serialize.h \
+  sph_blake.h \
+  sph_bmw.h \
+  sph_cubehash.h \
+  sph_echo.h \
+  sph_groestl.h \
+  sph_jh.h \
+  sph_keccak.h \
+  sph_luffa.h \
+  sph_shavite.h \
+  sph_simd.h \
+  sph_skein.h \
+  sph_types.h \
+  spork.h \
   sync.h \
   threadsafety.h \
   tinyformat.h \
@@ -95,7 +109,8 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 version.o: obj/build.h
 
-libbitcoin_server_a_SOURCES = \
+libdash_server_a_SOURCES = \
+  activemasternode.cpp \
   addrman.cpp \
   alert.cpp \
   bloom.cpp \
@@ -109,6 +124,7 @@ libbitcoin_server_a_SOURCES = \
   net.cpp \
   noui.cpp \
   rpcblockchain.cpp \
+  rpcdarksend.cpp \
   rpcmining.cpp \
   rpcmisc.cpp \
   rpcnet.cpp \
@@ -119,27 +135,31 @@ libbitcoin_server_a_SOURCES = \
   $(JSON_H) \
   $(BITCOIN_CORE_H)
 
-libbitcoin_wallet_a_SOURCES = \
+libdash_wallet_a_SOURCES = \
+  activemasternode.cpp \
   db.cpp \
   crypter.cpp \
   rpcdump.cpp \
   rpcwallet.cpp \
   wallet.cpp \
   walletdb.cpp \
+  keepass.cpp \
   $(BITCOIN_CORE_H)
 
-libbitcoin_common_a_SOURCES = \
+libdash_common_a_SOURCES = \
+  activemasternode.cpp \
   base58.cpp \
   allocators.cpp \
   chainparams.cpp \
   core.cpp \
+  darksend.cpp \
+  darksend-relay.cpp \
+  masternode.cpp \
+  masternode-pos.cpp \
+  masternodeman.cpp \
+  masternodeconfig.cpp \
+  instantx.cpp \
   hash.cpp \
-  blake.c \
-  bmw.c \
-  groestl.c \
-  jh.c \
-  keccak.c \
-  skein.c \
   key.cpp \
   netbase.cpp \
   protocol.cpp \
@@ -148,50 +168,63 @@ libbitcoin_common_a_SOURCES = \
   sync.cpp \
   util.cpp \
   version.cpp \
+  aes_helper.c \
+  luffa.c \
+  groestl.c \
+  jh.c \
+  echo.c \
+  shavite.c \
+  keccak.c \
+  skein.c \
+  spork.cpp \
+  bmw.c \
+  simd.c \
+  cubehash.c \
+  blake.c \
   $(BITCOIN_CORE_H)
 
 if GLIBC_BACK_COMPAT
-libbitcoin_common_a_SOURCES += compat/glibc_compat.cpp
-libbitcoin_common_a_SOURCES += compat/glibcxx_compat.cpp
+libdash_common_a_SOURCES += compat/glibc_compat.cpp
+libdash_common_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-libbitcoin_cli_a_SOURCES = \
+libdash_cli_a_SOURCES = \
   rpcclient.cpp \
   $(BITCOIN_CORE_H)
 
-nodist_libbitcoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
+nodist_libdash_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
-# bloodd binary #
-bloodd_LDADD = \
-  libbitcoin_server.a \
-  libbitcoin_cli.a \
-  libbitcoin_common.a \
+# bloodcoind binary #
+bloodcoind_LDADD = \
+  libdash_server.a \
+  libdash_cli.a \
+  libdash_common.a \
   $(LIBLEVELDB) \
   $(LIBMEMENV)
 if ENABLE_WALLET
-bloodd_LDADD += libbitcoin_wallet.a
+bloodcoind_LDADD += libdash_wallet.a
 endif
-bloodd_SOURCES = bitcoind.cpp
+bloodcoind_SOURCES = bloodcoind.cpp
 #
 
 if TARGET_WINDOWS
-bloodd_SOURCES += bitcoind-res.rc
+bloodcoind_SOURCES += bloodcoind-res.rc
 endif
 
 AM_CPPFLAGS += $(BDB_CPPFLAGS)
-bloodd_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
+bloodcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
 
-# blood-cli binary #
-blood_cli_LDADD = \
-  libbitcoin_cli.a \
-  libbitcoin_common.a \
+# bloodcoin-cli binary #
+bloodcoin_cli_LDADD = \
+  libdash_cli.a \
+  libdash_common.a \
   $(BOOST_LIBS)
-blood_cli_SOURCES = bitcoin-cli.cpp
+bloodcoin_cli_SOURCES = bloodcoin-cli.cpp
 #
 
 if TARGET_WINDOWS
-blood_cli_SOURCES += bitcoin-cli-res.rc
+bloodcoin_cli_SOURCES += bloodcoin-cli-res.rc
 endif
 
 # NOTE: This dependency is not strictly necessary, but without it make may try to build both in parallel, which breaks the LevelDB build system in a race
@@ -202,7 +235,7 @@ leveldb/%.a:
 	  CC="$(CC)" PLATFORM=$(TARGET_OS) AR="$(AR)" $(LEVELDB_TARGET_FLAGS) \
 	  OPT="$(CXXFLAGS) $(CPPFLAGS)"
 
-qt/bitcoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_cli_a_SOURCES)
+qt/dashstrings.cpp: $(libdash_server_a_SOURCES) $(libdash_common_a_SOURCES) $(libdash_cli_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	@cd $(top_srcdir); XGETTEXT=$(XGETTEXT) share/qt/extract_strings_qt.py
 

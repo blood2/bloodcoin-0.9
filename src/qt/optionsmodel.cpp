@@ -1,9 +1,10 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "bitcoin-config.h"
+#include "dash-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -13,7 +14,6 @@
 
 #include "init.h"
 #include "main.h"
-#include "miner.h"
 #include "net.h"
 #include "txdb.h" // for -dbcache defaults
 #ifdef ENABLE_WALLET
@@ -34,19 +34,6 @@ OptionsModel::OptionsModel(QObject *parent) :
 void OptionsModel::addOverriddenOption(const std::string &option)
 {
     strOverriddenByCommandLine += QString::fromStdString(option) + "=" + QString::fromStdString(mapArgs[option]) + " ";
-}
-
-void static ApplyMiningSettings()
-{
-    QSettings settings;
-    if (settings.contains("bAutoMiningEnabled"))
-        SetBoolArg("-gen", settings.value("bAutoMiningEnabled").toBool());
-    if (settings.contains("nMiningIntensity"))
-        SetArg("-genproclimit", settings.value("nMiningIntensity").toString().toStdString());
-    // stop
-    GenerateBitcoins(false, NULL, -1);
-    // start
-    GenerateBitcoins(GetBoolArg("-gen", false), pwalletMain, GetArg("-genproclimit", -1));
 }
 
 // Writes all missing QSettings with their default values
@@ -70,7 +57,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::BTC);
+        settings.setValue("nDisplayUnit", BitcoinUnits::BOD);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("bDisplayAddresses"))
@@ -84,6 +71,15 @@ void OptionsModel::Init()
     if (!settings.contains("fCoinControlFeatures"))
         settings.setValue("fCoinControlFeatures", false);
     fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();
+
+    if (!settings.contains("nDarksendRounds"))
+        settings.setValue("nDarksendRounds", 2);
+
+    if (!settings.contains("nAnonymizeDarkcoinAmount"))
+        settings.setValue("nAnonymizeDarkcoinAmount", 1000);
+
+    nDarksendRounds = settings.value("nDarksendRounds").toLongLong();
+    nAnonymizeDarkcoinAmount = settings.value("nAnonymizeDarkcoinAmount").toLongLong();
 
     // These are shared with the core or have a command-line parameter
     // and we want command-line parameters to overwrite the GUI settings.
@@ -141,22 +137,18 @@ void OptionsModel::Init()
     if (settings.value("fUseProxy").toBool() && !SoftSetArg("-socks", settings.value("nSocksVersion").toString().toStdString()))
         addOverriddenOption("-socks");
 
-    // Mining disabled by default in QT if not overriden 
-    // by command-line options
-    if (settings.contains("bAutoMiningEnabled"))
-        SoftSetBoolArg("-gen", settings.value("bAutoMiningEnabled").toBool());
-    else
-        SoftSetBoolArg("-gen", false);
-    if (settings.contains("nMiningIntensity"))
-        SoftSetArg("-genproclimit", settings.value("nMiningIntensity").toString().toStdString());
-    else
-        SoftSetArg("-genproclimit", "0");
-        
     // Display
+    if (!settings.contains("theme"))
+        settings.setValue("theme", "");
     if (!settings.contains("language"))
         settings.setValue("language", "");
     if (!SoftSetArg("-lang", settings.value("language").toString().toStdString()))
         addOverriddenOption("-lang");
+
+    if (settings.contains("nDarksendRounds"))
+        SoftSetArg("-darksendrounds", settings.value("nDarksendRounds").toString().toStdString());
+    if (settings.contains("nAnonymizeDarkcoinAmount"))
+        SoftSetArg("-anonymizebodamount", settings.value("nAnonymizeDarkcoinAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -234,6 +226,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return bDisplayAddresses;
         case ThirdPartyTxUrls:
             return strThirdPartyTxUrls;
+        case Theme:
+            return settings.value("theme");            
         case Language:
             return settings.value("language");
         case CoinControlFeatures:
@@ -242,13 +236,10 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return settings.value("nDatabaseCache");
         case ThreadsScriptVerif:
             return settings.value("nThreadsScriptVerif");
-        case MiningEnabled:
-            return settings.value("bAutoMiningEnabled", GetBoolArg("-gen", false));
-        case MiningIntensity:
-        {
-            int lim = GetArg("-genproclimit", 0);
-            return settings.value("nMiningIntensity", lim);
-        }
+        case DarksendRounds:
+            return QVariant(nDarksendRounds);
+        case AnonymizeDarkcoinAmount:
+            return QVariant(nAnonymizeDarkcoinAmount);
         default:
             return QVariant();
         }
@@ -349,11 +340,27 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
                 setRestartRequired(true);
             }
             break;
+        case Theme:
+            if (settings.value("theme") != value) {
+                settings.setValue("theme", value);
+                setRestartRequired(true);
+            }
+            break;            
         case Language:
             if (settings.value("language") != value) {
                 settings.setValue("language", value);
                 setRestartRequired(true);
             }
+            break;
+        case DarksendRounds:
+            nDarksendRounds = value.toInt();
+            settings.setValue("nDarksendRounds", nDarksendRounds);
+            emit darksendRoundsChanged(nDarksendRounds);
+            break;
+        case AnonymizeDarkcoinAmount:
+            nAnonymizeDarkcoinAmount = value.toInt();
+            settings.setValue("nAnonymizeDarkcoinAmount", nAnonymizeDarkcoinAmount);
+            emit anonymizeDarkcoinAmountChanged(nAnonymizeDarkcoinAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();
@@ -371,16 +378,6 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
                 settings.setValue("nThreadsScriptVerif", value);
                 setRestartRequired(true);
             }
-            break;
-        case MiningEnabled:
-            bAutoMiningEnabled = value.toBool();
-            settings.setValue("bAutoMiningEnabled", bAutoMiningEnabled);
-            ApplyMiningSettings();
-            break;
-        case MiningIntensity:
-            nMiningIntensity = value.toInt();
-            settings.setValue("nMiningIntensity", nMiningIntensity);
-            ApplyMiningSettings();
             break;
         default:
             break;

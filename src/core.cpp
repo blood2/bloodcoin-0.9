@@ -1,16 +1,15 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "core.h"
-#include "hashblock.h"
-
 #include "util.h"
 
 std::string COutPoint::ToString() const
 {
-    return strprintf("COutPoint(%s, %u)", hash.ToString().substr(0,10), n);
+    return strprintf("COutPoint(%s, %u)", hash.ToString().substr(0,64), n);
 }
 
 void COutPoint::print() const
@@ -55,6 +54,8 @@ void CTxIn::print() const
 CTxOut::CTxOut(int64_t nValueIn, CScript scriptPubKeyIn)
 {
     nValue = nValueIn;
+    nRounds = -10; // an initial value, should be no way to get this by calculations
+
     scriptPubKey = scriptPubKeyIn;
 }
 

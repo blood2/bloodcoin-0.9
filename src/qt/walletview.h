@@ -17,6 +17,7 @@ class TransactionView;
 class WalletModel;
 
 QT_BEGIN_NAMESPACE
+class QLabel;
 class QModelIndex;
 class QProgressDialog;
 QT_END_NAMESPACE
@@ -62,6 +63,7 @@ private:
     TransactionView *transactionView;
 
     QProgressDialog *progressDialog;
+    QLabel *transactionSum;
 
 public slots:
     /** Switch to overview (home) page */
@@ -91,6 +93,8 @@ public slots:
     void changePassphrase();
     /** Ask for passphrase to unlock wallet temporarily */
     void unlockWallet();
+    /** Lock wallet */
+    void lockWallet();
 
     /** Show used sending addresses */
     void usedSendingAddresses();
@@ -102,6 +106,9 @@ public slots:
 
     /** Show progress dialog e.g. for rescan */
     void showProgress(const QString &title, int nProgress);
+    
+    /** Update selected DASH amount from transactionview */
+    void trxAmount(QString amount);
 
 signals:
     /** Signal that we want to show the main window */

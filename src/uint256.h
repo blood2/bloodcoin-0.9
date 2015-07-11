@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2013 The Bitcoin developers
+// Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2014-2015 The Dash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -367,6 +368,11 @@ public:
         return sizeof(pn);
     }
 
+    uint64_t Get64(int n=0) const
+    {
+        return pn[2*n] | (uint64_t)pn[2*n+1] << 32;
+    }
+
     uint64_t GetLow64() const
     {
         assert(WIDTH >= 2);
@@ -635,6 +641,7 @@ inline const uint256 operator+(const uint256& a, const uint256& b)      { return
 inline const uint256 operator-(const uint256& a, const uint256& b)      { return (base_uint256)a -  (base_uint256)b; }
 
 
+
 //////////////////////////////////////////////////////////////////////////////
 //
 // uint512
@@ -694,7 +701,7 @@ public:
         else
             *this = 0;
     }
-	
+
     uint256 trim256() const
     {
         uint256 ret;
@@ -702,11 +709,11 @@ public:
             ret.pn[i] = pn[i];
         }
         return ret;
-    }	
+    }
 };
 
-inline bool operator==(const uint512& a, uint64_t b)                          { return (base_uint512)a == b; }
-inline bool operator!=(const uint512& a, uint64_t b)                          { return (base_uint512)a != b; }
+inline bool operator==(const uint512& a, uint64_t b)                           { return (base_uint512)a == b; }
+inline bool operator!=(const uint512& a, uint64_t b)                           { return (base_uint512)a != b; }
 inline const uint512 operator<<(const base_uint512& a, unsigned int shift)   { return uint512(a) <<= shift; }
 inline const uint512 operator>>(const base_uint512& a, unsigned int shift)   { return uint512(a) >>= shift; }
 inline const uint512 operator<<(const uint512& a, unsigned int shift)        { return uint512(a) <<= shift; }
@@ -753,6 +760,5 @@ inline const uint512 operator&(const uint512& a, const uint512& b)      { return
 inline const uint512 operator|(const uint512& a, const uint512& b)      { return (base_uint512)a |  (base_uint512)b; }
 inline const uint512 operator+(const uint512& a, const uint512& b)      { return (base_uint512)a +  (base_uint512)b; }
 inline const uint512 operator-(const uint512& a, const uint512& b)      { return (base_uint512)a -  (base_uint512)b; }
-
 
 #endif

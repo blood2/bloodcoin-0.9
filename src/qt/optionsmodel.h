@@ -37,13 +37,14 @@ public:
         DisplayUnit,            // BitcoinUnits::Unit
         DisplayAddresses,       // bool
         ThirdPartyTxUrls,       // QString
+        Theme,                  // QString        
         Language,               // QString
         CoinControlFeatures,    // bool
         ThreadsScriptVerif,     // int
         DatabaseCache,          // int
         SpendZeroConfChange,    // bool
-        MiningEnabled,          // bool
-        MiningIntensity,        // int
+        DarksendRounds,    // int
+        AnonymizeDarkcoinAmount, //int
         OptionIDRowCount,
     };
 
@@ -77,8 +78,6 @@ private:
     bool bDisplayAddresses;
     QString strThirdPartyTxUrls;
     bool fCoinControlFeatures;
-    bool bAutoMiningEnabled;
-    int nMiningIntensity;
     /* settings that were overriden by command-line */
     QString strOverriddenByCommandLine;
 
@@ -88,6 +87,8 @@ private:
 signals:
     void displayUnitChanged(int unit);
     void transactionFeeChanged(qint64);
+    void darksendRoundsChanged(int);
+    void anonymizeDarkcoinAmountChanged(int);
     void coinControlFeaturesChanged(bool);
 };
 
