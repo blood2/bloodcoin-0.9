@@ -42,9 +42,9 @@ static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "Dash"
-#define QAPP_ORG_DOMAIN "dashpay.io"
-#define QAPP_APP_NAME_DEFAULT "Dash-Qt"
-#define QAPP_APP_NAME_TESTNET "Dash-Qt-testnet"
+#define QAPP_ORG_NAME "Bloodcoin"
+#define QAPP_ORG_DOMAIN "bloodcoin.cc"
+#define QAPP_APP_NAME_DEFAULT "Bloodcoin-Qt"
+#define QAPP_APP_NAME_TESTNET "Bloodcoin-Qt-testnet"
 
 #endif // GUICONSTANTS_H

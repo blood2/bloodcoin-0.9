@@ -366,7 +366,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn)
         nLastBlockTx = nBlockTx;
         nLastBlockSize = nBlockSize;
         LogPrintf("CreateNewBlock(): total size %u\n", nBlockSize);
-        int64_t blockValue = GetBlockValue(pindexPrev->nBits, pindexPrev->nHeight, nFees);
+        int64_t blockValue = GetBlockValue(pindexPrev->nHeight+1, nFees);
         int64_t masternodePayment = GetMasternodePayment(pindexPrev->nHeight+1, blockValue);
 
         //create masternode payment
@@ -519,9 +519,9 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
 void static BitcoinMiner(CWallet *pwallet)
 {
-    LogPrintf("DarkcoinMiner started\n");
+    LogPrintf("BloodcoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("dash-miner");
+    RenameThread("bloodcoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);

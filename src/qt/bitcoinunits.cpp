@@ -16,10 +16,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(DASH);
-    unitlist.append(mDASH);
-    unitlist.append(uDASH);
-    unitlist.append(duffs);
+    unitlist.append(BOD);
+    unitlist.append(mBOD);
+    unitlist.append(uBOD);
     return unitlist;
 }
 
@@ -27,10 +26,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case DASH:
-    case mDASH:
-    case uDASH:
-    case duffs:
+    case BOD:
+    case mBOD:
+    case uBOD:
         return true;
     default:
         return false;
@@ -43,10 +41,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("DASH");
-            case mDASH: return QString("mDASH");
-            case uDASH: return QString::fromUtf8("μDASH");
-            case duffs: return QString::fromUtf8("duffs");
+            case BOD: return QString("BOD");
+            case mBOD: return QString("mBOD");
+            case uBOD: return QString::fromUtf8("μBOD");
             default: return QString("???");
         }
     }
@@ -54,10 +51,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("tDASH");
-            case mDASH: return QString("mtDASH");
-            case uDASH: return QString::fromUtf8("μtDASH");
-            case duffs: return QString::fromUtf8("tduffs");
+            case BOD: return QString("tBOD");
+            case mBOD: return QString("mtBOD");
+            case uBOD: return QString::fromUtf8("μtBOD");
             default: return QString("???");
         }
     }
@@ -69,10 +65,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("Dash");
-            case mDASH: return QString("Milli-Dash (1 / 1,000)");
-            case uDASH: return QString("Micro-Dash (1 / 1,000,000)");
-            case duffs: return QString("Ten Nano-Dash (1 / 100,000,000)");
+            case BOD: return QString("Bloodcoin");
+            case mBOD: return QString("Milli-Bloodcoin (1 / 1,000)");
+            case uBOD: return QString("Micro-Bloodcoin (1 / 1,000,000)");
             default: return QString("???");
         }
     }
@@ -80,10 +75,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DASH: return QString("TestDashs");
-            case mDASH: return QString("Milli-TestDash (1 / 1,000)");
-            case uDASH: return QString("Micro-TestDash (1 / 1,000,000)");
-            case duffs: return QString("Ten Nano-TestDash (1 / 100,000,000)");
+            case BOD: return QString("TestBods");
+            case mBOD: return QString("Milli-TestBods (1 / 1,000)");
+            case uBOD: return QString("Micro-TestBods (1 / 1,000,000)");
             default: return QString("???");
         }
     }
@@ -93,11 +87,10 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case DASH:  return 100000000;
-    case mDASH: return 100000;
-    case uDASH: return 100;
-    case duffs: return 1;
-    default:   return 100000000;
+    case BOD:  return 100000;
+    case mBOD: return 1000;
+    case uBOD: return 100;
+    default:   return 100000;
     }
 }
 
@@ -105,10 +98,9 @@ qint64 BitcoinUnits::maxAmount(int unit)
 {
     switch(unit)
     {
-    case DASH:  return Q_INT64_C(21000000);
-    case mDASH: return Q_INT64_C(21000000000);
-    case uDASH: return Q_INT64_C(21000000000000);
-    case duffs: return Q_INT64_C(2100000000000000);
+    case BOD:  return Q_INT64_C(210000000);
+    case mBOD: return Q_INT64_C(210000000000);
+    case uBOD: return Q_INT64_C(210000000000000);
     default:   return 0;
     }
 }
@@ -117,10 +109,9 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case DASH: return 8; // 21,000,000 (# digits, without commas)
-    case mDASH: return 11; // 21,000,000,000
-    case uDASH: return 14; // 21,000,000,000,000
-    case duffs: return 16; // 2,100,000,000,000,000
+    case BOD: return 17; // 21,000,000 (# digits, without commas)
+    case mBOD: return 19; // 21,000,000,000
+    case uBOD: return 20; // 21,000,000,000,000
     default: return 0;
     }
 }
@@ -129,10 +120,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case DASH: return 8;
-    case mDASH: return 5;
-    case uDASH: return 2;
-    case duffs: return 0;
+    case BOD: return 5;
+    case mBOD: return 3;
+    case uBOD: return 6;
     default: return 0;
     }
 }

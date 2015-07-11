@@ -12,6 +12,8 @@
 #include "util.h"
 
 #include <boost/assign/list_of.hpp>
+#include <stdint.h>
+
 
 using namespace boost::assign;
 
@@ -21,10 +23,14 @@ using namespace boost::assign;
 
 unsigned int pnSeed[] =
 {
-    0xb32b80ef, 0x807f6aeb, 0x259dfa0a, 0xa2d16323, 0x6c3dd236,
-    0xacf50584, 0x2ea2420a, 0x4e6db2c3, 0x8a80a95e, 0x340b8de5,
-    0x253b153a, 0x2e69760f, 0xb2217edd, 0x68ec1783, 0x6c3dd125,
+    0x6df9a8d5, 0x25974f2d, 0xe226655e, 0x473bf25e, 0xf301a28b, 0xcf0f212d, 0xdd7e21b2, 0xde2cee2e,
 };
+
+static CBigNum bnMainProofOfWorkLimit(~uint256(0) >> 21);
+static const int64_t nGenesisBlockRewardCoin = 1 * COIN;
+static const int64_t nBlockRewardStartCoin = 8192 * COIN;
+static const int64_t nBlockRewardMinimumCoin = 1 * COIN;
+
 
 class CMainParams : public CChainParams {
 public:
@@ -32,47 +38,48 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xbf;
-        pchMessageStart[1] = 0x0c;
-        pchMessageStart[2] = 0x6b;
-        pchMessageStart[3] = 0xbd;
-        vAlertPubKey = ParseHex("048240a8748a80a286b270ba126705ced4f2ce5a7847b3610ea3c06513150dade2a8512ed5ea86320824683fc0818f0ac019214973e677acd1244f6d0571fc5103");
-        nDefaultPort = 9999;
-        nRPCPort = 9998;
-        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);  // Dash starting difficulty is 1 / 2^12
-        nSubsidyHalvingInterval = 210000;
+        pchMessageStart[0] = 0xab;
+        pchMessageStart[1] = 0xa2;
+        pchMessageStart[2] = 0x35;
+        pchMessageStart[3] = 0xc2;
+        vAlertPubKey = ParseHex("0438e2caf8302a8a3d2e342a0b04cf6b6956be5bbcf53c2aa1d45d33763faceb20e8821be435694198fc26a3807963e4fd04ede1d5a5966220080a353bab070a5f");
+        nDefaultPort = 5011;
+        nRPCPort = 5009;
+        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 21);  
+        //nSubsidyHalvingInterval = 210000;
 
         // Genesis block
-        const char* pszTimestamp = "Wired 09/Jan/2014 The Grand Experiment Goes Live: Overstock.com Is Now Accepting Bitcoins";
+        const char* pszTimestamp = "The 2015 Bilderberg Conference just took place";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
-        txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 50 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+        txNew.vin[0].scriptSig = txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+        txNew.vout[0].nValue = nGenesisBlockRewardCoin;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("047c2e1ef97661cdbbc9d448dd35415c2d511fcab295eb39fb5fb27ec95442fbb44e2beb1233a5eadb9b1aeac97312f43ef244645ea9efc503e5d233a4a8424932") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
-        genesis.nVersion = 1;
-        genesis.nTime    = 1390095618;
-        genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 28917698;
+        genesis.nVersion = 112;
+        genesis.nTime    = 1434482533;
+        genesis.nBits    = 0x1e07ffff;
+        genesis.nNonce   = 12238375;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6"));
-        assert(genesis.hashMerkleRoot == uint256("0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7"));
+        assert(hashGenesisBlock == uint256("0x0000031d234b64f9a2c8fc5c5ff49e3bcb6f809e558bddf1a3fb8f4fd48b953e"));
+        assert(genesis.hashMerkleRoot == uint256("0xb1b803d7826df7d8b6464f3125c7dce12b050a5dc836693096f61d2cb5b5db45"));
 
-        vSeeds.push_back(CDNSSeedData("darkcoin.io", "dnsseed.darkcoin.io"));
-        vSeeds.push_back(CDNSSeedData("darkcoin.qa", "dnsseed.darkcoin.qa"));
-        vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
-        vSeeds.push_back(CDNSSeedData("dashpay.io", "dnsseed.dashpay.io"));
+        vSeeds.push_back(CDNSSeedData("ns000.bloodcoin.cc", "nd000.bloodcoin.cc"));
+        vSeeds.push_back(CDNSSeedData("ns004.bloodcoin.cc", "nd004.bloodcoin.cc"));
+        vSeeds.push_back(CDNSSeedData("ns001.bloodcoin.cc", "nd001.bloodcoin.cc"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of( 76);                    // Dash addresses start with 'X'
-        base58Prefixes[SCRIPT_ADDRESS] = list_of( 16);                    // Dash script addresses start with '7'
-        base58Prefixes[SECRET_KEY] =     list_of(204);                    // Dash private keys start with '7' or 'X'
-        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x02)(0xFE)(0x52)(0xF8); // Dash BIP32 pubkeys start with 'drkv'
-        base58Prefixes[EXT_SECRET_KEY] = list_of(0x02)(0xFE)(0x52)(0xCC); // Dash BIP32 prvkeys start with 'drkp'
-        base58Prefixes[EXT_COIN_TYPE]  = list_of(0x80000005);             // Dash BIP44 coin type is '5'
+
+
+        base58Prefixes[PUBKEY_ADDRESS] = list_of(85);
+        base58Prefixes[SCRIPT_ADDRESS] = list_of(9);
+        base58Prefixes[SECRET_KEY] =     list_of(213);
+        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E);
+        base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4);
+        base58Prefixes[EXT_COIN_TYPE]  = list_of(0x80000005);
 
         // Convert the pnSeeds array into usable address objects.
         for (unsigned int i = 0; i < ARRAYLEN(pnSeed); i++)
@@ -127,16 +134,16 @@ public:
         genesis.nNonce = 3861367235;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c"));
+        //assert(hashGenesisBlock == uint256("0x00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         /*vSeeds.push_back(CDNSSeedData("dashpay.io", "testnet-seed.dashpay.io"));
         vSeeds.push_back(CDNSSeedData("dash.qa", "testnet-seed.dash.qa"));
         *///legacy seeders
-        vSeeds.push_back(CDNSSeedData("darkcoin.io",  "testnet-seed.darkcoin.io"));
-        vSeeds.push_back(CDNSSeedData("darkcoin.qa", "testnet-seed.darkcoin.qa"));
-        vSeeds.push_back(CDNSSeedData("masternode.io", "test.dnsseed.masternode.io"));
+        //vSeeds.push_back(CDNSSeedData("darkcoin.io",  "testnet-seed.darkcoin.io"));
+        //vSeeds.push_back(CDNSSeedData("darkcoin.qa", "testnet-seed.darkcoin.qa"));
+        //vSeeds.push_back(CDNSSeedData("masternode.io", "test.dnsseed.masternode.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(139);                    // Testnet dash addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = list_of( 19);                    // Testnet dash script addresses start with '8' or '9'
@@ -169,7 +176,7 @@ public:
         strDataDir = "regtest";
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000008ca1832a4baf228eb1553c03d3a2c8e02399550dd6ea8d65cec3ef23d2e"));
+        //assert(hashGenesisBlock == uint256("0x000008ca1832a4baf228eb1553c03d3a2c8e02399550dd6ea8d65cec3ef23d2e"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }

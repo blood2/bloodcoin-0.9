@@ -244,7 +244,7 @@ public:
 class CDarkSendSigner
 {
 public:
-    /// Is the inputs associated with this public key? (and there is 1000 DASH - checking if valid masternode)
+    /// Is the inputs associated with this public key? (and there is 1000 BOD - checking if valid masternode)
     bool IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey);
     /// Set the private/public key values, returns true if successful
     bool SetKey(std::string strSecret, std::string& errorMessage, CKey& key, CPubKey& pubkey);
@@ -479,7 +479,7 @@ public:
 
     void GetDenominationsToString(int nDenom, std::string& strDenom);
 
-    /// Get the denominations for a specific amount of dash.
+    /// Get the denominations for a specific amount of bod.
     int GetDenominationsByAmount(int64_t nAmount, int nDenomTarget=0);
     int GetDenominationsByAmounts(std::vector<int64_t>& vecAmount);
 

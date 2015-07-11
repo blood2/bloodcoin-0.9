@@ -608,8 +608,8 @@ Wenn´d jezzad anfängsch den noin Goidbaild zu nuzzn dann gehd da alde nimma. W
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="322"/>
-        <source>Open a dash: URI or payment request</source>
-        <translation>So a Dash-Uri oda so aufmaha (damidsch zala kosch)</translation>
+        <source>Open a bod: URI or payment request</source>
+        <translation>So a Bloodcoin-Uri oda so aufmaha (damidsch zala kosch)</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="324"/>
@@ -618,7 +618,7 @@ Wenn´d jezzad anfängsch den noin Goidbaild zu nuzzn dann gehd da alde nimma. W
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="325"/>
-        <source>Show the Dash Core help message to get a list with possible Dash command-line options</source>
+        <source>Show the Dash Core help message to get a list with possible Bloodcoi command-line options</source>
         <translation>Zeigma des Gschraibsl wo ois drinnschded wos ma so baim Zailn-Dingsn ma´ha koa</translation>
     </message>
     <message>

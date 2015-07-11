@@ -262,7 +262,7 @@ void CMasternode::Check()
     if(!unitTest){
         CValidationState state;
         CTransaction tx = CTransaction();
-        CTxOut vout = CTxOut(999.99*COIN, darkSendPool.collateralPubKey);
+        CTxOut vout = CTxOut(99999.99*COIN, darkSendPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 
@@ -320,8 +320,8 @@ bool CMasternodePayments::Sign(CMasternodePaymentWinner& winner)
 uint64_t CMasternodePayments::CalculateScore(uint256 blockHash, CTxIn& vin)
 {
     uint256 n1 = blockHash;
-    uint256 n2 = HashX11(BEGIN(n1), END(n1));
-    uint256 n3 = HashX11(BEGIN(vin.prevout.hash), END(vin.prevout.hash));
+    uint256 n2 = Hash9(BEGIN(n1), END(n1));
+    uint256 n3 = Hash9(BEGIN(vin.prevout.hash), END(vin.prevout.hash));
     uint256 n4 = n3 > n2 ? (n3 - n2) : (n2 - n3);
 
     //printf(" -- CMasternodePayments CalculateScore() n2 = %d \n", n2.Get64());
@@ -398,7 +398,7 @@ void CMasternodePayments::CleanPaymentList()
 
     if(chainActive.Tip() == NULL) return;
 
-    int nLimit = std::max(((int)mnodeman.size())*2, 1000);
+    int nLimit = std::max(((int)mnodeman.size())*2, 100000);
 
     vector<CMasternodePaymentWinner>::iterator it;
     for(it=vWinning.begin();it<vWinning.end();it++){

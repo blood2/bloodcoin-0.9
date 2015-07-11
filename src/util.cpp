@@ -93,7 +93,7 @@ namespace boost {
 
 using namespace std;
 
-//Dash only features
+//Bloodcoin only features
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
 string strMasterNodeAddr = "";
@@ -993,7 +993,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "dash";
+    const char* pszModule = "bloodcoin";
 #endif
     if (pex)
         return strprintf(
@@ -1020,13 +1020,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Dash
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Dash
-    // Mac: ~/Library/Application Support/Dash
-    // Unix: ~/.dash
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Bloodcoin
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Bloodcoin
+    // Mac: ~/Library/Application Support/Bloodcoin
+    // Unix: ~/.bloodcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Dash";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Bloodcoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1038,10 +1038,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Dash";
+    return pathRet / "Bloodcoin";
 #else
     // Unix
-    return pathRet / ".dash";
+    return pathRet / ".bloodcoin";
 #endif
 #endif
 }
@@ -1090,7 +1090,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "dash.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "bloodcoin.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1107,7 +1107,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()){
-        // Create empty dash.conf if it does not excist
+        // Create empty bloodcoin.conf if it does not excist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -1119,7 +1119,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override dash.conf
+        // Don't overwrite existing settings so command line settings override bloodcoin.conf
         string strKey = string("-") + it->string_key;
         if (mapSettingsRet.count(strKey) == 0)
         {
@@ -1135,7 +1135,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "dashd.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "bloodcoind.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
@@ -1368,7 +1368,7 @@ void AddTimeData(const CNetAddr& ip, int64_t nTime)
                 if (!fMatch)
                 {
                     fDone = true;
-                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong Dash will not work properly.");
+                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong Bloodcoin will not work properly.");
                     strMiscWarning = strMessage;
                     LogPrintf("*** %s\n", strMessage);
                     uiInterface.ThreadSafeMessageBox(strMessage, "", CClientUIInterface::MSG_WARNING);

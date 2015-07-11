@@ -55,6 +55,7 @@ CTxOut::CTxOut(int64_t nValueIn, CScript scriptPubKeyIn)
 {
     nValue = nValueIn;
     nRounds = -10; // an initial value, should be no way to get this by calculations
+
     scriptPubKey = scriptPubKeyIn;
 }
 
@@ -215,7 +216,7 @@ uint64_t CTxOutCompressor::DecompressAmount(uint64_t x)
 
 uint256 CBlockHeader::GetHash() const
 {
-    return HashX11(BEGIN(nVersion), END(nNonce));
+    return Hash9(BEGIN(nVersion), END(nNonce));
 }
 
 uint256 CBlock::BuildMerkleTree() const

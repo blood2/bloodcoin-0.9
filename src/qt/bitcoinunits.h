@@ -26,10 +26,9 @@ public:
      */
     enum Unit
     {
-        DASH,
-        mDASH,
-        uDASH,
-        duffs
+        BOD,
+        mBOD,
+        uBOD
     };
 
     //! @name Static API

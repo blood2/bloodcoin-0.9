@@ -33,7 +33,7 @@ SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
 
     // normal dash address field
     GUIUtil::setupAddressWidget(ui->payTo, this);
-    // just a label for displaying dash address(es)
+    // just a label for displaying bloodcoin address(es)
     ui->payTo_is->setFont(GUIUtil::bitcoinAddressFont());
 }
 

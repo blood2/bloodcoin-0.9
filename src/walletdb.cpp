@@ -766,7 +766,7 @@ DBErrors CWalletDB::ZapWalletTx(CWallet* pwallet)
 void ThreadFlushWalletDB(const string& strFile)
 {
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("dash-wallet");
+    RenameThread("bloodcoin-wallet");
 
     static bool fOneThread;
     if (fOneThread)

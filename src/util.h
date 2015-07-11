@@ -36,8 +36,8 @@
 class CNetAddr;
 class uint256;
 
-static const int64_t COIN = 100000000;
-static const int64_t CENT = 1000000;
+static const int64_t COIN = 100000;
+static const int64_t CENT = COIN / 100;
 
 #define BEGIN(a)            ((char*)&(a))
 #define END(a)              ((char*)&((&(a))[1]))
@@ -541,7 +541,7 @@ inline uint32_t ByteReverse(uint32_t value)
 //    threadGroup.create_thread(boost::bind(&LoopForever<boost::function<void()> >, "nothing", f, milliseconds));
 template <typename Callable> void LoopForever(const char* name,  Callable func, int64_t msecs)
 {
-    std::string s = strprintf("dash-%s", name);
+    std::string s = strprintf("bloodcoin-%s", name);
     RenameThread(s.c_str());
     LogPrintf("%s thread start\n", name);
     try
@@ -569,7 +569,7 @@ template <typename Callable> void LoopForever(const char* name,  Callable func, 
 // .. and a wrapper that just calls func once
 template <typename Callable> void TraceThread(const char* name,  Callable func)
 {
-    std::string s = strprintf("dash-%s", name);
+    std::string s = strprintf("bloodcoin-%s", name);
     RenameThread(s.c_str());
     try
     {

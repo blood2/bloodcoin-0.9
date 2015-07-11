@@ -17,14 +17,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Dash"
-            VALUE "FileDescription",    "Dash-cli (OSS RPC client for Dash)"
+            VALUE "CompanyName",        "Bloodcoin"
+            VALUE "FileDescription",    "Bloodcoind (OSS daemon/client for Bloodcoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "dash-cli"
+            VALUE "InternalName",       "bloodcoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "dash-cli.exe"
-            VALUE "ProductName",        "Dash-cli"
+            VALUE "OriginalFilename",   "bloodcoind.exe"
+            VALUE "ProductName",        "Bloodcoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

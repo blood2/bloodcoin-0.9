@@ -43,14 +43,14 @@ void CActiveMasternode::ManageStatus()
         LogPrintf("CActiveMasternode::ManageStatus() - Checking inbound connection to '%s'\n", service.ToString().c_str());
 
         if(Params().NetworkID() == CChainParams::MAIN){
-            if(service.GetPort() != 9999) {
-                notCapableReason = "Invalid port: " + boost::lexical_cast<string>(service.GetPort()) + " - only 9999 is supported on mainnet.";
+            if(service.GetPort() != 5011) {
+                notCapableReason = "Invalid port: " + boost::lexical_cast<string>(service.GetPort()) + " - only 5011 is supported on mainnet.";
                 status = MASTERNODE_NOT_CAPABLE;
                 LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason.c_str());
                 return;
             }
-        } else if(service.GetPort() == 9999) {
-            notCapableReason = "Invalid port: " + boost::lexical_cast<string>(service.GetPort()) + " - 9999 is only supported on mainnet.";
+        } else if(service.GetPort() == 5011) {
+            notCapableReason = "Invalid port: " + boost::lexical_cast<string>(service.GetPort()) + " - 5011 is only supported on mainnet.";
             status = MASTERNODE_NOT_CAPABLE;
             LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason.c_str());
             return;
@@ -105,7 +105,7 @@ void CActiveMasternode::ManageStatus()
                 return;
             }
 
-            /* donations are not supported in dash.conf */
+            /* donations are not supported in bloodcoin.conf */
             CScript donationAddress = CScript();
             int donationPercentage = 0;
 
@@ -403,7 +403,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
     // Filter
     BOOST_FOREACH(const COutput& out, vCoins)
     {
-        if(out.tx->vout[out.i].nValue == 1000*COIN) { //exactly
+        if(out.tx->vout[out.i].nValue == 100000*COIN) { //exactly
             filteredCoins.push_back(out);
         }
     }

@@ -39,8 +39,8 @@ Value getinfo(const Array& params, bool fHelp)
             "  \"version\": xxxxx,           (numeric) the server version\n"
             "  \"protocolversion\": xxxxx,   (numeric) the protocol version\n"
             "  \"walletversion\": xxxxx,     (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,         (numeric) the total dash balance of the wallet\n"
-            "  \"darksend_balance\": xxxxxx, (numeric) the anonymized dash balance of the wallet\n"
+            "  \"balance\": xxxxxxx,         (numeric) the total bloodcoin balance of the wallet\n"
+            "  \"darksend_balance\": xxxxxx, (numeric) the anonymized bloodcoin balance of the wallet\n"
             "  \"blocks\": xxxxxx,           (numeric) the current number of blocks processed in the server\n"
             "  \"timeoffset\": xxxxx,        (numeric) the time offset\n"
             "  \"connections\": xxxxx,       (numeric) the number of connections\n"
@@ -174,14 +174,14 @@ Value validateaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress \"dashaddress\"\n"
-            "\nReturn information about the given dash address.\n"
+            "validateaddress \"bodaddress\"\n"
+            "\nReturn information about the given bloodcoin address.\n"
             "\nArguments:\n"
-            "1. \"dashaddress\"     (string, required) The dash address to validate\n"
+            "1. \"bodaddress\"     (string, required) The bloodcoin address to validate\n"
             "\nResult:\n"
             "{\n"
             "  \"isvalid\" : true|false,         (boolean) If the address is valid or not. If not, this is the only property returned.\n"
-            "  \"address\" : \"dashaddress\", (string) The dash address validated\n"
+            "  \"address\" : \"bodaddress\", (string) The bloodcoin address validated\n"
             "  \"ismine\" : true|false,          (boolean) If the address is yours or not\n"
             "  \"isscript\" : true|false,        (boolean) If the key is a script\n"
             "  \"pubkey\" : \"publickeyhex\",    (string) The hex value of the raw public key\n"
@@ -238,7 +238,7 @@ CScript _createmultisig_redeemScript(const Array& params)
     {
         const std::string& ks = keys[i].get_str();
 #ifdef ENABLE_WALLET
-        // Case 1: Dash address and we have full public key:
+        // Case 1: Bloodcoin address and we have full public key:
         CBitcoinAddress address(ks);
         if (pwalletMain && address.IsValid())
         {
@@ -290,9 +290,9 @@ Value createmultisig(const Array& params, bool fHelp)
 
             "\nArguments:\n"
             "1. nrequired      (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keys\"       (string, required) A json array of keys which are dash addresses or hex-encoded public keys\n"
+            "2. \"keys\"       (string, required) A json array of keys which are bloodcoin addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"key\"    (string) dash address or hex-encoded public key\n"
+            "       \"key\"    (string) bloodcoin address or hex-encoded public key\n"
             "       ,...\n"
             "     ]\n"
 
@@ -327,10 +327,10 @@ Value verifymessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage \"dashaddress\" \"signature\" \"message\"\n"
+            "verifymessage \"bodaddress\" \"signature\" \"message\"\n"
             "\nVerify a signed message\n"
             "\nArguments:\n"
-            "1. \"dashaddress\"  (string, required) The dash address to use for the signature.\n"
+            "1. \"bodaddress\"  (string, required) The bloodcoin address to use for the signature.\n"
             "2. \"signature\"       (string, required) The signature provided by the signer in base 64 encoding (see signmessage).\n"
             "3. \"message\"         (string, required) The message that was signed.\n"
             "\nResult:\n"

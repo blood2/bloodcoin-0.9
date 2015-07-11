@@ -45,20 +45,20 @@ bool CMasternodeConfig::read(std::string& strErr) {
             }
             CBitcoinAddress address(donationAddress);
             if (!address.IsValid()) {
-                strErr = "Invalid Dash address in masternode.conf line: " + line;
+                strErr = "Invalid Bloodcoin address in masternode.conf line: " + line;
                 streamConfig.close();
                 return false;
             }
         }
 
         if(Params().NetworkID() == CChainParams::MAIN){
-            if(CService(ip).GetPort() != 9999) {
-                strErr = "Invalid port detected in masternode.conf: " + line + " (must be 9999 for mainnet)";
+            if(CService(ip).GetPort() != 5011) {
+                strErr = "Invalid port detected in masternode.conf: " + line + " (must be 5011 for mainnet)";
                 streamConfig.close();
                 return false;
             }
-        } else if(CService(ip).GetPort() == 9999) {
-            strErr = "Invalid port detected in masternode.conf: " + line + " (9999 must be only on mainnet)";
+        } else if(CService(ip).GetPort() == 5011) {
+            strErr = "Invalid port detected in masternode.conf: " + line + " (5011 must be only on mainnet)";
             streamConfig.close();
             return false;
         }

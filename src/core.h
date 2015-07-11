@@ -12,11 +12,11 @@
 
 #include <stdint.h>
 
-#define START_MASTERNODE_PAYMENTS_TESTNET 1420837558 //Fri, 09 Jan 2015 21:05:58 GMT
-#define START_MASTERNODE_PAYMENTS 1403728576 //Wed, 25 Jun 2014 20:36:16 GMT
+#define START_MASTERNODE_PAYMENTS_TESTNET 1436552033 //2015-07-10 21:13:53
+#define START_MASTERNODE_PAYMENTS 1436552033 //2015-07-10 21:13:53
 
 static const int64_t DARKSEND_COLLATERAL = (0.01*COIN);
-static const int64_t DARKSEND_POOL_MAX = (999.99*COIN);
+static const int64_t DARKSEND_POOL_MAX = (99999.99*COIN);
 
 /*
     At 15 signatures, 1/2 of the masternode network can be owned by
@@ -43,12 +43,12 @@ static const int64_t DARKSEND_POOL_MAX = (999.99*COIN);
 #define MASTERNODE_EXPIRATION_SECONDS          (65*60)
 #define MASTERNODE_REMOVAL_SECONDS             (70*60)
 
-static const int MIN_POOL_PEER_PROTO_VERSION = 70076; // minimum peer version accepted by DarkSendPool
+static const int MIN_POOL_PEER_PROTO_VERSION = 70077; // minimum peer version accepted by DarkSendPool
 
 class CTransaction;
 
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 21000000 * COIN;
+static const int64_t MAX_MONEY = 500000000 * COIN;
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
 /** An outpoint - a combination of a transaction hash and an index n into its vout */
@@ -382,7 +382,7 @@ class CBlockHeader
 {
 public:
     // header
-    static const int CURRENT_VERSION=3;
+    static const int CURRENT_VERSION=112;
     int nVersion;
     uint256 hashPrevBlock;
     uint256 hashMerkleRoot;

@@ -27,10 +27,10 @@ using namespace boost;
 #define SPORK_6_NOTUSED                                       10005
 #define SPORK_7_MASTERNODE_SCANNING                           10006
 
-#define SPORK_1_MASTERNODE_PAYMENTS_ENFORCEMENT_DEFAULT       1424217600  //2015-2-18
+#define SPORK_1_MASTERNODE_PAYMENTS_ENFORCEMENT_DEFAULT       1436552033  //2015-7-10
 #define SPORK_2_INSTANTX_DEFAULT                              978307200   //2001-1-1
-#define SPORK_3_INSTANTX_BLOCK_FILTERING_DEFAULT              1424217600  //2015-2-18
-#define SPORK_5_MAX_VALUE_DEFAULT                             1000        //1000 DASH
+#define SPORK_3_INSTANTX_BLOCK_FILTERING_DEFAULT              1436552033  //2015-7-10
+#define SPORK_5_MAX_VALUE_DEFAULT                             100000      //100000 BOD
 #define SPORK_7_MASTERNODE_SCANNING_DEFAULT                   978307200   //2001-1-1
 
 class CSporkMessage;
@@ -70,7 +70,7 @@ public:
     int64_t nTimeSigned;
 
     uint256 GetHash(){
-        uint256 n = HashX11(BEGIN(nSporkID), END(nTimeSigned));
+        uint256 n = Hash9(BEGIN(nSporkID), END(nTimeSigned));
         return n;
     }
 
@@ -95,8 +95,8 @@ private:
 public:
 
     CSporkManager() {
-        strMainPubKey = "04549ac134f694c0243f503e8c8a9a986f5de6610049c40b07816809b0d1d06a21b07be27b9bb555931773f62ba6cf35a25fd52f694d4e1106ccd237a7bb899fdd";
-        strTestPubKey = "046f78dcf911fbd61910136f7f0f8d90578f68d0b3ac973b5040fb7afb501b5939f39b108b0569dca71488f5bbf498d92e4d1194f6f941307ffd95f75e76869f0e";
+        strMainPubKey = "040947e40e55bef884938fb5367590b52b14256f75ccf05110b02c9bf89261a5cf3b58d1748996b92622b40ffc46c244c39c0508f8011520272c2b6c94094fdd53";
+        strTestPubKey = "0438e2caf8302a8a3d2e342a0b04cf6b6956be5bbcf53c2aa1d45d33763faceb20e8821be435694198fc26a3807963e4fd04ede1d5a5966220080a353bab070a5f";
     }
 
     std::string GetSporkNameByID(int id);
